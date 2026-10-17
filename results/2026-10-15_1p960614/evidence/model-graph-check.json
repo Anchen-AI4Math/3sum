@@ -1,0 +1,56 @@
+{
+  "read_at_utc": "2026-10-15T09:12:30.378901+00:00",
+  "model_branch_complete": true,
+  "proved_theorems": [
+    {
+      "source_name": "ThreeSum1960614.FixedModel.bound_of_witnesses",
+      "platform_name": "ThreeSum1960614.FixedModel.bound_of_witnesses",
+      "theorem_id": "6600f18a-f5d3-4c32-9b82-95b2f500c864",
+      "status": "Proved",
+      "submission_id": "8379cd5c-65b6-4bc5-bd3a-2bbecbec833e"
+    },
+    {
+      "source_name": "ThreeSum1960614.FixedModel.witness_logs",
+      "platform_name": "ThreeSum1960614.FixedModel.witness_logs",
+      "theorem_id": "18279722-8cec-48a0-97f0-d0162d84f3d2",
+      "status": "Proved",
+      "submission_id": "ef6605e2-4caf-4a2d-bdcb-5d66723373af"
+    },
+    {
+      "source_name": "ThreeSum1960614.FixedModel.complete_lower_bound",
+      "platform_name": "ThreeSum1960614.fixed_model_lower_bound",
+      "theorem_id": "9319378a-d6f7-45f7-b66b-35f91d017f2e",
+      "status": "Proved",
+      "submission_id": "11fed256-8412-4818-9772-e4a1cf7558bc"
+    }
+  ],
+  "verified_paths": [
+    {
+      "child_name": "ThreeSum1960614.encoding_parameter_bounds",
+      "child": "a9706156-d570-4deb-9673-92dc5a793f2a",
+      "submission_id": "11fed256-8412-4818-9772-e4a1cf7558bc",
+      "parent": "9319378a-d6f7-45f7-b66b-35f91d017f2e"
+    },
+    {
+      "child_name": "ThreeSum1960614.high_precision_logs",
+      "child": "de7fe647-8aac-4316-94bf-b5004b38aa98",
+      "submission_id": "11fed256-8412-4818-9772-e4a1cf7558bc",
+      "parent": "9319378a-d6f7-45f7-b66b-35f91d017f2e"
+    },
+    {
+      "child_name": "ThreeSum1960614.FixedModel.bound_of_witnesses",
+      "child": "6600f18a-f5d3-4c32-9b82-95b2f500c864",
+      "submission_id": "11fed256-8412-4818-9772-e4a1cf7558bc",
+      "parent": "9319378a-d6f7-45f7-b66b-35f91d017f2e"
+    },
+    {
+      "child_name": "ThreeSum1960614.FixedModel.witness_logs",
+      "child": "18279722-8cec-48a0-97f0-d0162d84f3d2",
+      "submission_id": "11fed256-8412-4818-9772-e4a1cf7558bc",
+      "parent": "9319378a-d6f7-45f7-b66b-35f91d017f2e"
+    }
+  ],
+  "independent_root": "9319378a-d6f7-45f7-b66b-35f91d017f2e",
+  "main_goal_status": "Open",
+  "full_machine_graph_complete": false
+}

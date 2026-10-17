@@ -1,0 +1,25 @@
+{
+  "status": "VERIFIED MODEL BOUNDS; END-TO-END 3SUM H2/H3 STILL OPEN",
+  "global_lower": "1.958",
+  "global_upper_strict": "1.9585615",
+  "rounded_upper_target": "1.958562",
+  "old_interval": [
+    "1.9533",
+    "1.9586106"
+  ],
+  "lower_leaf_regions": 18060,
+  "dual_rows_checked": 283808,
+  "upper_schedule_intervals": 707,
+  "negative_tests": {
+    "upper": 5,
+    "lower": 4
+  },
+  "files_sha256": {
+    "kappa_multidepth_fast_certificate.json": "6fe051991300cb80e85abcd89e1c4f73e6e73ec0a5b782eacdd296196ba0d2e2",
+    "upper_certificate.json": "230370ebf9098a61689018cf67ff95a79d835eb636654f8df7f9f27f2689dd00",
+    "verify_multidepth.py": "ab4bd48d7646f2f869a95b395861cbf2c3ba5a714cb44eaf1728dbd926010c37",
+    "verify_upper.py": "30e1d73a95fd75d03e9769270e01765194670ebf0bf7a49917929d69d6da2019",
+    "fast_rational.py": "e3c7cfa64b9ff686e16a1dcd7499f824a772da6cd93def8cae074486d1139ab7",
+    "GLOBAL_PROOF.txt": "bce7e38f045939c4f9ba64e25eebe1ea287aebeab405c8cab4b32c7cd97b6c37"
+  }
+}

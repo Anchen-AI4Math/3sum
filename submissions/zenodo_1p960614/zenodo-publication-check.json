@@ -1,0 +1,34 @@
+{
+  "record_id": 23408567,
+  "doi": "10.5281/zenodo.23408567",
+  "submitted": true,
+  "publication_date": "2026-10-16",
+  "files": [
+    {
+      "file": "SHA256SUMS.txt",
+      "bytes": 352,
+      "matches_local": true
+    },
+    {
+      "file": "3sum-1p960614-artifact-v1.0.0.zip",
+      "bytes": 2736813,
+      "matches_local": true
+    },
+    {
+      "file": "3sum-1p960614-report.pdf",
+      "bytes": 87231,
+      "matches_local": true
+    },
+    {
+      "file": "README.txt",
+      "bytes": 3653,
+      "matches_local": true
+    },
+    {
+      "file": "LICENSING.txt",
+      "bytes": 1095,
+      "matches_local": true
+    }
+  ],
+  "verification_scope": "Public Zenodo metadata and file checksums compared with the local upload directory; no remote changes."
+}

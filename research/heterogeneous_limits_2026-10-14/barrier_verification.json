@@ -1,0 +1,10 @@
+{
+  "scope": "all finite homogeneous or heterogeneous profiles, arbitrary order, c>=3, beta<0; same ledger",
+  "lower": "19533/10000",
+  "counts": {
+    "leaves": 1449,
+    "empty": 205,
+    "split": 1653
+  },
+  "worst_saving_upper": "[0.046699885315242698193090, 0.046699885315242698193091]"
+}

@@ -1,0 +1,20 @@
+{
+  "id": 11904143134,
+  "node_id": "MDg6QXJ0aWZhY3QxMTkwNDE0MzEzNA==",
+  "name": "verifier-receipt-and-logs-38567645711-1-8",
+  "size_in_bytes": 1021246,
+  "url": "https://api.github.com/repos/bigospeedrun/verifier/actions/artifacts/11904143134",
+  "archive_download_url": "https://api.github.com/repos/bigospeedrun/verifier/actions/artifacts/11904143134/zip",
+  "expired": false,
+  "digest": "sha256:2452614d8f788b0614aeb644975299771355194afecb7e699100761fef515380",
+  "created_at": "2026-10-14T14:47:19Z",
+  "updated_at": "2026-10-14T14:47:19Z",
+  "expires_at": "2027-01-12T12:56:02Z",
+  "workflow_run": {
+    "id": 38567645711,
+    "repository_id": 1413001192,
+    "head_repository_id": 1413001192,
+    "head_branch": "main",
+    "head_sha": "51489ee2ac82596a41375e92ea8108814f931242"
+  }
+}

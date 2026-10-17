@@ -1,0 +1,77 @@
+{
+  "moves": [
+    {
+      "from": "3sum_exponent_research_2026-10-13",
+      "to": "research\\3sum_exponent_research_2026-10-13",
+      "files_verified": 3
+    },
+    {
+      "from": "algorithm_search_2026-10-14",
+      "to": "research\\algorithm_search_2026-10-14",
+      "files_verified": 21
+    },
+    {
+      "from": "continuation_2026-10-14",
+      "to": "research\\continuation_2026-10-14",
+      "files_verified": 22
+    },
+    {
+      "from": "global_limits_refinement_2026-10-14",
+      "to": "research\\global_limits_refinement_2026-10-14",
+      "files_verified": 30
+    },
+    {
+      "from": "heterogeneous_limits_2026-10-14",
+      "to": "research\\heterogeneous_limits_2026-10-14",
+      "files_verified": 25
+    },
+    {
+      "from": "3sum_certificate_1p960614_v3.zip",
+      "to": "archives\\3sum_certificate_1p960614_v3.zip",
+      "files_verified": 1
+    },
+    {
+      "from": "3sum_exponent_research_2026-10-13.zip",
+      "to": "archives\\3sum_exponent_research_2026-10-13.zip",
+      "files_verified": 1
+    },
+    {
+      "from": "AUDIT_REPORT_2026-10-13.txt",
+      "to": "audit\\AUDIT_REPORT_2026-10-13.txt",
+      "files_verified": 1
+    },
+    {
+      "from": "independent_audit.py",
+      "to": "audit\\independent_audit.py",
+      "files_verified": 1
+    },
+    {
+      "from": "independent_audit_output.txt",
+      "to": "audit\\independent_audit_output.txt",
+      "files_verified": 1
+    },
+    {
+      "from": "audit_sources",
+      "to": "references\\audit_sources",
+      "files_verified": 4
+    },
+    {
+      "from": "hexagon_openapi.json",
+      "to": "references\\hexagon\\hexagon_openapi.json",
+      "files_verified": 1
+    },
+    {
+      "from": "hexagon_submit_page.html",
+      "to": "references\\hexagon\\hexagon_submit_page.html",
+      "files_verified": 1
+    },
+    {
+      "from": "hexagon_submission",
+      "to": "submissions\\hexagon_1p999017",
+      "files_verified": 40
+    }
+  ],
+  "bytes_preserved_before_path_repairs": true,
+  "root": "3 SUM",
+  "date": "2026-10-15"
+}

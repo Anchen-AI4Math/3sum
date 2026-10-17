@@ -1,0 +1,69 @@
+{
+  "completed_at_utc": "2026-10-15T10:37:43.636360+00:00",
+  "mission_url": "https://prove2.me/missions/Deterministic_Integer_3SUM_1.960614%3A_Quartic_Switch_and_Complete_Program_Extension",
+  "mission_id": "01a7fb00-e5c3-4a42-a3c2-2cbf04330ffc",
+  "exact_goal": "EndStatement.ThreeSum.SolvedInTime 1.960614",
+  "exact_exponent": {
+    "numerator": 980307,
+    "denominator": 500000
+  },
+  "original_main_theorem_id": "a53b364e-57a0-4d2c-adc6-983a74218a4b",
+  "main_status": "Proved",
+  "original_bridge_theorem_id": "7c23d3cb-c4a0-4bc1-975a-ca2e5849adc6",
+  "bridge_status": "Proved",
+  "original_main_reduction": "17448ceb-49aa-4f37-9e4e-107b286f0059",
+  "original_main_reduction_status": "ACCEPTED",
+  "original_main_reduction_active": true,
+  "original_milestones_complete": 7,
+  "original_milestones_total": 7,
+  "published_machine_definition_bundles": 41,
+  "accepted_machine_proofs": 481,
+  "new_machine_theorem_declarations": 480,
+  "reused_proved_theorems": 110,
+  "actual_child_paths_verified": 1316,
+  "direct_paths": 1173,
+  "transitive_paths": 143,
+  "every_planned_node_connected_to_original_main": true,
+  "bounded_graph_view_omission_count": 4,
+  "bounded_graph_view_omission_evidence": "Four omitted direct edges are independently present in fresh nondeprecated server decomposition child records. Their exact submissions, children and response hashes are retained in machine-graph-check.json. No import-based edges were inferred.",
+  "graph_snapshot_integrity_passed": true,
+  "source_integrity_passed": true,
+  "workspace_ownership_check_passed": true,
+  "validation_mode": "user-authorized server-first; no local Lean build rerun",
+  "fixed_model_lower_bound_is_independent": true,
+  "local_native_proof_complete": true,
+  "bigospeedrun_officially_verified": true,
+  "claims_new_speedrun_record": false,
+  "source_repository": "https://github.com/Anchen0823/three-sum-1960614",
+  "source_commit": "8c25c0325de5be4286413f39ca0c9278aad33f52",
+  "manifest_sha256": "3e5505d439e5e616b1ee3d2d89b8e2b5596a7b8bbbf077d13700c69cc1239145",
+  "evidence": {
+    "machine-graph-check.json": {
+      "sha256": "a28ffc2844c4f59ede278ba3885e37d9c55439448ea94c0ce06aeeab889d995b"
+    },
+    "machine-graph-snapshot-integrity.json": {
+      "sha256": "6839bf65f11ffde650fd002c3dff9e48e1019021225cc8bd59c849e35eee8350"
+    },
+    "machine-source-integrity-check.json": {
+      "sha256": "76315a5a95a1401e7f37980ccb81c434e74467a3306618c9f5618d63b1a6b02d"
+    },
+    "machine-remote-status.json": {
+      "sha256": "020ba563a9704033ca8417d836d93bc98e2ec868077b3ae0caf94fe29173ac6f"
+    },
+    "mission-live-milestones.json": {
+      "sha256": "ef824a95c0162113c994a37dd3e7581876d1cf07500668264bcc1b0473702f63"
+    },
+    "mission-completion-metadata-validation.json": {
+      "sha256": "9a6abba5a33ec52b3b4421565dc4d54f6798bed77b5d89165e7a25040299ee23"
+    },
+    "model-graph-check.json": {
+      "sha256": "16f933a18a0c4e1921d838164ae335e96b6f40b9c6e79f323bd1d923d48d3aca"
+    },
+    "bigospeedrun-official-audit.json": {
+      "sha256": "6dd7e0f28827ec31c73fc5f8260a5eb4cf679e274e538e410d815fa34e6143b6"
+    },
+    "workspace-check-final.txt": {
+      "sha256": "b81861effabc801af818c71f4db46f9a2331c53ce42136fd3c7830f015a34102"
+    }
+  }
+}

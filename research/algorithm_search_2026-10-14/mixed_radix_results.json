@@ -1,0 +1,30 @@
+[
+  {
+    "bases": [],
+    "target_pairs": 25,
+    "modulus": 1,
+    "cap": 1,
+    "choice_tuples": 1
+  },
+  {
+    "bases": [
+      3,
+      5
+    ],
+    "target_pairs": 3721,
+    "modulus": 15,
+    "cap": 4,
+    "choice_tuples": 900
+  },
+  {
+    "bases": [
+      2,
+      3,
+      2
+    ],
+    "target_pairs": 2401,
+    "modulus": 12,
+    "cap": 8,
+    "choice_tuples": 1152
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "archive": "certificate_1p9593_2026-10-16.zip",
+  "bytes": 65071,
+  "sha256": "f65b13ea6de7ff304c4a03e440047130a3cd565571ebb903b75bdd1a082f3fe5",
+  "isolated_extracted_verification": "PASS",
+  "results_byte_identical": true,
+  "python": "3.14.7",
+  "files": 21
+}

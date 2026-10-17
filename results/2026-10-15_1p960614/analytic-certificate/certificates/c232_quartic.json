@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "analytic_and_parametric_cost_certificate_not_machine_runtime_certificate",
+  "base_repository": "c0ldzy17/three-sum-lean",
+  "base_commit": "2b639655e07421b9ac743de9090459bab473a7c0",
+  "expansion": 232,
+  "parameters": {
+    "epsilon": "0.203889696",
+    "beta": "-0.062656016",
+    "saving": "0.193175570",
+    "theta0": "0.040409899",
+    "principal": "1.96061388",
+    "target": "1.960614",
+    "barrier": "1.96061349120",
+    "tau": "13/20",
+    "rho": "2790503/10000000"
+  },
+  "polynomial": {
+    "degree": 4,
+    "denominator": 100000000,
+    "numerators": [
+      785174904,
+      72447023,
+      24044466,
+      12022459
+    ]
+  },
+  "tangent_point": "17200068185091493/100000000000000000",
+  "analytic_caps": {
+    "E_lower": "4648781151243719/1000000000000000",
+    "E_upper": "116219528781093/25000000000000",
+    "kappa_lower": "778993608289/500000000000000",
+    "kappa_upper": "1557987216579/1000000000000000",
+    "h0_upper": "15260525917959/62500000000000"
+  },
+  "barrier_split": "252561863698173/6250000000000000",
+  "barrier_note": "Lower bound only on the fixed-c uniform-entropy twelve-cost model; not on 3SUM algorithms.",
+  "certificate_id": "c232-quartic",
+  "barrier_ratio_point": "859960785302793/5000000000000000"
+}

@@ -1,0 +1,37 @@
+ZENODO PUBLICATION RECORD
+
+Status: published; public record verified through Zenodo's public API.
+Publication date: 2026-10-16
+Version: 1.0.0
+Resource type: Report
+Record: https://zenodo.org/records/23408567
+Version-specific DOI: https://doi.org/10.5281/zenodo.23408567
+All-versions DOI: https://doi.org/10.5281/zenodo.23408566
+
+Title:
+Deterministic Integer 3SUM at Exponent 1.960614: Quartic Switch Certificates
+and a Lean Word-RAM Proof
+
+Author: Xu, Yuxuan
+Affiliation: School of Computer Science, Wuhan University
+ORCID: 0009-0001-8760-5277
+
+VERIFICATION ON 2026-10-16
+Zenodo reports submitted=true and access_right=open.
+All five remote file sizes and MD5 checksums agree with the local upload/
+files: the report PDF, artifact ZIP, README.txt, LICENSING.txt, SHA256SUMS.txt.
+The uploaded release is preserved unchanged. The report's October 15 date
+is its preparation date; the public record's publication date is October 16.
+
+Evidence:
+  zenodo-record-23408567.json       saved public API response
+  zenodo-publication-check.json    comparison against local upload bytes
+  citation.bib                    citation for this precise version
+
+SUGGESTED CITATION
+Xu, Y. (2026). Deterministic Integer 3SUM at Exponent 1.960614: Quartic
+Switch Certificates and a Lean Word-RAM Proof (Version 1.0.0) [Technical
+report]. Zenodo. https://doi.org/10.5281/zenodo.23408567
+
+This record supersedes the preparation checklist's unpublished status.
+No remote metadata or files were changed by the publication verification.

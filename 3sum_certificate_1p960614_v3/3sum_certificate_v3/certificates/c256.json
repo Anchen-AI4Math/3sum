@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "analytic_and_parametric_cost_certificate_not_machine_runtime_certificate",
+  "base_repository": "c0ldzy17/three-sum-lean",
+  "base_commit": "2b639655e07421b9ac743de9090459bab473a7c0",
+  "expansion": 256,
+  "parameters": {
+    "epsilon": "0.200881388",
+    "beta": "-0.062090573",
+    "saving": "0.196034583",
+    "theta0": "0.039909009",
+    "principal": "1.960620301",
+    "target": "1.960621",
+    "barrier": "1.96062030002",
+    "tau": "13/20",
+    "rho": "27620057697/100000000000"
+  },
+  "polynomial": {
+    "degree": 8,
+    "denominator": 1000000000000000000,
+    "numerators": [
+      7994353436858857937,
+      724176334250146337,
+      240445475685669503,
+      120224593991326998,
+      72134752027387982,
+      48089834696343382,
+      34349881925927575,
+      25762411444445775
+    ]
+  },
+  "tangent_point": "17046924690369581/100000000000000000",
+  "analytic_caps": {
+    "E_lower": "1179984200123903/250000000000000",
+    "E_upper": "4719936800495613/1000000000000000",
+    "kappa_lower": "141163988427/100000000000000",
+    "kappa_upper": "1411639884271/1000000000000000",
+    "h0_upper": "24187484311779/100000000000000"
+  },
+  "barrier_split": "3990900848905231/100000000000000000",
+  "barrier_note": "Lower bound only on the fixed-c uniform-entropy twelve-cost model; not on 3SUM algorithms.",
+  "certificate_id": "c256-octic",
+  "barrier_ratio_point": "3409384864775739/20000000000000000"
+}

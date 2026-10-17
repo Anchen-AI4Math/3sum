@@ -1,0 +1,99 @@
+异质局部盖的全局组合：H1纸面连接
+2026-10-14
+
+本文件补完ALGORITHM_AND_PROOF.txt中H1的有限纸面证明。
+依赖上游一般L,h的局部哈希矩与贪心覆盖引理；没有重做这些经典/上游证明，
+也没有声称新的混合基数实现已接入或编译为Lean机器程序。
+
+一、每个c_i的局部盖都存在
+
+固定偶数s=2h>0和整数c_i>=3，令L_i=c_i*s，
+  M_i=binom(L_i,s)，V_i=binom(L_i,h)，
+  Delta_i=binom(L_i-h,h)，G=binom(s,h)。
+有限双计数V_i*Delta_i=M_i*G，且Delta_i<=V_i、G<2^s，故
+  Delta_i^2<=M_i*G<M_i*2^s。
+从s个不相交的c_i元组各选一个坐标得到M_i>=c_i^s>2^s，故
+  G^2<2^(2s)<M_i*2^s。
+
+令r=ceil(sqrt(M_i*2^s))，由Bertrand选素数r<p_i<2r（允许非严格上端
+也不影响估计）。于是
+  M_i*2^s<=p_i^2<=16*M_i*2^s，Delta_i<p_i，G<p_i。
+这些正是LocalHashMoments.second_moment与cover_frequency的一般假设，
+并且L_i>2h保证两类端点分离。
+
+因此上游一般L,h的独立端点桶截断及贪心构造给出一个确定性映射列表，
+它覆盖每个F_{p_i}^2中的目标对；列表长ell_i=O(s^2)，每个保留端点桶
+大小至多B_i=O(1+V_i/p_i)。所有列表条目按出现位置区分，重复映射不合并。
+一个局部目标对的保留表示数介于1和K_i=ell_i*B_i^2之间。
+局部穷举构建可用2^{O(s^2)}时间（c_i是固定常数）。
+
+二、一般混合基数覆盖定理
+
+对每层i，允许不同有限选择集C_i、不同整数p_i>=2，以及原始整数哈希
+l_i,r_i:C_i->Z。假设任意整数a,b的局部纤维
+
+  F_i(a,b)={x in C_i: p_i | a-l_i(x)，p_i | b-r_i(x)}
+
+非空且大小至多K_i。定义Q=prod_i p_i，P_0=1，P_i=prod_{h<i}p_h，
+  L(x)=sum_i P_i*l_i(x_i)，R(x)=sum_i P_i*r_i(x_i)。
+
+结论：对任意整数a,b，满足Q|a-L(x)、Q|b-R(x)的选择序列非空，
+且总数至多prod_i K_i。p_i不必互异；不需要中国剩余定理或互素假设。
+
+证明：长度零时Q=1、空序列唯一。非空时必须先取x_0 in F_0(a,b)，
+再对后缀求目标
+  a'=(a-l_0(x_0))/p_0，b'=(b-r_0(x_0))/p_0。
+它们为整数，允许负数。由于
+  L=l_0+p_0*L_suffix，R=r_0+p_0*R_suffix，
+整体整除条件等价于后缀整除条件。这给出不交并的精确递归分解。
+由归纳，至少一个局部选择的后缀非空，每个局部分支至多prod_{i>0}K_i项，
+分支数至多K_0，得到结论。这里处理了真实进位，不能逐块独立取a,b的
+标准数字后忽略rawHash的非标准代表值。
+
+三、输出键与内部左右划分无关
+
+沿用上游二符号哈希：左端点在S上为1、其他坐标为0；右端点在T上为0、
+其他坐标为1。S,T互不相交且各有s/2个坐标。对Q_i=S∪T，有精确整数等式
+
+  rawRight_i-rawLeft_i
+    = sum_{x notin Q_i}(w_i(x,1)-w_i(x,0)) = key_i(Q_i)。
+
+Q_i内两侧使用相同符号而抵消；Q_i外分别使用1、0。因而
+  R-L=sum_i P_i*key_i(Q_i)。
+输出记录保留每块映射的出现位置和Q_i，忘掉内部划分即可确定整体键。
+若它表示a,b，Q整除(b-a)-key。完整输出记录数量为prod_i(ell_i*M_i)。
+独立左右桶截断仍是两个端点条件的乘积，故与新zeta核心相容。
+
+四、指数
+
+二项式熵界给出
+  log2 p_i=(E_ci+1/2)*s+O(log s)，
+  log2 V_i=(E_ci+1/2+kappa_ci/2)*s+O(log s)。
+kappa_ci>0，所以log2 B_i=(kappa_ci/2)*s+O(log s)。
+ell_i=poly(s)，故log2 K_i=kappa_ci*s+O(log s)。
+乘过J层并令前j0=floor(pJ)层使用c1，得到
+
+  log2 Q=(E_bar+1/2)*mu+O(J log s+s)，
+  log2 prod K_i=kappa_bar*mu+O(J log s+s)，
+  log2 prod ell_i=O(J log s)。
+
+在s=Theta((log n)^(1/3))、mu~e log2 n下，所有误差都是o(log n)。
+从而H1需要的覆盖、表示上界、输出键及增长率已在纸面上接通。
+
+五、可执行有限核对
+
+  python "3 SUM/research/algorithm_search_2026-10-14/mixed_radix.py"
+
+脚本对空基数序列、[3,5]、含重复基数的[2,3,2]构造具有多重映射标签、
+非标准raw代表值及正负进位的局部盖，穷尽有界正负目标对，将递归生成
+的全局表示集合与直接整除枚举逐项比较。检查覆盖、重复、乘法上界、
+精确整除等价和输出键差分恒等式。有限枚举只用于核对递归实现，不是
+渐近算法中枚举全部Q^2目标对的步骤。
+
+本文件没有补完H2的原始输入过滤、wanted/false质量合同，也没有完成
+H3的实际机器程序和耗时组合。因此1.95923仍是条件目标。
+
+上游来源（固定提交2b639655e07421b9ac743de9090459bab473a7c0）：
+https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/LocalHashMoments.lean
+https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/GlobalEncoding.lean
+https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/BlockEncoding.lean

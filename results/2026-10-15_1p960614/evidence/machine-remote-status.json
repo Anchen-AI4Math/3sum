@@ -1,0 +1,17 @@
+{
+  "read_at_utc": "2026-10-15T10:20:42.580833+00:00",
+  "main": {
+    "theorem_name": "ThreeSum1960614.threeSum_1960614",
+    "status": "Proved"
+  },
+  "bridge": {
+    "theorem_name": "ThreeSum1960614.costs_solve_3sum",
+    "status": "Proved"
+  },
+  "proposal": {
+    "id": "561f5d71-28d6-4027-81f0-3fa01d5d7409",
+    "name": "Deterministic Integer 3SUM 1.960614: Quartic Switch and Complete Program Extension",
+    "status": "Reviewed",
+    "campaign_id": "52073c33-5f7d-479b-b2db-238c6e280c9a"
+  }
+}

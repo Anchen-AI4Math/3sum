@@ -1,0 +1,15 @@
+{
+  "lengths": [
+    6,
+    8,
+    10
+  ],
+  "seed": 314159,
+  "endpoint_coordinates": 480,
+  "full_output_coordinates": 18900,
+  "capped_zeta_coordinates": 45584,
+  "exact_queries": 340200,
+  "direct_leaf_reads": 869400,
+  "box_reads": 1436400,
+  "elapsed_seconds": 11.47474193572998
+}

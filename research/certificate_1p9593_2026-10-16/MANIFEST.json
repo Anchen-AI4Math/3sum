@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "sha256": {
+    "certificate.json": "49e9ac5540100cb4bdb2975833fdccaded3c438792a581e8926568c03efd7272",
+    "CORE_PRIOR.txt": "67a48a17ad606d6eb829b7ff715867b42fb7b20a5bb29fed8f7c1875d0af30eb",
+    "exact_interval.py": "eea44a249ecaab49678672ff70e0153552bc7c757c7a53e5ce93f57aebaa0780",
+    "finite_bridge.py": "8ea478621b85de25544c7a161d86c0f120703ce6367dfbb60371718010f357dc",
+    "finite_core.py": "3ae0a34d72e84e4f52506fc4b772bb30fb0024363f026de7d393b4a234981e5e",
+    "mixed_radix.py": "bf5f0f5f5c2bfa034f6903c73e419a838d132d477df1f8e66714ee633c15150f",
+    "MIXED_RADIX_PRIOR.txt": "0090d4f2074ec5000e478f0d63c50123cdc3194b98a114e5cc63a62ba7aa93a7",
+    "PROOF.txt": "7936fda307ca2046822ce024c9f6b78122d1de8c153927d17584fd22f1e3656e",
+    "README.txt": "fcdcd9c1fc0d76440456e9116c3ac39b43ebe7f455834efff9fa4110d1c71d51",
+    "source-excerpts/Arithmetic.lean": "48fc19a481369561273b1ccbab46712f68ba9f047ba4e5a4ccc41466798a0650",
+    "source-excerpts/BandPrimeChoice.lean": "fc3e266ee1b373a147996764da463a3ba006d395172d5b78fc5ffff4c6bf988a",
+    "source-excerpts/GlobalKeyOffset.lean": "740f23d5bbb34d524e04a386306c744c98bc5eec831048c4871f7e507cf79f68",
+    "source-excerpts/LocalCoverBounds.lean": "dacdde1776622e42e24c1573e2917a49494fb5d871431a98e5e0ade67796e714",
+    "source-excerpts/LocalHashMoments.lean": "9f00831eba273f6a9372d9952d98cbb58f5d31c2d41b8914bc00a73f38a99c47",
+    "source-excerpts/PrimeDensity.lean": "74fe16a1ad041b32e8e1e52b940453a56933d83d84c4ca62d1c57bb0e0cb2b7a",
+    "source-excerpts/WeightedModuli.lean": "5529741b11bc47da060e24051719417c473022b3463b4941f5a76048a99e0006",
+    "SOURCES.json": "7c541a6def1594e0ea5cf7b7ba62cfa99f48dc8254af9f709e1406aa76bf296c",
+    "verify_all.py": "094552c7350a19bd3b2eeaa4368a3cd049df3442f6c4195eec5f21dd889467d1",
+    "verify_numeric.py": "6573394027101d6cc069ecb7fda4e354ab0570ea32af201c2fc05aff2d6ad1d5"
+  }
+}

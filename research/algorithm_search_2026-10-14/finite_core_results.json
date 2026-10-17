@@ -1,0 +1,28 @@
+[
+  {
+    "lengths": [
+      6,
+      10
+    ],
+    "seed": 1729,
+    "endpoint_coordinates": 60,
+    "full_output_coordinates": 675,
+    "capped_zeta_coordinates": 1232,
+    "exact_queries": 4725,
+    "direct_leaf_reads": 5400,
+    "box_reads": 11475
+  },
+  {
+    "lengths": [
+      10,
+      6
+    ],
+    "seed": 2718,
+    "endpoint_coordinates": 60,
+    "full_output_coordinates": 675,
+    "capped_zeta_coordinates": 1232,
+    "exact_queries": 4725,
+    "direct_leaf_reads": 5400,
+    "box_reads": 11475
+  }
+]

@@ -1,0 +1,474 @@
+{
+  "schema_version": 1,
+  "problem_id": "3sum/word-ram",
+  "model": {
+    "id": "word-ram",
+    "version": "1",
+    "description": "Deterministic decision on n integers, three distinct positions. For every fixed k, input magnitude at most n^k. One fixed program for each k; correctness for every word width W >= b(floor(log2 n)+1). Signed fixed-width addition, subtraction, multiplication, indirect load/store and branch are unit-cost steps.",
+    "definition_url": "https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/EndStatement.lean"
+  },
+  "score": {
+    "id": "time-exponent",
+    "version": "1",
+    "symbol": "alpha",
+    "definition": "Worst-case O(n^alpha).",
+    "direction": "lower-is-better",
+    "encoding": "rational-string",
+    "minimum": "0",
+    "maximum": "2"
+  },
+  "checked_at": "2026-10-14",
+  "sources": [
+    {
+      "url": "https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/EndStatement.lean",
+      "checked_at": "2026-10-08"
+    },
+    {
+      "url": "https://people.csail.mit.edu/virgi/6.s078/papers/gajovermars.pdf",
+      "checked_at": "2026-10-08"
+    },
+    {
+      "url": "https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/README.md",
+      "checked_at": "2026-10-08"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.06783v1",
+      "checked_at": "2026-10-08"
+    },
+    {
+      "url": "https://github.com/Swapnil-jain/threesum-derand/blob/087ece61dd9ef6108441927785b16dfda0e95284/proofs/bands.md",
+      "checked_at": "2026-10-10"
+    }
+  ],
+  "records": [
+    {
+      "id": "classical-baseline",
+      "kind": "baseline",
+      "score": "2",
+      "tier": "claimed",
+      "submitted_at": null,
+      "upstream_status": "not-applicable",
+      "upstream_status_at": "2026-10-08T21:34:39.207006Z",
+      "site_observed_at": "2026-10-08T21:34:39.207006Z",
+      "source": {
+        "kind": "paper",
+        "url": "https://www.sciencedirect.com/science/article/pii/0925772195000222"
+      },
+      "spec_version": "1",
+      "title": "Folklore quadratic 3SUM algorithm; documented by Gajentaan and Overmars (1995)",
+      "authors": [
+        {
+          "name": "Folklore; cited account by Anka Gajentaan and Mark H. Overmars",
+          "url": "https://people.csail.mit.edu/virgi/6.s078/papers/gajovermars.pdf"
+        }
+      ],
+      "predecessors": [],
+      "submission_url": "https://www.sciencedirect.com/science/article/pii/0925772195000222",
+      "artifact": {
+        "path": "sources/3sum-baseline.json",
+        "sha256": "8719692b30adb832b92e8e2fc51c2539fdf514f591ec71906d3ba20706525cfc"
+      },
+      "evidence": {
+        "paper_url": "https://www.sciencedirect.com/science/article/pii/0925772195000222",
+        "theorem": null,
+        "certificate_path": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "anthropic-2026",
+      "kind": "improvement",
+      "score": "2499/1250",
+      "tier": "verified",
+      "submitted_at": "2026-10-05T17:44:29Z",
+      "upstream_status": "not-applicable",
+      "upstream_status_at": "2026-10-08T21:34:39.207006Z",
+      "site_observed_at": "2026-10-08T21:34:39.207006Z",
+      "source": {
+        "kind": "repo-artifact",
+        "url": "https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/EndStatement.lean"
+      },
+      "spec_version": "1",
+      "title": "Anthropic formalization; Alman and Vassilevska Williams result",
+      "authors": [
+        {
+          "name": "Josh Alman and Virginia Vassilevska Williams",
+          "url": "https://arxiv.org/abs/2610.06783"
+        },
+        {
+          "name": "Anthropic",
+          "url": "https://github.com/anthropics/formal-math"
+        }
+      ],
+      "predecessors": [],
+      "submission_url": "https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/EndStatement.lean",
+      "artifact": {
+        "path": "sources/anthropic-EndStatement.lean",
+        "sha256": "4291e3f05781cea42f9d672ff73ceac1f6d1a0c3021038e94372fa8f7e1ad987"
+      },
+      "evidence": {
+        "paper_url": "https://arxiv.org/abs/2610.06783v1",
+        "theorem": "endStatement_theorem_22_3SUM",
+        "certificate_path": null
+      },
+      "dependencies": [],
+      "source_commit": "e1a4e6508154ea59f030480661590a9fe3018011",
+      "rerun_status": {
+        "state": "passed",
+        "checked_at": "2026-10-08T22:12:13.857231Z",
+        "receipt_path": "sources/anthropic-comparator-receipt.json"
+      }
+    },
+    {
+      "id": "bigospeedrun-local-baseline-19992",
+      "kind": "reproduction",
+      "score": "2499/1250",
+      "tier": "verified",
+      "submitted_at": "2026-10-08T22:25:27.032164+00:00",
+      "source_commit": "02286f1026443cd76a2b04d05737f2f141449390",
+      "spec_version": "3sum-word-ram-v1",
+      "title": "3SUM in O(n^1.9992): Anthropic formalization of Alman and Vassilevska Williams",
+      "authors": [
+        {
+          "name": "Anthropic (Lean formalization)",
+          "url": "https://github.com/anthropics/formal-math"
+        },
+        {
+          "name": "Josh Alman (paper)",
+          "url": "https://arxiv.org/abs/2610.06783"
+        },
+        {
+          "name": "Virginia Vassilevska Williams (paper)",
+          "url": "https://arxiv.org/abs/2610.06783"
+        }
+      ],
+      "predecessors": [
+        "https://github.com/anthropics/formal-math/tree/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp"
+      ],
+      "submission_url": "https://github.com/bigospeedrun/3sum/blob/02286f1026443cd76a2b04d05737f2f141449390/records/baseline-19992/submission/Submission.lean",
+      "artifact": {
+        "path": "sources/3sum-scored-baseline/Submission.lean",
+        "sha256": "b80faf22bbf4ae34e5d25fa00ecd39b041ff0cf7aca3a98d8170984ab0038ed1"
+      },
+      "evidence": {
+        "paper_url": "https://arxiv.org/abs/2610.06783",
+        "theorem": "Race.bound",
+        "certificate_path": null
+      },
+      "dependencies": [],
+      "source": {
+        "kind": "repo-artifact",
+        "url": "https://github.com/bigospeedrun/3sum/blob/02286f1026443cd76a2b04d05737f2f141449390/records/baseline-19992/submission/Submission.lean"
+      },
+      "upstream_status": "not-applicable",
+      "upstream_status_at": "2026-10-08T22:25:27.032164+00:00",
+      "site_observed_at": "2026-10-08T22:35:20.574242Z",
+      "rerun_status": {
+        "state": "passed",
+        "checked_at": "2026-10-08T22:33:38.808770+00:00",
+        "receipt_path": "sources/3sum-scored-baseline-receipt.json"
+      }
+    },
+    {
+      "id": "swapnil-jain-3sum-2026",
+      "kind": "improvement",
+      "score": "997891/500000",
+      "tier": "claimed",
+      "submitted_at": "2026-10-10T07:43:56Z",
+      "upstream_status": "not-applicable",
+      "upstream_status_at": "2026-10-10T09:04:13Z",
+      "site_observed_at": "2026-10-10T09:04:13Z",
+      "source": {
+        "kind": "repo-artifact",
+        "url": "https://github.com/Swapnil-jain/threesum-derand/blob/087ece61dd9ef6108441927785b16dfda0e95284/proofs/bands.md"
+      },
+      "spec_version": "1",
+      "title": "Swapnil Jain deterministic 3SUM claim",
+      "authors": [
+        {
+          "name": "Swapnil Jain",
+          "url": "https://github.com/Swapnil-jain"
+        }
+      ],
+      "predecessors": [
+        "https://arxiv.org/abs/2610.06783",
+        "https://github.com/qawbecrdtey/ImprovedExponents"
+      ],
+      "submission_url": "https://github.com/Swapnil-jain/threesum-derand/blob/087ece61dd9ef6108441927785b16dfda0e95284/proofs/bands.md",
+      "source_commit": "087ece61dd9ef6108441927785b16dfda0e95284",
+      "artifact": {
+        "path": "sources/Swapnil-jain-threesum-model-check.json",
+        "sha256": "6e01ec709b57163860535f9cc7c60b867102c643734ba67778ef3f2bd66d620d"
+      },
+      "evidence": {
+        "paper_url": "https://github.com/Swapnil-jain/threesum-derand/blob/087ece61dd9ef6108441927785b16dfda0e95284/proofs/bands.md",
+        "theorem": "Theorem 3; bands.md Theorem C'' and Lemma Y",
+        "certificate_path": null
+      },
+      "dependencies": [
+        {
+          "id": "written-reductions-and-cost-accounting",
+          "statement": "Lean checks certificate arithmetic and finite lemmas only. Reductions, cost accounting and Theorem 3 combinatorics remain written proof dependencies; no site rerun.",
+          "source_url": "https://github.com/Swapnil-jain/threesum-derand/blob/087ece61dd9ef6108441927785b16dfda0e95284/proofs/bands.md",
+          "status": "unverified"
+        }
+      ]
+    },
+    {
+      "id": "jihoon-hyun-3sum-2026",
+      "kind": "improvement",
+      "score": "24987/12500",
+      "tier": "claimed",
+      "submitted_at": "2026-10-07T09:11:13Z",
+      "upstream_status": "not-applicable",
+      "upstream_status_at": "2026-10-10T12:06:44Z",
+      "site_observed_at": "2026-10-10T12:06:44Z",
+      "source": {
+        "kind": "repo-artifact",
+        "url": "https://github.com/qawbecrdtey/ImprovedExponents/blob/0725f2477587d67212936777b8a264c9793ac7bb/README.md"
+      },
+      "spec_version": "1",
+      "title": "Jihoon Hyun deterministic 3SUM claim",
+      "authors": [
+        {
+          "name": "Jihoon Hyun",
+          "url": "https://github.com/qawbecrdtey"
+        }
+      ],
+      "predecessors": [
+        "https://arxiv.org/abs/2610.06783",
+        "https://github.com/anthropics/formal-math"
+      ],
+      "submission_url": "https://github.com/qawbecrdtey/ImprovedExponents/blob/0725f2477587d67212936777b8a264c9793ac7bb/README.md",
+      "source_commit": "0725f2477587d67212936777b8a264c9793ac7bb",
+      "artifact": {
+        "path": "sources/improved-exponents-model-check.json",
+        "sha256": "7bc7c81470d43f99d3f3b800c065ad4196d5dcddecf29233ef1ba03c6083c9a0"
+      },
+      "evidence": {
+        "paper_url": "https://github.com/qawbecrdtey/ImprovedExponents/blob/0725f2477587d67212936777b8a264c9793ac7bb/README.md",
+        "theorem": "threeSum_pruned",
+        "certificate_path": null
+      },
+      "dependencies": []
+    },
+    {
+      "id": "direct-issue-4",
+      "kind": "improvement",
+      "score": "981/500",
+      "score_relation": "attained",
+      "tier": "verified",
+      "submitted_at": "2026-10-11T21:07:40Z",
+      "spec_version": "1",
+      "title": "c0ldzy17 direct 3sum submission",
+      "authors": [
+        {
+          "name": "c0ldzy17",
+          "url": "https://github.com/c0ldzy17"
+        }
+      ],
+      "predecessors": [],
+      "submission_url": "https://github.com/bigospeedrun/verifier/issues/4",
+      "source_commit": "2b639655e07421b9ac743de9090459bab473a7c0",
+      "artifact": {
+        "path": "sources/direct-issue-4-submission.json",
+        "sha256": "abd7f873e2aca46c8cf166a4ae93526336d630001f6bed39560eb536dbfd515f"
+      },
+      "evidence": {
+        "paper_url": "https://github.com/bigospeedrun/verifier/issues/4",
+        "theorem": "Race.bound",
+        "certificate_path": null
+      },
+      "dependencies": [],
+      "upstream_status": "open",
+      "upstream_status_at": "2026-10-11T21:07:40Z",
+      "site_observed_at": "2026-10-11T21:19:01Z",
+      "source": {
+        "kind": "repo-artifact",
+        "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission.lean"
+      },
+      "rerun_status": {
+        "state": "passed",
+        "checked_at": "2026-10-11T22:56:40.733523Z",
+        "receipt_path": "sources/direct-issue-4-38175066816-1.json"
+      }
+    },
+    {
+      "id": "direct-issue-8",
+      "kind": "improvement",
+      "score": "980307/500000",
+      "score_relation": "attained",
+      "tier": "verified",
+      "submitted_at": "2026-10-14T12:55:58Z",
+      "spec_version": "1",
+      "title": "Anchen0823 direct 3sum submission",
+      "authors": [
+        {
+          "name": "Anchen0823",
+          "url": "https://github.com/Anchen0823"
+        }
+      ],
+      "predecessors": [],
+      "submission_url": "https://github.com/bigospeedrun/verifier/issues/8",
+      "source_commit": "8c25c0325de5be4286413f39ca0c9278aad33f52",
+      "artifact": {
+        "path": "sources/direct-issue-8-submission.json",
+        "sha256": "6d47b3db265457fd3af0d7aceec5a0a14b2ffc53fcbf337468ad3169a2807737"
+      },
+      "evidence": {
+        "paper_url": "https://github.com/bigospeedrun/verifier/issues/8",
+        "theorem": "Race.bound",
+        "certificate_path": null
+      },
+      "dependencies": [],
+      "upstream_status": "open",
+      "upstream_status_at": "2026-10-14T12:55:58Z",
+      "site_observed_at": "2026-10-14T13:19:17Z",
+      "source": {
+        "kind": "repo-artifact",
+        "url": "https://github.com/Anchen0823/three-sum-1960614/blob/8c25c0325de5be4286413f39ca0c9278aad33f52/Submission.lean"
+      },
+      "rerun_status": {
+        "state": "passed",
+        "checked_at": "2026-10-14T14:47:17.801569Z",
+        "receipt_path": "sources/direct-issue-8-38567645711-1.json"
+      }
+    }
+  ],
+  "record_metadata": {
+    "classical-baseline": {
+      "checked_at": "2026-10-08",
+      "eligible_for_record": true,
+      "proof_status": "Classical paper baseline; no site proof check.",
+      "date_precision": "Publication year only; exact submission time unknown. site_observed_at is separate.",
+      "source_access": "opened paper mirror; publisher denied access",
+      "publication_year": 1995,
+      "publication_date_precision": "year",
+      "publication_source_url": "https://people.csail.mit.edu/virgi/6.s078/papers/gajovermars.pdf",
+      "upstream_tier": "claimed",
+      "site_tier": "claimed",
+      "comparison_key": "3sum/word-ram/v1",
+      "attribution_note": "Gajentaan and Overmars introduced the 3SUM-hardness framework and described the existing quadratic algorithm. This citation does not attribute the algorithm invention to them. 1995 is the cited account year; the folklore origin date is unknown.",
+      "publication_date_role": "cited-account-not-invention"
+    },
+    "anthropic-2026": {
+      "checked_at": "2026-10-08",
+      "eligible_for_record": true,
+      "proof_status": "proved upstream; independent rerun passed; see rerun_status receipt",
+      "site_badge": false,
+      "source_url": "https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp/EndStatement.lean",
+      "upstream_tier": "verified",
+      "site_tier": "verified",
+      "comparison_key": "3sum/word-ram/v1",
+      "publication_date_precision": "date-time",
+      "publication_year": 2026,
+      "publication_date": "2026-10-05T17:44:29Z",
+      "publication_source_url": "https://arxiv.org/abs/2610.06783v1",
+      "publication_date_role": "arXiv v1 paper submission, not formalization publication",
+      "date_precision": "Exact arXiv v1 submission timestamp in UTC; observation time separate."
+    },
+    "bigospeedrun-local-baseline-19992": {
+      "checked_at": "2026-10-08",
+      "source_url": "https://github.com/bigospeedrun/3sum/blob/02286f1026443cd76a2b04d05737f2f141449390/records/baseline-19992/submission/Submission.lean",
+      "site_badge": false,
+      "eligible_for_record": false,
+      "proof_status": "Local scored Comparator gate passed with nanoda and Lean kernels; reused upstream proof artifacts; no public badge.",
+      "source_record_id": "baseline-19992",
+      "source_record_path": "sources/3sum-scored-baseline/record.json",
+      "source_url_public": false,
+      "source_url_status": "Intended publication URL; local-only repo, not pushed.",
+      "repo": "bigospeedrun/3sum",
+      "reproduction_of": "anthropic-2026",
+      "upstream_tier": "verified",
+      "site_tier": "verified",
+      "comparison_key": "3sum/word-ram/v1",
+      "publication_date": "2026-10-08T22:25:27.032164+00:00",
+      "publication_date_precision": "date-time",
+      "publication_date_role": "Local wrapper creation, not new mathematical result",
+      "date_precision": "Exact local wrapper timestamps; paper date remains on the original record."
+    },
+    "swapnil-jain-3sum-2026": {
+      "checked_at": "2026-10-10",
+      "source_url": "https://github.com/Swapnil-jain/threesum-derand/blob/087ece61dd9ef6108441927785b16dfda0e95284/proofs/bands.md",
+      "repo": "Swapnil-jain/threesum-derand",
+      "site_badge": false,
+      "eligible_for_record": true,
+      "proof_status": "Lean checks certificate arithmetic and finite lemmas only. Reductions, cost accounting and Theorem 3 combinatorics remain written proof dependencies; no site rerun.",
+      "upstream_tier": "claimed",
+      "site_tier": "claimed",
+      "comparison_key": "3sum/word-ram/v1",
+      "comparison_status": "Deterministic worst-case algorithms for each fixed polynomial input-magnitude bound on logarithmic-word RAM. Not a randomized claim. Unlike EndStatement, the paper does not supply a fixed-width program or quantify all sufficiently large word widths in Lean. Model compatibility is an algorithmic interpretation, not a checked formal statement equivalence: polynomial-sized words can be simulated by the signed arithmetic/load/store/branch model with polylogarithmic overhead, absorbed by the explicit strict exponent margin.",
+      "scope": "Paper states three-set a+b=c and cites the standard one-set reduction. For distinct positions, use O(log^2 n) deterministic index-bit partitions into three disjoint classes, negate the third set, and deduplicate within each class. Each distinct triple is separated by some partition. Polylogarithmic overhead fits the positive margin below 1.995782. This adaptation is reasoned here, not an upstream Lean proof.",
+      "publication_date_precision": "date-time",
+      "publication_date": "2026-10-10T07:43:56Z",
+      "publication_date_role": "First README commit stating this exponent, not scientific priority",
+      "publication_source_url": "https://github.com/Swapnil-jain/threesum-derand/blob/72ecd8d44b81c9ebbc178274d387383c0e223dae/README.md",
+      "claim_date_commit": "72ecd8d44b81c9ebbc178274d387383c0e223dae",
+      "listing_status": "research-draft",
+      "open_race": false,
+      "credits": "Swapnil Jain; builds on Alman and Vassilevska Williams, ImprovedExponents, and the reductions credited in the source README.",
+      "license_status": "Apache-2.0; LICENSE and NOTICE retained",
+      "notes_url": "https://github.com/Swapnil-jain/threesum-derand/blob/087ece61dd9ef6108441927785b16dfda0e95284/proofs/bands.md"
+    },
+    "jihoon-hyun-3sum-2026": {
+      "checked_at": "2026-10-10",
+      "source_url": "https://github.com/qawbecrdtey/ImprovedExponents/blob/0725f2477587d67212936777b8a264c9793ac7bb/README.md",
+      "repo": "qawbecrdtey/ImprovedExponents",
+      "site_badge": false,
+      "eligible_for_record": true,
+      "proof_status": "Source-reported Lean proof; no independent site rerun. Historical Claimed result.",
+      "upstream_tier": "claimed",
+      "site_tier": "claimed",
+      "comparison_key": "3sum/word-ram/v1",
+      "comparison_status": "Pinned upstream/3sum-apsp/EndStatement.lean equals anthropics/formal-math at e1a4e6508154ea59f030480661590a9fe3018011 byte for byte.",
+      "scope": "Deterministic programs in the upstream word RAM: every polynomial input-magnitude bound, every instance, and every word size above the stated logarithmic threshold. Exact 3SUM as specified by EndStatement.ThreeSum.",
+      "publication_date_precision": "date-time",
+      "publication_date": "2026-10-07T09:11:13Z",
+      "publication_date_role": "First repository commit stating this bound",
+      "publication_source_url": "https://github.com/qawbecrdtey/ImprovedExponents/blob/a3a87451f930e41d802d3d415ec12ca4bcd3161e/README.md",
+      "claim_date_commit": "a3a87451f930e41d802d3d415ec12ca4bcd3161e",
+      "listing_status": "research-draft",
+      "open_race": false,
+      "credits": "Jihoon Hyun (qawbecrdtey); source credits Claude Fable 5.1 and Claude Opus 5.5 for implementation under his direction, and Alman and Vassilevska Williams for the underlying algorithms and framework.",
+      "license_status": "Apache-2.0; LICENSE and NOTICE retained",
+      "notes_url": "https://github.com/qawbecrdtey/ImprovedExponents/blob/0725f2477587d67212936777b8a264c9793ac7bb/README.md"
+    },
+    "direct-issue-4": {
+      "checked_at": "2026-10-14",
+      "source_url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission.lean",
+      "repo": "c0ldzy17/three-sum-lean",
+      "site_badge": false,
+      "eligible_for_record": false,
+      "proof_status": "Lean and nanoda passed; permitted-axiom audit passed",
+      "upstream_tier": "verified",
+      "site_tier": "verified",
+      "comparison_key": "3sum/word-ram/v1",
+      "publication_date": "2026-10-11T21:07:40Z",
+      "publication_date_precision": "date-time",
+      "publication_date_role": "Submission opened",
+      "publication_source_url": "https://github.com/bigospeedrun/verifier/issues/4",
+      "direct_submission": true,
+      "route": "issue",
+      "receipt_url": "https://github.com/bigospeedrun/verifier/actions/runs/38175066816"
+    },
+    "direct-issue-8": {
+      "checked_at": "2026-10-14",
+      "source_url": "https://github.com/Anchen0823/three-sum-1960614/blob/8c25c0325de5be4286413f39ca0c9278aad33f52/Submission.lean",
+      "repo": "Anchen0823/three-sum-1960614",
+      "site_badge": false,
+      "eligible_for_record": false,
+      "proof_status": "Lean and nanoda passed; permitted-axiom audit passed",
+      "upstream_tier": "verified",
+      "site_tier": "verified",
+      "comparison_key": "3sum/word-ram/v1",
+      "publication_date": "2026-10-14T12:55:58Z",
+      "publication_date_precision": "date-time",
+      "publication_date_role": "Submission opened",
+      "publication_source_url": "https://github.com/bigospeedrun/verifier/issues/8",
+      "direct_submission": true,
+      "route": "issue",
+      "receipt_url": "https://github.com/bigospeedrun/verifier/actions/runs/38567645711"
+    }
+  },
+  "updated_at": "2026-10-14T15:19:24Z"
+}

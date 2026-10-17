@@ -1,0 +1,6 @@
+{
+  "entropy_kappa_relation_checks": 64,
+  "minimum_formula_checks": 80,
+  "mixed_branch_interpolation_rejected": true,
+  "status": "PASS: independent arithmetic checks; not a replacement for the universal proof"
+}

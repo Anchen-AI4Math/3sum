@@ -1,0 +1,42 @@
+{
+  "scope": "Numerical ledger and finite identities only; no full algorithm or Lean rebuild",
+  "entropy": {
+    "H": 0.8146356379525423,
+    "A": 0.5114298100214977,
+    "G": 0.20511813944103913,
+    "B": 0.7821640398703291,
+    "Q": 0.070087443683646
+  },
+  "ledger": {
+    "bank": 1.9202794560674379,
+    "query": 1.9202793874363615,
+    "endpoint": 1.2556038213768685,
+    "histogram": 1.2517912670216234,
+    "incidence": 1.7482087329783766,
+    "linear": 1
+  },
+  "exact_top_rank_cases": 1650,
+  "joint_type_dimensions": [
+    {
+      "alphabet": 3,
+      "cells": 6,
+      "rank": 6,
+      "free": 0
+    },
+    {
+      "alphabet": 4,
+      "cells": 10,
+      "rank": 9,
+      "free": 1
+    },
+    {
+      "alphabet": 5,
+      "cells": 15,
+      "rank": 12,
+      "free": 3
+    }
+  ],
+  "principal_certificate": 1.9203,
+  "runtime_envelope": 1.9209,
+  "exported_exponent": 1.921
+}

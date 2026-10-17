@@ -1,0 +1,505 @@
+{
+  "artifact_sha256": {
+    "apt-tools.log": "80095af1a7c233753d136af845c8f702de79960c1baeb040cc2b0df3c810dd53",
+    "apt-update.log": "7ebc6b944a38332efe5c6c3487d64450026f12b6351c8dd8da6ad7145913c534",
+    "audit.log": "9d88565f3aa718954259a026329811a80c89cabccf12dede66c5aad5294ca223",
+    "build-comparator.log": "05aa40a8ee2fd8b10779520c8d8ba4ec9e93554c4687757e8c63dd3853ac9ac7",
+    "build-lake-adapter.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build-landrun.log": "5e09e7add5ffb69e6ec818cd8417bef048ede8025e5a71a6dc067b62b9776191",
+    "build-nanoda.log": "7ec0619476e4e29451e3d1fad20db256947ec83fbb5854cf2e817489dd1efb62",
+    "bwrap-apparmor-policy.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cache-hash-metadata.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dependency-Cli-checkout.log": "5f9a80e11f4afc464a5e54e2dafc4876c0d747773da1e2f9b8583a38ff64c07c",
+    "dependency-Cli-fetch.log": "0a247c2401eac884074c4626041c7fb91ff513f532334cb03f4edb7910737f5f",
+    "dependency-Cli-init.log": "806fb9690dbeea89238e99f8dd297b5af2e0e0f565af71af6f5626a6d61faf3e",
+    "dependency-LeanSearchClient-checkout.log": "e41add07a44049fb8733c7006631e003a204f0a358c54c1fdc44bbadf3672461",
+    "dependency-LeanSearchClient-fetch.log": "da12e1a4e139a7ef73ec1d485f03ddefc150e2d0b1b84086a16036c0c821e856",
+    "dependency-LeanSearchClient-init.log": "7da5337a0fc32514d71481e6bd805dea2161c22056ea299c1b9ad45e663240a9",
+    "dependency-Qq-checkout.log": "46982568d82481327c1a20e4c1099af735f36f0ccd7655f70d020f8a9caca35f",
+    "dependency-Qq-fetch.log": "c05301ccb6aafb55d26996ad4a0ae6072c19749883886dbfcdbdfe22ac941800",
+    "dependency-Qq-init.log": "ffa3697aed5c4505fa7b759ea58199632d47708e338d7c844267b2c5754d61e1",
+    "dependency-aesop-checkout.log": "0c62bec7a7cdbab6974ee4f08afb36f3270c1e436419061aa725379b2fe5112e",
+    "dependency-aesop-fetch.log": "10d4e0d957564142f860089514d4c768ab0fe9052d44a6f30cb82e35f144ccb4",
+    "dependency-aesop-init.log": "ddfe172f4b698d0ac102ac2178f4280b00372368ef06591a3952fcc668834fc3",
+    "dependency-batteries-checkout.log": "fb9416f52b3f781e340ec0f32439da3853010679067385dfc08f5207a644aa7a",
+    "dependency-batteries-fetch.log": "38c9fcd43d238fbc18a5563c3d2a4da8e2db3a4e31686cfa4eb52e83c114d87a",
+    "dependency-batteries-init.log": "2aba402bb7545f350f21c752a73448002dc8b209f4963bde1df90ea8266b5a91",
+    "dependency-importGraph-checkout.log": "bafcbf34e1d8c14bc3cde5dd9be4a3f71a64ad3c3d8d0600be81e21a1850f913",
+    "dependency-importGraph-fetch.log": "9002082d5d2c05916036aaac93dd319d7cd1ec5cb4c090298d9811ec97f154b3",
+    "dependency-importGraph-init.log": "a48fa1c744a9cebca87074efdb8cfbcb7d6cbaae8af8d46f504f4223c9a551bc",
+    "dependency-mathlib-checkout.log": "59cb781070d46da902adef8704dbe885efdef5a4727b48348154064f9554c421",
+    "dependency-mathlib-fetch.log": "14467991b60bcb5ac2624066cef08d772209d07d06c6e490fd40acf0f132dac0",
+    "dependency-mathlib-init.log": "2bcb292b69734b9db2ced338b6ac726cedc20827a6780104169f95f2d66c1b73",
+    "dependency-plausible-checkout.log": "97a9da65eec54523f2cf944afaf48b4c8ac5d52f40a145156407d9af81cef368",
+    "dependency-plausible-fetch.log": "68ffcdb88d722dc91d24ced7854a369a4762d9932118b56f1da06058ec5c34f1",
+    "dependency-plausible-init.log": "4077b7e1977b1b77945885d54ad3705e70446164adda8a0c5d8844827b97eb72",
+    "dependency-proofwidgets-checkout.log": "de826f20845a91c765748f932243143f1b26f196b5bf82b5c7a13c3556f19420",
+    "dependency-proofwidgets-fetch.log": "0a623796ef5e7db5c2bd7493063f5de0dadae427eb16ad689f947352d8601e11",
+    "dependency-proofwidgets-init.log": "4c883bd1450aa7a672b32e14df04922d40e349467c3d76da18d2643ce6e1a397",
+    "elan-download.log": "de30b0c8fcdfa162f6eabe5c0f609e0235afeff0c82bed0582acd6b5538b83c5",
+    "elan-install.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "elan-unpack.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gate.json": "b54b3037df317fe50d5dbe3d0faef5695160b86b61e41aa2e6c00975253835ec",
+    "lean-install.log": "6c9f52055eb83646f479a4034f7a4e9734ebdaebc542da835db9eb5c6fefc2a5",
+    "lean.log": "f12f9a0fa6e3ca22dd71e3ac3a96a2774c11c41459a898b2f99a7b535d406fb7",
+    "mathlib-cache.log": "9508272d38e0333dba51cd473bba9cba6f83260f7f53e6e748c214dfb074faa5",
+    "nanoda-swap-allocate.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "nanoda-swap-enable.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "nanoda-swap-format.log": "2bb280c03bdba02090b02a34fb79f80134ef1ec7c8b02b59aae5a9b62311f4f4",
+    "nanoda-swap-permissions.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "nanoda.log": "ad1e9d6f72916e799098c09e3a189eef6bc128a22b61f5e7c927138b7a40cc9a",
+    "runner-sdk-space.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sandbox-preflight.log": "41648742f98aab2171f9eb88297548170de3f3b760e7c07ef9fcc94aedd69355",
+    "selected-request.json": "8734735c6d38dbcd770b2cdfe2ad3bf44690891500c5f4f482ef7cc30fe65c92",
+    "source-sha256.json": "569fe4f50523156bc9835bf0cec976150738cbe7a70382cd7f21daf797bd71d8",
+    "submission-checkout.log": "c83e14013b9cb6bfd9b2a65ae1aba0afb87be47d5dc312476e416693f70b8577",
+    "submission-fetch.log": "5b81876b6613de92c2f1eea499f0ec5274c2f15abe1528b88b58dcfcb67ee882",
+    "submission-init.log": "b0cb466a875c47cba4ca64cba0f001ef50a616dc50516bac9b66fd30769c2e1c",
+    "tool-comparator-checkout.log": "eb2f51d7ccc0df410d8f62abfd635b429bda92b2c7e57d37c8af786607d7fc18",
+    "tool-comparator-fetch.log": "d97f802ec663a6e2904f729b083b0a1f7abc9757aed15b7a8ebb35ea01d3bf5c",
+    "tool-comparator-init.log": "8e15416f568c947d6b68e42b7ac7e7d538a5d80d8cf6cdd58d2dde6fc25a880d",
+    "tool-exporter-checkout.log": "bf62a767eb8db1b91df05a613df37c7d74acd3a71bb8e204934b82c64a586bc9",
+    "tool-exporter-fetch.log": "114008cb89e1fd908977a3e1f6f1e2c9d60a0c2b367bb462cf19705ea1293de3",
+    "tool-exporter-init.log": "018b405fedf95d297837cdacc99659adb689b297c8717951de499143b20a5b6b",
+    "tool-landrun-checkout.log": "d79c67290ceb531c3a58de807a7fa90ffb38fef022cb06beb789045ad1150093",
+    "tool-landrun-fetch.log": "5236b9fb8cd4e085ff194e356bb8f7235b824d3598b30e372ba59a226fc326e8",
+    "tool-landrun-init.log": "a9eb19dc8f9948571af0e040de262ccf9b0afad041ed34b8a563ba78daac7eda",
+    "tool-nanoda-checkout.log": "000d4b6dbb65d8336c4d3b4f2cd3cb6a8afe417db3ac3e9d3822002d7e8db822",
+    "tool-nanoda-fetch.log": "552cb6d19400093c52a70dcbedcf542affd7d15ca22ade89b76553f1de38bd86",
+    "tool-nanoda-init.log": "0823fe50f87fc13c0edb7540c3847aa4be35620dabf31ab1809f8abaa36ccc6d",
+    "tool-sha256.json": "34c7a7453842127869882b3781c966877dbfd98c798915b22fad93080b24fe30",
+    "trusted-lake-config.log": "487b1fa6ac945590437d69397065a65ddf5a090b3b0a3cc4ea3abcd0af5b6804"
+  },
+  "axiom_audit": {
+    "exit_code": 0,
+    "guard_stop": null,
+    "log": "audit.log",
+    "memory_limit_bytes": 15032385536,
+    "reported_axioms": {
+      "Race.bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "sampled_peak_cgroup_bytes": 384614400,
+    "sampled_peak_swap_bytes": 0,
+    "status": "passed",
+    "swap_limit_bytes": 0,
+    "systemd_result": "success",
+    "wall_seconds": 4.015
+  },
+  "checked_at": "2026-10-14T14:47:17.801569Z",
+  "finished_unix": 1791989237.8015692,
+  "generated_challenge_sha256": "1f3750cd3b89303a31de7e3854bb15322425e4615c1f1b7172b03fb6bb387a5d",
+  "kernels": {
+    "lean": {
+      "exit_code": 0,
+      "guard_stop": null,
+      "log": "lean.log",
+      "memory_limit_bytes": 15032385536,
+      "reason": "comparator_acceptance",
+      "sampled_peak_cgroup_bytes": 7785930752,
+      "sampled_peak_swap_bytes": 0,
+      "status": "passed",
+      "swap_limit_bytes": 0,
+      "systemd_result": "success",
+      "wall_seconds": 4954.997
+    },
+    "nanoda": {
+      "exit_code": 0,
+      "guard_stop": null,
+      "log": "nanoda.log",
+      "memory_limit_bytes": 15032385536,
+      "reason": "comparator_acceptance",
+      "sampled_peak_cgroup_bytes": 6308827136,
+      "sampled_peak_swap_bytes": 0,
+      "status": "passed",
+      "swap_limit_bytes": 17179869184,
+      "systemd_result": "success",
+      "wall_seconds": 1403.57
+    }
+  },
+  "profile": {
+    "bound_kind": "exponent",
+    "challenge_file": "challenges/3sum-apsp/EndStatement.lean",
+    "challenge_sha256": "4291e3f05781cea42f9d672ff73ceac1f6d1a0c3021038e94372fa8f7e1ad987",
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "manifest_file": "profiles/anthropic-lake-manifest.json",
+    "maximum": "2",
+    "solution_module": "Submission",
+    "source_roots": [
+      "Submission"
+    ],
+    "theorem_names": [
+      "Race.bound"
+    ],
+    "tools_file": "profiles/anthropic-tools.json",
+    "upstream_commit": "e1a4e6508154ea59f030480661590a9fe3018011"
+  },
+  "request": {
+    "challenge_file": "challenges/3sum-apsp/EndStatement.lean",
+    "commit": "8c25c0325de5be4286413f39ca0c9278aad33f52",
+    "direct_submission": {
+      "authors": [],
+      "bound": "980307/500000",
+      "commit": "8c25c0325de5be4286413f39ca0c9278aad33f52",
+      "problem": "3sum",
+      "repo_url": "https://github.com/Anchen0823/three-sum-1960614",
+      "schema_version": 1
+    },
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "repo_url": "https://github.com/Anchen0823/three-sum-1960614",
+    "theorem_names": "Race.bound"
+  },
+  "run_url": "https://github.com/bigospeedrun/verifier/actions/runs/38567645711",
+  "schema_version": 1,
+  "solution_dependencies": [],
+  "source_file_count": 689,
+  "started_unix": 1791982593.4931717,
+  "status": "passed",
+  "steps": [
+    {
+      "exit_code": 0,
+      "name": "submission-init",
+      "wall_seconds": 0.004
+    },
+    {
+      "exit_code": 0,
+      "name": "submission-fetch",
+      "wall_seconds": 0.747
+    },
+    {
+      "exit_code": 0,
+      "name": "submission-checkout",
+      "wall_seconds": 0.05
+    },
+    {
+      "exit_code": 0,
+      "name": "apt-update",
+      "wall_seconds": 4.413
+    },
+    {
+      "exit_code": 0,
+      "name": "apt-tools",
+      "wall_seconds": 99.013
+    },
+    {
+      "exit_code": 0,
+      "name": "bwrap-apparmor-policy",
+      "wall_seconds": 0.014
+    },
+    {
+      "exit_code": 0,
+      "name": "runner-sdk-space",
+      "wall_seconds": 50.703
+    },
+    {
+      "exit_code": 0,
+      "name": "elan-download",
+      "wall_seconds": 0.471
+    },
+    {
+      "exit_code": 0,
+      "name": "elan-unpack",
+      "wall_seconds": 0.089
+    },
+    {
+      "exit_code": 0,
+      "name": "elan-install",
+      "wall_seconds": 0.285
+    },
+    {
+      "exit_code": 0,
+      "name": "lean-install",
+      "wall_seconds": 11.585
+    },
+    {
+      "exit_code": 0,
+      "name": "tool-comparator-init",
+      "wall_seconds": 0.048
+    },
+    {
+      "exit_code": 0,
+      "name": "tool-comparator-fetch",
+      "wall_seconds": 0.518
+    },
+    {
+      "exit_code": 0,
+      "name": "tool-comparator-checkout",
+      "wall_seconds": 0.043
+    },
+    {
+      "exit_code": 0,
+      "name": "tool-exporter-init",
+      "wall_seconds": 0.064
+    },
+    {
+      "exit_code": 0,
+      "name": "tool-exporter-fetch",
+      "wall_seconds": 0.404
+    },
+    {
+      "exit_code": 0,
+      "name": "tool-exporter-checkout",
+      "wall_seconds": 0.005
+    },
+    {
+      "exit_code": 0,
+      "name": "build-comparator",
+      "wall_seconds": 9.18
+    },
+    {
+      "exit_code": 0,
+      "name": "tool-nanoda-init",
+      "wall_seconds": 0.004
+    },
+    {
+      "exit_code": 0,
+      "name": "tool-nanoda-fetch",
+      "wall_seconds": 0.491
+    },
+    {
+      "exit_code": 0,
+      "name": "tool-nanoda-checkout",
+      "wall_seconds": 0.006
+    },
+    {
+      "exit_code": 0,
+      "name": "build-nanoda",
+      "wall_seconds": 19.823
+    },
+    {
+      "exit_code": 0,
+      "name": "tool-landrun-init",
+      "wall_seconds": 0.004
+    },
+    {
+      "exit_code": 0,
+      "name": "tool-landrun-fetch",
+      "wall_seconds": 0.44
+    },
+    {
+      "exit_code": 0,
+      "name": "tool-landrun-checkout",
+      "wall_seconds": 0.005
+    },
+    {
+      "exit_code": 0,
+      "name": "build-landrun",
+      "wall_seconds": 14.776
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-mathlib-init",
+      "wall_seconds": 0.004
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-mathlib-fetch",
+      "wall_seconds": 8.185
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-mathlib-checkout",
+      "wall_seconds": 0.729
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-plausible-init",
+      "wall_seconds": 0.003
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-plausible-fetch",
+      "wall_seconds": 0.451
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-plausible-checkout",
+      "wall_seconds": 0.006
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-LeanSearchClient-init",
+      "wall_seconds": 0.003
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-LeanSearchClient-fetch",
+      "wall_seconds": 0.38
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-LeanSearchClient-checkout",
+      "wall_seconds": 0.004
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-importGraph-init",
+      "wall_seconds": 0.003
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-importGraph-fetch",
+      "wall_seconds": 0.639
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-importGraph-checkout",
+      "wall_seconds": 0.008
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-proofwidgets-init",
+      "wall_seconds": 0.003
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-proofwidgets-fetch",
+      "wall_seconds": 0.853
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-proofwidgets-checkout",
+      "wall_seconds": 0.04
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-aesop-init",
+      "wall_seconds": 0.003
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-aesop-fetch",
+      "wall_seconds": 0.583
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-aesop-checkout",
+      "wall_seconds": 0.016
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-Qq-init",
+      "wall_seconds": 0.003
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-Qq-fetch",
+      "wall_seconds": 0.498
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-Qq-checkout",
+      "wall_seconds": 0.005
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-batteries-init",
+      "wall_seconds": 0.003
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-batteries-fetch",
+      "wall_seconds": 0.596
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-batteries-checkout",
+      "wall_seconds": 0.02
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-Cli-init",
+      "wall_seconds": 0.003
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-Cli-fetch",
+      "wall_seconds": 0.4
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-Cli-checkout",
+      "wall_seconds": 0.004
+    },
+    {
+      "exit_code": 0,
+      "name": "mathlib-cache",
+      "wall_seconds": 44.987
+    },
+    {
+      "exit_code": 0,
+      "name": "cache-hash-metadata",
+      "wall_seconds": 0.404
+    },
+    {
+      "exit_code": 0,
+      "name": "build-lake-adapter",
+      "wall_seconds": 0.064
+    },
+    {
+      "exit_code": 0,
+      "name": "trusted-lake-config",
+      "wall_seconds": 2.309
+    },
+    {
+      "exit_code": 0,
+      "name": "sandbox-preflight",
+      "wall_seconds": 0.031
+    },
+    {
+      "exit_code": 0,
+      "name": "sandbox-preflight",
+      "wall_seconds": 0.032
+    },
+    {
+      "exit_code": 0,
+      "name": "nanoda-swap-allocate",
+      "wall_seconds": 0.024
+    },
+    {
+      "exit_code": 0,
+      "name": "nanoda-swap-permissions",
+      "wall_seconds": 0.009
+    },
+    {
+      "exit_code": 0,
+      "name": "nanoda-swap-format",
+      "wall_seconds": 0.011
+    },
+    {
+      "exit_code": 0,
+      "name": "nanoda-swap-enable",
+      "wall_seconds": 0.011
+    }
+  ],
+  "test_only": false,
+  "theorem_names": [
+    "Race.bound"
+  ],
+  "theorems": {
+    "Race.bound": {
+      "lean_kernel": "passed",
+      "nanoda_kernel": "passed",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "timing_group": "shared theorem closure"
+    }
+  },
+  "tool_pins": {
+    "comparator": "3927ad383f208ae977c340a91c48ac9b497d2097",
+    "elan_tar_sha256": "42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63",
+    "elan_version": "v4.2.4",
+    "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+    "lean4export": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+    "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7"
+  },
+  "total_wall_seconds": 6644.308,
+  "verification_stage": "final",
+  "verifier_commit": "51489ee2ac82596a41375e92ea8108814f931242"
+}

@@ -1,0 +1,85 @@
+Hexagon 投稿表单内容
+准备日期：2026-10-13
+状态：仅本地准备，未创建网站草稿、未提交。
+
+TITLE
+Deterministic Integer 3SUM in O(n^1.999017) Time via a Sharper Binomial-Tail Analysis
+
+ABSTRACT
+We refine the analysis of the deterministic integer 3SUM algorithm of Alman and Vassilevska Williams. Within their framework of thin matrix products and reductions through Exact Triangle, we obtain a worst-case running time of O(n^1.999017) for polynomially bounded integer inputs on a word RAM with O(log n)-bit words. The refinement retains the binomial tail in the preprocessing cost instead of replacing it immediately by a uniform geometric bound. An entropy estimate improves the preprocessing saving exponent while preserving the query algorithm. Explicit rational parameters give a 3SUM exponent of 1.999016414375 + o(1), leaving a positive margin below the stated fixed exponent. Retuning the previous analysis alone gives O(n^1.999073). We account for encoding, queries, prime selection, instance construction, witness scanning, and parameter rounding. The numerical inequalities admit exact rational interval certificates. This is an analysis refinement of an existing algorithm and its reductions; no complete Lean formalization of the improved bounds, global optimality, or priority claim is made.
+
+PRIMARY SUBJECT
+cs.DS — Data Structures and Algorithms
+
+CROSS-LIST SUBJECT
+cs.CC — Computational Complexity
+
+MSC2020
+68W40
+68Q25
+
+TAGS（逐项添加）
+3SUM
+deterministic algorithms
+fine-grained complexity
+Exact Triangle
+thin matrix products
+binomial tails
+computer-assisted analysis
+
+CONTRIBUTOR（真实人类署名）
+Name: Yuxuan Xu
+Given name: Yuxuan
+Family name: Xu
+中文姓名：徐宇轩
+Affiliation: School of Computer Science, Wuhan University
+中文单位：武汉大学计算机学院
+Email: 2024302111072@whu.edu.cn
+ORCID: 0009-0001-8760-5277
+ORCID URL: https://orcid.org/0009-0001-8760-5277
+Submitting contributor: Yuxuan Xu（唯一署名者）
+表单如从 ORCID 自动读取姓名，按账号实际显示填写；论文使用英文拼音署名。
+
+TEXT ORIGIN
+Primarily AI-generated text
+API compatibility value: no-human-author-claimed
+此选项表示文本主要由 AI 生成，不表示 AI 为作者，也不移除人类贡献者署名。
+
+HUMAN UNDERSTANDING
+No parts / none
+依据：提交者在本次对话中表示“尚未逐步核查”。AI 审查不计为人类理解或人类同行评审。
+
+PROVENANCE STATEMENT
+This submission is based on the algorithmic framework of Josh Alman and Virginia Vassilevska Williams, “Truly Subquadratic 3SUM and Truly Subcubic APSP via Triangles in Sparse Lopsided Graphs,” arXiv:2610.06783v1. Selected files from the accompanying upstream formalization were consulted at commit e1a4e6508154ea59f030480661590a9fe3018011.
+
+The manuscript and submission metadata were prepared using OpenAI Codex from the supplied research notes. Codex was also used to inspect the cited paper and selected upstream source files, rerun the supplied verifier, and write and execute a separate checking script. The supplied verifier uses exact rational interval arithmetic with explicit logarithm remainder bounds. The separate script performs exact finite checks of binomial entropy and geometric-tail inequalities, together with high-precision numerical cross-checks. The detailed provenance of the initial research notes is not reconstructed here.
+
+The submitting contributor reports that they have not yet checked and understood the contribution step by step; human understanding is therefore declared as none. The automated checks are not independent human peer review and do not establish human understanding. Neither improved bound has been certified by a complete Lean development in this work. The existing upstream formalization is prior work, not a formal certification of the refinements presented here. No global optimality or priority claim is made.
+
+TOOLS USED
+OpenAI Codex — manuscript preparation, source inspection, automated review, and checking-script development. Exact model version not asserted.
+Python 3 — exact rational interval certificates and separate finite/high-precision checks.
+SciPy — optional exploratory numerical optimization; not used for rigorous pass/fail decisions.
+Tectonic — LaTeX compilation (see build/compile_result.json for the completed build result).
+
+FORMALIZATION LINKS
+留空。本次两个改进界尚未完成 Lean 认证。
+不要将原工程或已存在的 1.999074 mission 填为本稿已经形式化的结果。
+
+ARXIV IDENTIFIER OF THIS WORK
+留空。2610.06783 是引用文献，不是本稿的 arXiv 编号。
+
+LICENSE
+由提交者选择。建议 CC BY 4.0；本地准备未代替你选择或授予许可。
+
+CONFIRMATIONS
+正确性、数学社区研究价值、引用完整性、发布权利等勾选项，由提交者阅读材料后据实确认；此文件不预设已确认。
+
+UPLOAD
+上传 hexagon_source.zip；主入口选择 main.tex。
+也可直接上传 main.tex，它是含内嵌参考文献的单文件论文，不依赖外部图片或 .bib 文件。
+不要将 verification_bundle.zip 上传到论文源文件栏；该包是本地复现材料。
+如需公开验证代码，请另行放在合适的代码仓库或数据存档，并在正文补充真实链接。
+
+官方字段说明：https://hexagonmath.org/api/v1/openapi.json
+投稿要求：https://hexagonmath.org/about

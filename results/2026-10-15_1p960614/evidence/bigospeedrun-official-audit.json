@@ -1,0 +1,28 @@
+{
+  "audited_at_utc": "2026-10-14T15:36:20.634176+00:00",
+  "official_checked_at_utc": "2026-10-14T14:47:17.801569Z",
+  "source_commit": "8c25c0325de5be4286413f39ca0c9278aad33f52",
+  "source_files_matched": 689,
+  "bound": "980307/500000",
+  "problem": "3sum",
+  "theorem": "Race.bound",
+  "lean_kernel_passed": true,
+  "nanoda_kernel_passed": true,
+  "axiom_audit_passed": true,
+  "comparator_passed": true,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "run_url": "https://github.com/bigospeedrun/verifier/actions/runs/38567645711",
+  "receipt_artifact_id": 11904143134,
+  "receipt_sha256": "91d1b8e7f8910241cd372373af18ed636378b02b7a2c2f143bc937c44a7cfc14",
+  "artifact_archive_sha256": "2452614d8f788b0614aeb644975299771355194afecb7e699100761fef515380",
+  "site_data_checked": true,
+  "site_record_id": "direct-issue-8",
+  "site_tier": "verified",
+  "site_eligible_for_record": false,
+  "site_data_sha256": "31ad4b5e3564d1052097ccc5b65ba50668529eb80e0eb1811d5036bc201ce8ce",
+  "site_receipt_path": "sources/direct-issue-8-38567645711-1.json"
+}

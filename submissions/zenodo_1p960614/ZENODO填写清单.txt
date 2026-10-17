@@ -1,0 +1,109 @@
+Zenodo 手动填写清单 — 1.960614 技术报告与形式化证明
+准备日期：2026-10-15。状态：材料已就绪，尚未发布。
+新上传页面：https://zenodo.org/uploads/new
+
+1. Select a community
+留空即可，不必选择社区。
+
+2. Files → Upload files
+把同目录 upload 文件夹中的以下 5 个文件一起上传：
+  3sum-1p960614-report.pdf
+  3sum-1p960614-artifact-v1.0.0.zip
+  README.txt
+  LICENSING.txt
+  SHA256SUMS.txt
+不要把本清单、build、tmp 或 release 文件夹重复上传。
+
+3. Digital Object Identifier
+选择 No, I need one。若页面出现 Get a DOI now，可点击预留 DOI。
+不要填写 ORCID、GitHub 地址或 Prove2Me 链接作为 DOI。
+预留 DOI／保存草稿不等于公开发布。
+
+4. Resource type
+选择 Publication → Report（或列表中直接显示的 Report）。
+这次主要文件是技术报告，配套 ZIP 是证明材料；不要填 Journal article。
+
+5. Title（原样复制）
+Deterministic Integer 3SUM at Exponent 1.960614: Quartic Switch Certificates and a Lean Word-RAM Proof
+
+6. Publication date
+今天提交填 2026-10-15；改天首次发布则填实际发布日期。
+
+7. Authors/Creators → Add author
+类型：Person
+Family name：Xu
+Given names：Yuxuan
+ORCID：0009-0001-8760-5277
+Affiliation：School of Computer Science, Wuhan University
+检查显示为 Xu, Yuxuan 或 Yuxuan Xu；使用上述 ORCID。
+本稿仅填写已确认的你本人。上游作者已在正文和源码署名，不追加为本稿共同作者。
+
+8. Description
+完整复制同目录 description.txt 的全部内容。
+数学式用 O(n^1.960614) 的纯文本即可，避免粘贴未渲染的 LaTeX。
+
+9. Licenses
+移除网页默认的笼统 CC BY 4.0 条目，改用 Add custom，按弹窗字段填写：
+名称：Mixed licensing — see LICENSING.txt
+说明：The new report and release documentation are licensed under CC BY 4.0. The accompanying source code, analytic package, and verification artifacts retain their existing licenses and notices. No blanket license is granted for the entire archive. See LICENSING.txt and proof-source/NOTICE.
+链接：如非必填则留空；不要把 CC BY 4.0 链接当作整个源码压缩包的统一许可。
+这套配置把报告的 CC BY 4.0 与上游代码原许可区分开；最终发布前请确认你接受报告使用 CC BY 4.0。
+
+10. Copyright
+Report and release documentation: Copyright (c) 2026 Yuxuan Xu. Third-party material retains its original copyright and notices.
+
+11. Contributors
+留空。AI 使用情况已写入正文与说明；不把 AI 填成作者。
+
+12. Keywords and subjects（逐条添加）
+3SUM
+deterministic algorithms
+word-RAM
+Lean
+formal verification
+entropy bounds
+exact certificates
+
+13. Languages
+English；可同时添加 Chinese（压缩包含原始中文解析说明）。
+
+14. Dates
+额外日期区留空。
+
+15. Version
+1.0.0
+
+16. Publisher
+保留 Zenodo。
+
+17. Funding / Alternate identifiers / Related works / References
+可留空；必要来源已写入 Description 和报告参考文献。
+不要填写未经确认的基金、期刊或会议。
+
+18. Software → Repository URL
+https://github.com/Anchen0823/three-sum-1960614
+Programming language 可填 Lean、Python；若选项不支持 Lean，留空即可。
+Development Status 可留空。
+
+19. Publishing information / Conference / Domain specific fields
+均留空：本稿尚无期刊、卷期、会议或学位论文信息。
+
+20. Visibility
+选择 Public；不设置 embargo。
+草稿不会因此提前公开，正式 Publish 后才公开。
+
+21. 保存和检查
+先点 Save draft，再点 Preview。
+重点检查：作者和 ORCID；1.960614；日期；5 个文件上传完成；许可说明；AI 使用说明。
+本稿没有把 1.958562 当作已完成结果，也不声称经过同行评审。
+确认无误后由你点击 Publish，按页面要求阅读并完成最终确认。
+发布后核对 DOI 页面可以打开，且 PDF 和 ZIP 能下载。
+
+本地校验
+release-validation.json：722 个文件哈希核对通过，689 个官方 Lean 源码哈希核对通过，69 个官方验证产物条目核对通过。
+release/evidence/release-certificate-check.txt：3 个精确证书及 12 个损坏证书拒绝测试通过。
+此次整理没有重跑完整 Lean／Nanoda；正式证明验证结论引用已归档的官方记录。
+
+浏览器状态说明
+先前自动填写仅确认标题已写入；后续版本号／作者窗口操作曾超时。
+没有确认保存成功的 Zenodo 草稿，也没有点击 Publish。请以上述清单为准检查各字段。

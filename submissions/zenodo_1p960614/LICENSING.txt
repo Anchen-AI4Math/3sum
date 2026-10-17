@@ -1,0 +1,20 @@
+PER-COMPONENT LICENSING -- version 1.0.0
+
+The new technical report (PDF and LaTeX) and the new release documentation
+are offered under Creative Commons Attribution 4.0 International (CC BY 4.0).
+Copyright (c) 2026 Yuxuan Xu, to the extent applicable.
+License: https://creativecommons.org/licenses/by/4.0/
+
+This grant does NOT apply to all material inside the accompanying archive.
+The pinned proof source, original analytic package, and verification
+artifacts are preserved under their existing licenses, copyright notices,
+and terms. No new license is assigned to those components here.
+
+In particular, proof-source/LICENSE is the inherited Apache-2.0 license,
+whose scope is explained in proof-source/NOTICE. That notice does not
+assign a license to additional project sources. Per-file notices remain
+authoritative. Where a component has no explicit license, this deposit
+does not create a blanket permission to reuse or redistribute it.
+
+Third-party copyright and attribution remain with their respective holders.
+Public availability and inclusion in this archive do not transfer ownership.

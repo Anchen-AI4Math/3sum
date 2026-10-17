@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-15T19:53:59.265270+08:00",
+  "scope": "Local organization and offline archive validation; no remote refresh and no Lean rebuild.",
+  "initial_archive_integrity_check": {
+    "result": "passed",
+    "archived_files_checked": 747,
+    "official_lean_source_files_checked": 689,
+    "platform_source_files_checked": 1003,
+    "key_graph_response_files_checked": 8,
+    "graph_snapshot_records_catalogued": 1010,
+    "official_artifact_files_checked": 69,
+    "original_certificate_checksums_checked": 12
+  },
+  "analytic_certificate_recheck": {
+    "command": "python analytic-certificate/verify_certificate.py --self-test",
+    "exit_code": 0,
+    "certificates_checked": 3,
+    "negative_rejection_tests_passed": 12,
+    "last_output_line": "ALL REQUESTED CERTIFICATES PASSED."
+  },
+  "navigation_check": {
+    "new_and_updated_markdown_files": 4,
+    "local_links_checked": 46,
+    "broken_links": []
+  },
+  "git_diff_whitespace_check": "passed",
+  "note": "The initial integrity count precedes this report. Re-run verify_archive.py for the current full archive count."
+}

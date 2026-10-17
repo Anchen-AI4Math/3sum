@@ -1,0 +1,251 @@
+{
+  "archived_at": "2026-10-15T19:49:56.480758+08:00",
+  "timezone": "Asia/Shanghai",
+  "mission_source": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614",
+  "source_repository": "https://github.com/Anchen0823/three-sum-1960614",
+  "source_commit": "8c25c0325de5be4286413f39ca0c9278aad33f52",
+  "native_source_export_method": "git archive from exact commit; official SHA256 map checked",
+  "remote_refreshed_this_archive": false,
+  "lean_build_rerun_this_archive": false,
+  "copied_files": [
+    {
+      "archive_path": "evidence/bigospeedrun-anthropic-manifest.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\bigospeedrun-anthropic-manifest.json",
+      "sha256": "484af05025301c3920dfeb644f6dbb7f02b05f596bf48831c9324e383694db25"
+    },
+    {
+      "archive_path": "evidence/bigospeedrun-official-audit.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\bigospeedrun-official-audit.json",
+      "sha256": "6dd7e0f28827ec31c73fc5f8260a5eb4cf679e274e538e410d815fa34e6143b6"
+    },
+    {
+      "archive_path": "evidence/bigospeedrun-package-receipt.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\bigospeedrun-package-receipt.json",
+      "sha256": "2c77798df96a1a5fd38e0f8c490241373322a853eb18556d2234cc8c303dea8c"
+    },
+    {
+      "archive_path": "evidence/bigospeedrun-site-data-current.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\bigospeedrun-site-data-current.json",
+      "sha256": "31ad4b5e3564d1052097ccc5b65ba50668529eb80e0eb1811d5036bc201ce8ce"
+    },
+    {
+      "archive_path": "evidence/bigospeedrun-submission.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\bigospeedrun-submission.json",
+      "sha256": "8a46ec18cf24a04931da3b7bc6006db10f8c3671596ce42dd8c3022ef1da42a8"
+    },
+    {
+      "archive_path": "evidence/full-machine-build-fifth.txt",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\full-machine-build-fifth.txt",
+      "sha256": "4918041408bba95d58aacdc456484bcc5f32db6855066bc4fe2824caead1243b"
+    },
+    {
+      "archive_path": "evidence/machine-graph-check.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\machine-graph-check.json",
+      "sha256": "a28ffc2844c4f59ede278ba3885e37d9c55439448ea94c0ce06aeeab889d995b"
+    },
+    {
+      "archive_path": "evidence/machine-graph-snapshot-integrity.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\machine-graph-snapshot-integrity.json",
+      "sha256": "6839bf65f11ffde650fd002c3dff9e48e1019021225cc8bd59c849e35eee8350"
+    },
+    {
+      "archive_path": "evidence/machine-platform-manifest.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\machine-platform-manifest.json",
+      "sha256": "3e5505d439e5e616b1ee3d2d89b8e2b5596a7b8bbbf077d13700c69cc1239145"
+    },
+    {
+      "archive_path": "evidence/machine-remote-status.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\machine-remote-status.json",
+      "sha256": "020ba563a9704033ca8417d836d93bc98e2ec868077b3ae0caf94fe29173ac6f"
+    },
+    {
+      "archive_path": "evidence/machine-source-integrity-check.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\machine-source-integrity-check.json",
+      "sha256": "76315a5a95a1401e7f37980ccb81c434e74467a3306618c9f5618d63b1a6b02d"
+    },
+    {
+      "archive_path": "evidence/mission-completion-metadata-after.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\mission-completion-metadata-after.json",
+      "sha256": "15ee6ded39362bc2072d72b25dba0643462fb412c8b3e355b4937eda64a7d8a8"
+    },
+    {
+      "archive_path": "evidence/mission-completion-metadata-validation.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\mission-completion-metadata-validation.json",
+      "sha256": "9a6abba5a33ec52b3b4421565dc4d54f6798bed77b5d89165e7a25040299ee23"
+    },
+    {
+      "archive_path": "evidence/mission-completion.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\mission-completion.json",
+      "sha256": "ae40a327d387097db525acf03a40882b01c3bd62b94b127e64b619bf277494b2"
+    },
+    {
+      "archive_path": "evidence/mission-github-reference-validation.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\mission-github-reference-validation.json",
+      "sha256": "25bdfed080934a032ad413f4328a6570d71cfad1f6de5ba548b74dee3ff30ac9"
+    },
+    {
+      "archive_path": "evidence/mission-live-milestones.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\mission-live-milestones.json",
+      "sha256": "ef824a95c0162113c994a37dd3e7581876d1cf07500668264bcc1b0473702f63"
+    },
+    {
+      "archive_path": "evidence/model-graph-check.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\model-graph-check.json",
+      "sha256": "16f933a18a0c4e1921d838164ae335e96b6f40b9c6e79f323bd1d923d48d3aca"
+    },
+    {
+      "archive_path": "evidence/upstream-source.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\upstream-source.json",
+      "sha256": "7f8bc3055d9ebfcf43eba359fccb03f38b64697465de227c9d4164a4c9a7ed73"
+    },
+    {
+      "archive_path": "evidence/workspace-check-final.txt",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\workspace-check-final.txt",
+      "sha256": "b81861effabc801af818c71f4db46f9a2331c53ce42136fd3c7830f015a34102"
+    },
+    {
+      "archive_path": "evidence/bigospeedrun-official-final/artifact.zip",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\bigospeedrun-official-final\\artifact.zip",
+      "sha256": "2452614d8f788b0614aeb644975299771355194afecb7e699100761fef515380"
+    },
+    {
+      "archive_path": "evidence/bigospeedrun-official-final/receipt.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\bigospeedrun-official-final\\receipt.json",
+      "sha256": "91d1b8e7f8910241cd372373af18ed636378b02b7a2c2f143bc937c44a7cfc14"
+    },
+    {
+      "archive_path": "evidence/bigospeedrun-official-final/source-sha256.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\bigospeedrun-official-final\\source-sha256.json",
+      "sha256": "569fe4f50523156bc9835bf0cec976150738cbe7a70382cd7f21daf797bd71d8"
+    },
+    {
+      "archive_path": "evidence/bigospeedrun-official-final/gate.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\bigospeedrun-official-final\\gate.json",
+      "sha256": "b54b3037df317fe50d5dbe3d0faef5695160b86b61e41aa2e6c00975253835ec"
+    },
+    {
+      "archive_path": "evidence/bigospeedrun-official-final/artifact-metadata.json",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\bigospeedrun-official-final\\artifact-metadata.json",
+      "sha256": "f0371e0966edd8c763a326fd1e45bae8291354b3821e57d5ded4ed0252980d21"
+    },
+    {
+      "archive_path": "evidence/bigospeedrun-official-final/audit.log",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\verification\\bigospeedrun-official-final\\audit.log",
+      "sha256": "9d88565f3aa718954259a026329811a80c89cabccf12dede66c5aad5294ca223"
+    },
+    {
+      "archive_path": "analytic-certificate/certificates/c232.json",
+      "original_path": "D:\\users\\self_projects\\math_discovery\\3 SUM\\3sum_certificate_1p960614_v3\\3sum_certificate_v3\\certificates\\c232.json",
+      "sha256": "140e1dc936f577ee3edd4adcd858205f57d5a09f9516173eb621d7d99f6fb630"
+    },
+    {
+      "archive_path": "analytic-certificate/certificates/c232_quartic.json",
+      "original_path": "D:\\users\\self_projects\\math_discovery\\3 SUM\\3sum_certificate_1p960614_v3\\3sum_certificate_v3\\certificates\\c232_quartic.json",
+      "sha256": "21c4ef5638b84d1b1c78b33ea0a0ed094207ae235cff14bac5f56cf475ba1d4d"
+    },
+    {
+      "archive_path": "analytic-certificate/certificates/c256.json",
+      "original_path": "D:\\users\\self_projects\\math_discovery\\3 SUM\\3sum_certificate_1p960614_v3\\3sum_certificate_v3\\certificates\\c256.json",
+      "sha256": "f809b38732b13ecc23446e125466384eab8e6e882084447a3838389c5e809f39"
+    },
+    {
+      "archive_path": "analytic-certificate/exact_interval.py",
+      "original_path": "D:\\users\\self_projects\\math_discovery\\3 SUM\\3sum_certificate_1p960614_v3\\3sum_certificate_v3\\exact_interval.py",
+      "sha256": "eea44a249ecaab49678672ff70e0153552bc7c757c7a53e5ce93f57aebaa0780"
+    },
+    {
+      "archive_path": "analytic-certificate/exploration_output.txt",
+      "original_path": "D:\\users\\self_projects\\math_discovery\\3 SUM\\3sum_certificate_1p960614_v3\\3sum_certificate_v3\\exploration_output.txt",
+      "sha256": "157b1c3f246d93cb362bcb1afdbdd285d80bb9573d286b57c831b3c3a425e018"
+    },
+    {
+      "archive_path": "analytic-certificate/explore.py",
+      "original_path": "D:\\users\\self_projects\\math_discovery\\3 SUM\\3sum_certificate_1p960614_v3\\3sum_certificate_v3\\explore.py",
+      "sha256": "9be06e5b0fdb462e7ead0a595634c9e1e7df2e4ecdf10a69f32b0795affb4418"
+    },
+    {
+      "archive_path": "analytic-certificate/PROOF.md",
+      "original_path": "D:\\users\\self_projects\\math_discovery\\3 SUM\\3sum_certificate_1p960614_v3\\3sum_certificate_v3\\PROOF.md",
+      "sha256": "c8dd7f79571095afb78b0974332251b01d31fd54d9bffd89dc972d3953bc6eda"
+    },
+    {
+      "archive_path": "analytic-certificate/README.md",
+      "original_path": "D:\\users\\self_projects\\math_discovery\\3 SUM\\3sum_certificate_1p960614_v3\\3sum_certificate_v3\\README.md",
+      "sha256": "cabfb45b3dddcc413433787aff54fc7edbf01afad612d0dccd7976b1f137f8e3"
+    },
+    {
+      "archive_path": "analytic-certificate/SHA256SUMS.txt",
+      "original_path": "D:\\users\\self_projects\\math_discovery\\3 SUM\\3sum_certificate_1p960614_v3\\3sum_certificate_v3\\SHA256SUMS.txt",
+      "sha256": "3a3f6d3f3d74763246bb2c602687af94240e82cd1a126f0d78ee6b68445dda80"
+    },
+    {
+      "archive_path": "analytic-certificate/SOURCES.md",
+      "original_path": "D:\\users\\self_projects\\math_discovery\\3 SUM\\3sum_certificate_1p960614_v3\\3sum_certificate_v3\\SOURCES.md",
+      "sha256": "b1c61470d654e050f296ec2591d2ab4105af861a8a7298b194ab6447bb14e35f"
+    },
+    {
+      "archive_path": "analytic-certificate/summary.json",
+      "original_path": "D:\\users\\self_projects\\math_discovery\\3 SUM\\3sum_certificate_1p960614_v3\\3sum_certificate_v3\\summary.json",
+      "sha256": "de53624c04b96186b07648620732a689a3ac0f66ede432e847095e73283ce91d"
+    },
+    {
+      "archive_path": "analytic-certificate/verification_output.txt",
+      "original_path": "D:\\users\\self_projects\\math_discovery\\3 SUM\\3sum_certificate_1p960614_v3\\3sum_certificate_v3\\verification_output.txt",
+      "sha256": "efebd37b200eb16992233d8400eda1824500e0644cbe727ee61d129f81adab35"
+    },
+    {
+      "archive_path": "analytic-certificate/verify_certificate.py",
+      "original_path": "D:\\users\\self_projects\\math_discovery\\3 SUM\\3sum_certificate_1p960614_v3\\3sum_certificate_v3\\verify_certificate.py",
+      "sha256": "9b918b6891e71f537010636dedce91f106c9986b5f68308b9908c9a74ae72929"
+    },
+    {
+      "archive_path": "docs/development-history.md",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\status.md",
+      "sha256": "a4e8e10c9f486834e624c5363edd857d60287e526cf2c712b9777f6f0f5032b6"
+    },
+    {
+      "archive_path": "docs/local-cover-explanation.md",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\local-cover-explanation.md",
+      "sha256": "1da12ee60adf29403d8e4ef391ffbade39b3d94dd3b849763b9ae56edec4733f"
+    },
+    {
+      "archive_path": "docs/quartic-switch-explanation.md",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\quartic-switch-explanation.md",
+      "sha256": "9d4b8f78a6c64bfab5bd36dc9e15c1305d076eb994ab684e16fa05885113f0d7"
+    },
+    {
+      "archive_path": "docs/integer-schedule-explanation.md",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\integer-schedule-explanation.md",
+      "sha256": "3a18e90baf970736792801329a1dabe565bdecf272ac4e57c171d3e7c956c9f6"
+    },
+    {
+      "archive_path": "docs/uniform-entropy-explanation.md",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\uniform-entropy-explanation.md",
+      "sha256": "dd37e6a8c13495423f1c436299c127692780ff7a792368961c87c8a74cefd142"
+    },
+    {
+      "archive_path": "docs/main-reduction-explanation.md",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\main-reduction-explanation.md",
+      "sha256": "4c86ec681546ba06adf9a929a0f374cf06551d286fa03823435d1acb02e13fb9"
+    },
+    {
+      "archive_path": "docs/parameter-certificate-explanation.txt",
+      "original_path": "D:\\users\\self_projects\\prove2me_workspace\\missions\\3sum-1960614\\parameter-certificate-explanation.txt",
+      "sha256": "e36e49f6b502ef29f9c5d4318eece6ef36f7709c6b77d272e77cfb3643a05ee0"
+    },
+    {
+      "archive_path": "screenshots/bigospeedrun-3sum-user-screenshot.png",
+      "original_path": "C:\\Users\\anche\\AppData\\Local\\Temp\\codex-clipboard-02381a00-d4fb-4137-b802-2cf09fb609fc.png",
+      "sha256": "7d2c05a0f66062360dde05e63c2e4e80e14dfa23ff65b6e7eb48db3d0262b8d0"
+    },
+    {
+      "archive_path": "screenshots/prove2me-campaign-user-screenshot.png",
+      "original_path": "C:\\Users\\anche\\AppData\\Local\\Temp\\codex-clipboard-bfffe9ed-ace1-4a2a-8c36-7e75bee87286.png",
+      "sha256": "533de7180e819fe3f69d61ed007955dd3629c17d8e385841614b3c016ec601e9"
+    }
+  ],
+  "generated_zip_membership": {
+    "evidence/prove2me-source-export.zip": "evidence/machine-platform-manifest.json",
+    "evidence/prove2me-key-graph-responses.zip": "evidence/graph-snapshot-catalog.json"
+  }
+}

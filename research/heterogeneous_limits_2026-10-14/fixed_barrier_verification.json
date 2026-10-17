@@ -1,0 +1,13 @@
+{
+  "scope": "fixed rational profile; all epsilon,beta<0,S,tau and admissible threshold schedules in the same ledger",
+  "lower": "19586103/10000000",
+  "counts": {
+    "initial": 28,
+    "cap": 43,
+    "empty": 6,
+    "split": 199,
+    "report": 123
+  },
+  "largest_cap_delta": "[0.041389697208230170336178, 0.041389697208230170336179]",
+  "smallest_exclusion_margin": "[0.000000017065027926765000, 0.000000017065027926765000]"
+}

@@ -1,0 +1,5 @@
+{
+  "cases": 120,
+  "seed": 20261014,
+  "status": "PASS exact containment of inherited 48-term log intervals"
+}

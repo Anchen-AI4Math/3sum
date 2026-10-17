@@ -1,0 +1,74 @@
+3SUM 成果独立审计
+日期：2026-10-13
+
+结论
+在原论文的确定性、多项式有界整数、word-RAM 模型下，未发现两项候选的纸面数学推导或数值证书存在实质性错误。
+A 的 O(n^1.999073) 可由既有参数化内层结果和归约推出。
+B 的熵尾和引理成立；将其接回原论文未放松的 box 成本后，支持 O(n^1.999017) 的纸面算法分析。
+这不等于两项结论已获 Lean 认证。本目录没有对应的新 Lean 证明或完整程序验证，本次也没有构建上游完整 Lean 工程。
+本结论以原论文及其算法为基础；未重新证明底层张量恒等式和所引用的所有确定性归约，也未检验全球原创性。
+
+检查对象
+3sum_exponent_research_2026-10-13/3sum-research/RESEARCH_NOTE.md
+3sum_exponent_research_2026-10-13/3sum-research/verify_exponents.py
+3sum_exponent_research_2026-10-13/3sum-research/verification_output.txt
+ZIP 中三个文件与解压后的文件逐字节一致。原成果未修改。
+
+一、计算验证
+原 verify_exponents.py --optimize 已实际运行成功，两组参数证书、有限测试和探索性优化结果均复现。
+逐项检查了 Fraction 区间的加减乘除、负数倍数、log 的二进制约化、atanh 级数余项、十进制向外舍入。
+余项使用 2 z^(2K+1)/((2K+1)(1-z²))，对约化后的 0<=z<=1/3 是有效上界。
+所有关键 PASS 使用有理数区间下端点，而非打印值或浮点近似。
+
+独立脚本 independent_audit.py 不导入原验证器：
+1. 使用标准库 Decimal、90 位精度独立重算全部参数，结果一致；这是数值交叉验证，不冒充区间证明。
+2. 对 r=1..100 的所有 k 检查二项式熵上下界，共 5150 组，使用精确整数比较。
+3. 对 c=11,12,21,22,30，m=1..80，所有 t=0..m 检查两种几何尾界，共 16600 组，使用精确整数比较。
+4. 对 B 的 m=1..100,200,500,1000，直接计算尾和，并以高精度对数检查完整熵尾界。
+所有检查通过。有限检查只辅助发现错误，渐近结论仍依赖下述一般证明。
+
+二、尾和证明审查
+beta_d/beta_(d-1)=9(m-d+1)/(cm-m+d)，分子递减、分母递增，因此统一上界 9/(c-1)<1 正确。
+从 beta_t 开始得到 sum_{d=t}^m beta_d <= beta_t/(1-9/(c-1))，t=m 也适用。
+二项式熵界来自 p=k/r 的二项分布，其中第 k 项确为众数；k=0,r 的边界成立。
+分子使用熵上界、分母使用熵下界，方向正确，产生 cm+1 因子。
+F'(u)=ln(9(1-u)/(c-1+u))<0，因此 t=ceil(theta*m) 的取整朝有利方向变化；u=1 用连续延拓。
+gamma_star 在 theta=0 为零，且导数对 theta>0 严格大于旧 gamma 的导数，因此确实严格改善同参数的尾部衰减率。
+本段是一般数学论证，不依赖有限测试。
+
+三、算法成本连接审查
+已读取原论文第 3 节和第 4 节，并下载固定提交 e1a4e6508154ea59f030480661590a9fe3018011 的 Theorem30.lean、Corollary31.lean、Lemma29.lean、README.md 至 audit_sources。
+Theorem30.lean:278 确实先使用 lemma_29_count 的精确尾和，然后才替换为旧几何界。
+因此成果不是无依据地替换 Corollary31 的 gamma，而是在其上游重新分析同一算法。
+tile 数 O(N²/M) 乘以每 tile 的 O(L(m+1)sum beta_d)，再代入熵尾界，确实得到 O(N²(log D)^3 D^(-gamma_star))。
+编码项为 O(N 10^L/sqrt(M))，结合熵下界得到 O(N D^A sqrt(log D))，没有漏掉一个固定正幂。
+由 a(A+gamma_star)<1 和 D<=N^a，可得编码项与 N²D^(-gamma_star) 的比值至多为常数乘 sqrt(log D)D^(-eta)，eta=1/a-A-gamma_star>0，故有统一上界。
+tile-fit 也成立：sqrt(M)<=10^L/sqrt(M)，编码条件最终保证 N>=sqrt(M)。
+查询的 ceil(theta*m) 仅引入固定乘法常数，指数 q 不变。
+用 s<gamma_star 和 s<1/2-q 吸收对数，得到 O(N²/D^s)。
+四项 Exact Triangle 成本与论文第 3 节一致；g=ceil(D^(s/2)) 满足 1<=g<=sqrt(D) 对充分大 D 成立，小规模可穷举。
+由确定性 3SUM 到 Exact Triangle 归约，节省指数除以 2，得到 2-as/4；目标与此端点均有严格正裕量。
+
+四、数值结论
+A：Exact Triangle 端点 2.9981455445；3SUM 端点 1.99907277225；目标 1.999073；裕量 0.00000022775。
+B：Exact Triangle 端点 2.99803282875；3SUM 端点 1.999016414375；目标 1.999017；裕量 0.000000585625。
+两者的素数选择和实例构建指数都严格低于主项。
+这些严格裕量允许吸收对数和 n^o(1)，不能将端点本身直接宣称为达到的 Big-O 界。
+
+五、认证与表述边界
+1. 目前可以表述为“纸面推导经独立审查未发现错误，算术证书已复现”。不能表述为“本次已完成 Lean 认证”。
+2. B 还需将新的尾和计数接到实际 word-RAM 程序耗时证明；仅改 cost8 中的公式不构成认证。
+3. A 也需实例化一般定理并贯通归约；不能由已认证的 1.999074 顶层定理通过单调性推出更小指数。
+4. 连续优化是局部浮点搜索，原成果已正确注明没有全局最优性证明。
+5. 原文第 2 节“一个可用的 s 必须满足”宜理解为“以下分析所选择的 s 满足”，这组严格条件是充分条件，未证明是任何算法的必要条件；不影响两个具体候选。
+6. Prove2Me campaign 当前页面列出 4 项完成目标、最佳 1.999074；mission 页面同时保留旧的 Open Problem 描述和 PROVED/ACCEPTED 状态。本次没有把其模板中的 sorry 当作实际证明漏洞，也没有重跑平台证明。
+
+来源（本次已读取）
+https://arxiv.org/html/2610.06783v1
+https://prove2.me/campaigns/3sum-exponent
+https://prove2.me/missions/3SUM_in_O%28n%5E1.999074%29_Time_on_a_Word_RAM
+https://github.com/anthropics/formal-math/tree/e1a4e6508154ea59f030480661590a9fe3018011/3sum-apsp
+
+复现：
+python "3 SUM/3sum_exponent_research_2026-10-13/3sum-research/verify_exponents.py" --optimize
+python "3 SUM/independent_audit.py"

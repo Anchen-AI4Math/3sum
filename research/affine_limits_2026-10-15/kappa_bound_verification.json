@@ -1,0 +1,10 @@
+{
+  "constant": "49/50",
+  "real_c_domain": "[3,infinity)",
+  "finite_cover_intervals": 5583,
+  "finite_min_log2_margin": "[0.00008801556675754792, 0.00008801556675754793]",
+  "tail_eta": "3341/41943040",
+  "tail_natural_log_margin": "[0.00034161113201532435, 0.00034161113201532436]",
+  "status": "PASS: k_c >= constant * 4^(-E_c), including analytic infinite tail",
+  "inflated_constant_rejected": true
+}

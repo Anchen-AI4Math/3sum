@@ -1,0 +1,50 @@
+Exact rational interval certificates (no floating-point decisions).
+
+A: existing Corollary 31, retuned parameters
+  c=22, theta=11229/100000, a=1081/20000, s=3431/50000, b=s/2=3431/100000
+  gamma = [0.068631222495934868, 0.068631222495934869]
+  q     = [0.431367880323245422, 0.431367880323245423]
+  A     = [18.431895353272202528, 18.431895353272202529]
+  R     = [0.054052515527303591, 0.054052515527303592]
+  PASS gamma > s; margin [0.000011222495934868, 0.000011222495934869]
+  PASS 1/2-q > s; margin [0.000012119676754577, 0.000012119676754578]
+  PASS 1-a*(A+gamma) > 0; margin [0.000046538579732173, 0.000046538579732174]
+  PASS prime-selection exponent below triangle exponent; margin [0.109715622442395892, 0.109715622442395893]
+  PASS instance-building exponent below triangle exponent; margin [0.942241089000000000, 0.942241089000000000]
+  PASS target strictly exceeds 3SUM cutoff; margin [0.000000227750000000, 0.000000227750000000]
+  PASS g exponent b < 1/2; margin [0.465690000000000000, 0.465690000000000000]
+  Exact Triangle cutoff: [2.998145544500000000, 2.998145544500000000]
+  3SUM cutoff:          [1.999072772250000000, 1.999072772250000000]
+  3SUM target:          [1.999073000000000000, 1.999073000000000000]
+  NOTE: a positive target gap absorbs logarithmic and n**o(1) factors.
+
+B: refined binomial tail, paper-proof candidate
+  c=21, theta=5601/50000, a=1133/20000, s=1389/20000, b=s/2=1389/40000
+  gamma = [0.069454625736072798, 0.069454625736072799]
+  q     = [0.430536990526086701, 0.430536990526086702]
+  A     = [17.580593993954063060, 17.580593993954063061]
+  R     = [0.056657067725264770, 0.056657067725264771]
+  PASS gamma > s; margin [0.000004625736072798, 0.000004625736072799]
+  PASS 1/2-q > s; margin [0.000013009473913298, 0.000013009473913299]
+  PASS 1-a*(A+gamma) > 0; margin [0.000124745694553803, 0.000124745694553804]
+  PASS prime-selection exponent below triangle exponent; margin [0.105702906692395892, 0.105702906692395893]
+  PASS instance-building exponent below triangle exponent; margin [0.939415657500000000, 0.939415657500000000]
+  PASS target strictly exceeds 3SUM cutoff; margin [0.000000585625000000, 0.000000585625000000]
+  PASS g exponent b < 1/2; margin [0.465275000000000000, 0.465275000000000000]
+  Exact Triangle cutoff: [2.998032828750000000, 2.998032828750000000]
+  3SUM cutoff:          [1.999016414375000000, 1.999016414375000000]
+  3SUM target:          [1.999017000000000000, 1.999017000000000000]
+  NOTE: a positive target gap absorbs logarithmic and n**o(1) factors.
+
+Exact finite tail sanity tests: PASS for m=1,...,100.
+Not a proof of the entropy bound or the RAM runtime.
+
+Exploratory numerical optimum (original):
+  c=22.218280070533, theta=0.112063613115, cutoff=1.999072507709900
+  NOT a proof of global optimality or an attained big-O endpoint.
+
+Exploratory numerical optimum (sharp):
+  c=20.788556811234, theta=0.112251497817, cutoff=1.999016131403629
+  NOT a proof of global optimality or an attained big-O endpoint.
+
+All arithmetic checks passed. No Lean build was run by this script.

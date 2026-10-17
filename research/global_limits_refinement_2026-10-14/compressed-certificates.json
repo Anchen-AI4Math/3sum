@@ -1,0 +1,18 @@
+[
+  {
+    "file": "checkpoint_lower_certificate.json",
+    "raw_bytes": 42839122,
+    "raw_sha256": "0ce510e42f57d698cf8d4b7954ff34b39df91f01f6e1759c3294fe8c4a60e4ea",
+    "gzip_file": "checkpoint_lower_certificate.json.gz",
+    "gzip_bytes": 6848747,
+    "gzip_sha256": "84b0be92b0da55684b760254369d22127e363d972de448444447f69724481a94"
+  },
+  {
+    "file": "kappa_multidepth_fast_certificate.json",
+    "raw_bytes": 61629956,
+    "raw_sha256": "6fe051991300cb80e85abcd89e1c4f73e6e73ec0a5b782eacdd296196ba0d2e2",
+    "gzip_file": "kappa_multidepth_fast_certificate.json.gz",
+    "gzip_bytes": 9872605,
+    "gzip_sha256": "d803fc8f8c25efd9ca726e163ae7b191c853ed526b2d6436a73862efd628cdac"
+  }
+]

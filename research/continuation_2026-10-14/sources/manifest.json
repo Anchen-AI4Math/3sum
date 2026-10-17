@@ -1,0 +1,77 @@
+[
+  {
+    "file": "Parameters.lean",
+    "sha": "8f62d54770b6a5215e6a4ab81f4c3260d583881e",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/Parameters.lean"
+  },
+  {
+    "file": "SharedTraversalCostBounds.lean",
+    "sha": "51187c26e7230d2556e056246c47f580db6576c0",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/SharedTraversalCostBounds.lean"
+  },
+  {
+    "file": "ThreeSumHybridCosts.lean",
+    "sha": "0b079d8ec9341cb712f0ea29a47d585a0bd1de29",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/ThreeSumHybridCosts.lean"
+  },
+  {
+    "file": "SharedTraversalScanCosts.lean",
+    "sha": "60c7195dcc29a66a81fe60c981b19777a264c2aa",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/SharedTraversalScanCosts.lean"
+  },
+  {
+    "file": "SharedTraversalPrefixCosts.lean",
+    "sha": "1382cc789959f5c9fe725aca6db74e93ca59cbe7",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/SharedTraversalPrefixCosts.lean"
+  },
+  {
+    "file": "StageBounds.lean",
+    "sha": "1f020cde13560e0e3d3c2c75fbae5bd28eab1229",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/StageBounds.lean"
+  },
+  {
+    "file": "Scales.lean",
+    "sha": "55c1f8ff8943d2fe1c3ddf6f55592412529534b6",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/Scales.lean"
+  },
+  {
+    "file": "RawReporting.lean",
+    "sha": "8717ea37a92db3f6fc51a2cc5d4f4ae00c409dd2",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/RawReporting.lean"
+  },
+  {
+    "file": "Switch.lean",
+    "sha": "791c6cedae06caeea57f214602ddb7d471052467",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/Switch.lean"
+  },
+  {
+    "file": "BandScales.lean",
+    "sha": "c7a4487152d98875c48494f223779a5648fb3368",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/BandScales.lean"
+  },
+  {
+    "file": "CostLedger.lean",
+    "sha": "baa37f9fedae1c91d904040d8dc66e699bef2d3d",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/CostLedger.lean"
+  },
+  {
+    "file": "MassScales.lean",
+    "sha": "387711f3671e9037ad9daf7a4189c18ce7a20ed4",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/MassScales.lean"
+  },
+  {
+    "file": "EncodedColorReportingCosts.lean",
+    "sha": "ff1574987fbd4dde265ca2aee995417cf8c77a48",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/EncodedColorReportingCosts.lean"
+  },
+  {
+    "file": "LightEncodedColorReportingPipeline.lean",
+    "sha": "3e15ae38f58592500e22cbc89ab5514cc7dd0f8d",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/LightEncodedColorReportingPipeline.lean"
+  },
+  {
+    "file": "TrimScales.lean",
+    "sha": "4582cbf59af14c2b8aa85a8f193d181be264ddbe",
+    "url": "https://github.com/c0ldzy17/three-sum-lean/blob/2b639655e07421b9ac743de9090459bab473a7c0/Submission/ThreeSum/TrimScales.lean"
+  }
+]

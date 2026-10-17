@@ -1,0 +1,7 @@
+A: independent Decimal checks PASS; cutoff=1.99907277225; gap=2.2775E-7
+B: independent Decimal checks PASS; cutoff=1.999016414375; gap=5.85625E-7
+Exact binomial entropy bounds: PASS (5150 pairs, r=1..100, all k).
+Exact geometric tail bounds: PASS (16600 triples, including t=0,m).
+Full sharp-tail bound: Decimal cross-check PASS for m=1..100,200,500,1000.
+Archive vs extracted files: byte-identical (3 files).
+These checks do not build Lean or certify a complete word-RAM program.

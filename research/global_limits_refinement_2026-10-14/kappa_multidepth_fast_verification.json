@@ -1,0 +1,14 @@
+{
+  "scope": "all finite expansion profiles c>=3, arbitrary order and number of pieces; beta<0, same cost/box model",
+  "lower": "979/500",
+  "counts": {
+    "empty": 116,
+    "analytic": 202,
+    "dual": 17742,
+    "split": 18059
+  },
+  "dual_rows_checked": 283808,
+  "worst_delta_upper": "[0.041999970672403841719473, 0.041999970672403841719474]",
+  "verification": "exact rational interval arithmetic; no floating optimizer",
+  "elapsed_seconds": 135.29172372817993
+}

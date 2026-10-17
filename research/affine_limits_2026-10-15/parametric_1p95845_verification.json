@@ -1,0 +1,37 @@
+{
+  "schema": 3,
+  "lower": "39169/20000",
+  "scope": "all finite real c>=3 profiles, arbitrary order and stage count; twelve-cost certification model, beta<0",
+  "counts": {
+    "empty": 32,
+    "base": 0,
+    "initial": 54,
+    "dual": 714,
+    "split": 799
+  },
+  "dual_rows_checked": 37051,
+  "allocation_vertices_checked": 148204,
+  "coupling_boosts": 752,
+  "finite_c_corrected_regions": 714,
+  "worst_conditional_delta_upper": "[0.041549976843664349451995, 0.041549976843664349451996]",
+  "status": "PASS: exact complete continuous parameter cover",
+  "local_inequality": {
+    "constant": "49/50",
+    "real_c_domain": "[3,infinity)",
+    "finite_cover_intervals": 5583,
+    "finite_min_log2_margin": "[0.00008801556675754792, 0.00008801556675754793]",
+    "tail_eta": "3341/41943040",
+    "tail_natural_log_margin": "[0.00034161113201532435, 0.00034161113201532436]",
+    "status": "PASS: k_c >= constant * 4^(-E_c), including analytic infinite tail"
+  },
+  "rejected_forgeries": [
+    "false lower bound",
+    "false empty region",
+    "inflated local constant",
+    "overweight energy dual",
+    "inflated base kappa",
+    "inflated coupled kappa",
+    "missing coupling energy multiplier"
+  ],
+  "elapsed_seconds": 115.7430694103241
+}

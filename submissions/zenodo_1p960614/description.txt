@@ -1,0 +1,13 @@
+This technical report and accompanying proof artifact document a deterministic O(n^1.960614) upper bound for 3SUM on polynomially bounded integers in the precise word-RAM model of the attached Lean development. The formal endpoint is EndStatement.ThreeSum.SolvedInTime (980307/500000 : Rat).
+
+The extension builds on the pinned c0ldzy17/three-sum-lean formalization and its upstream algorithmic framework. It uses local expansion c = 232, a positive-coefficient rational quartic switch, a uniform entropy bound proved using supporting lines, and integer schedules connected to the complete formal program. Exact rational interval arithmetic certifies all twelve cost expressions below 1.96061388, leaving a positive gap to the stated exponent.
+
+The deposit includes a seven-page report, its LaTeX source, 689 Lean source files, exact analytic certificates and a Python checker, archived official verification evidence, dependency pins, attribution and license notices, and SHA-256 checksums. The source is pinned to commit 8c25c0325de5be4286413f39ca0c9278aad33f52. The archived official verifier run reports successful Lean and Nanoda kernel checks, statement comparison, and an allowed-axiom audit. Preparation of this deposit reran integrity and rational-certificate checks, not the full kernel builds.
+
+This is a technical report and formal proof artifact, not a peer-reviewed publication. The complete machine proof is supplied as source. The report distinguishes the inherited framework from the extension, explains the scope of the analytic certificates, and discloses assistance from OpenAI Codex. Later unfinished exponent improvements are outside this deposit.
+
+Licensing is per component: the new report and release documentation use CC BY 4.0; inherited sources and verification material retain their existing terms. See LICENSING.txt before reuse.
+
+Pinned source: https://github.com/Anchen0823/three-sum-1960614/tree/8c25c0325de5be4286413f39ca0c9278aad33f52
+Official verification: https://github.com/bigospeedrun/verifier/actions/runs/38567645711
+Campaign: https://prove2.me/campaigns/3sum-exponent

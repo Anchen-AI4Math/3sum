@@ -1,0 +1,10 @@
+Running as unit: bos-verifier-audit.service
+warning: manifest out of date: git url of dependency 'mathlib' changed; use `lake update mathlib` to update it
+warning: manifest out of date: git revision of dependency 'mathlib' changed; use `lake update mathlib` to update it
+'Race.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Finished with result: success
+Main processes terminated with: code=exited/status=0
+Service runtime: 3.642s
+CPU time consumed: 3.696s
+Memory peak: 2.9M
+Memory swap peak: 0B

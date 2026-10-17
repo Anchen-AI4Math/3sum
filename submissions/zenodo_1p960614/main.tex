@@ -1,0 +1,406 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=26mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Deterministic Integer 3SUM at Exponent 1.960614},pdfauthor={Yuxuan Xu}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Oh}{\mathcal{O}}
+\newcommand{\code}[1]{\texttt{#1}}
+\setlength{\emergencystretch}{3em}
+\title{Deterministic Integer 3SUM at Exponent 1.960614\\[4pt]
+\large Quartic Switch Certificates and a Lean Word-RAM Proof}
+\author{Yuxuan Xu\\[3pt]
+\small School of Computer Science, Wuhan University\\
+\small ORCID: \href{https://orcid.org/0009-0001-8760-5277}{0009-0001-8760-5277}}
+\date{October 15, 2026\quad---\quad Technical report, version 1.0.0}
+\begin{document}
+\maketitle
+\begin{abstract}
+This report documents a deterministic integer 3SUM upper bound of
+$O(n^{1.960614})$ in the precise word-RAM model used by the accompanying
+Lean development. It extends the pinned \code{c0ldzy17/three-sum-lean}
+formalization with local expansion $c=232$, a rational quartic switch,
+integer schedules, and revised execution and resource proofs. A uniform
+entropy inequality follows from two supporting lines; exact rational
+interval arithmetic certifies every entry of a twelve-term cost ledger
+below $1.96061388$. The complete formal endpoint is
+\code{EndStatement.ThreeSum.SolvedInTime (980307/500000 : Rat)}.
+Archived official verification records for the pinned source report
+successful Lean and Nanoda kernel checks, statement comparison, and an
+allowed-axiom audit. This report explains the analytic certificates,
+the connection to the formal artifact, and the boundaries of the evidence.
+The full machine proof is supplied as source rather than reproduced here
+as a standalone paper proof. The deposit is a technical report and proof
+artifact, not a claim of journal peer review or a general 3SUM lower bound.
+\end{abstract}
+\noindent\textbf{Keywords:} 3SUM; deterministic algorithms; word RAM;
+Lean; formal verification; entropy bounds; exact certificates.
+
+\section{Statement and contribution}
+The input consists of $n$ integers. The decision problem asks whether
+three pairwise distinct positions have values summing to zero; repeated
+values at different positions are allowed. The result concerns
+polynomially bounded integer inputs, not arbitrary real inputs.
+
+\begin{theorem}[Formal endpoint]\label{thm:end}
+For each fixed $\kappa\in\N$, there exist a deterministic word-RAM
+program $P$, a word-width coefficient $b\in\N$, and a time function
+$T:\N\to\N$ with $T(n)=O(n^{980307/500000})$ such that $P$ correctly
+decides 3SUM for every input with $|a_i|\le n^\kappa$, at every word width
+$W\ge b(\lfloor\log_2 n\rfloor+1)$, within $T(n)$ steps.
+\end{theorem}
+
+The instruction set in the unchanged specification consists of the
+constant one, addition, subtraction, multiplication, indirect load and
+store, a branch on a negative signed word, and accept/reject instructions.
+Each executed instruction costs one step. The statement quantifies one
+program per fixed magnitude exponent, uniformly over all sufficiently
+large word widths. The exact rational exponent is $980307/500000=1.960614$.
+
+Theorem~\ref{thm:end} is the type of \code{Race.bound} in
+\code{proof-source/Submission.lean}. Its proof uses
+\code{ThreeSum.solvedInTime\_980307\_500000} in
+\code{Submission/ThreeSum/FinalSolver.lean}. The exact operational
+semantics and quantifiers are in \code{Submission/EndStatement.lean}.
+For a rational exponent $r$, that specification expresses the time bound as
+$\exists K\in\N\ \forall n\ge2,\ T(n)^{r.\mathrm{den}}
+\le K n^{r.\mathrm{num}}$.
+
+The construction inherits the algorithmic framework, reductions, machine
+model, and substantial proofs from earlier work \cite{avw,base,anthropic}.
+The changes documented here are the expansion-232 instantiation, a
+positive-coefficient quartic certificate, rounded integer schedules,
+and the machine-level proof changes needed to connect them to the exact
+endpoint. The baseline is pinned to commit
+\code{2b639655e07421b9ac743de9090459bab473a7c0}; the verified extension is
+pinned to \code{8c25c0325de5be4286413f39ca0c9278aad33f52} \cite{artifact}.
+No exhaustive novelty search or claim to invent the inherited framework
+is made. The earlier manuscript at exponent $1.999017$ concerns a
+different stage of the analysis and is not relabelled as this result.
+
+\section{Entropy functions and an exact quartic switch}
+Let $H(t)=-t\log_2t-(1-t)\log_2(1-t)$, continuously extended at
+$0$ and $1$. For an integer $c\ge3$, set
+\begin{align}
+ E_c&=\tfrac c2 H(1/c),\\
+ k_c&=2cH(1/(2c))-cH(1/c)-1,\\
+ \gamma_c(t)&=cH(1/c)-cH((1-t)/c).
+\end{align}
+The notation $k_c$ denotes a local combinatorial exponent and is distinct
+from the input-magnitude exponent $\kappa$.
+
+\begin{lemma}[Positive expansion]\label{lem:series}
+For $0\le t\le1/2$,
+\[
+ \gamma_c(t)=\log_2(c-1)t+
+ \frac1{\ln2}\sum_{j=2}^{\infty}
+ \frac{1+(-1)^j/(c-1)^{j-1}}{j(j-1)}t^j.
+\]
+All coefficients in this expansion are positive.
+\end{lemma}
+\begin{proof}
+Differentiate to obtain
+\[
+ \gamma_c'(t)=\frac{\ln(c-1)+\ln(1+t/(c-1))-\ln(1-t)}{\ln2}.
+\]
+The logarithm series converge absolutely and uniformly on the interval.
+Integrating term by term from zero gives the formula. Since $c-1\ge2$,
+the displayed coefficient numerator is strictly positive for every $j$.
+\end{proof}
+
+For $c=232$, use the polynomial
+\begin{equation}\label{eq:quartic}
+ P(t)=7.85174904t+0.72447023t^2+0.24044466t^3+0.12022459t^4.
+\end{equation}
+Every decimal here and below is an exact rational. Rational logarithm
+enclosures verify that each coefficient is below the corresponding
+coefficient of Lemma~\ref{lem:series}. Thus $P\le\gamma_{232}$ on
+$[0,1/2]$. Positivity of the coefficients gives monotonicity and convexity;
+the same certificate verifies $P'(1/2)<9$.
+
+\section{A uniform entropy inequality}
+The switch requires an inequality valid on an entire interval, not just
+at sampled values. Fix
+\[
+ \rho=0.27905030,\qquad u=0.17200068185091493,
+\]
+and define $A=-\log_2(1-u)$ and $B=\log_2((1-u)/u)$.
+Concavity of entropy and convexity of $P$ give
+\[
+ H(t)\le A+Bt,\qquad
+ P(t)\ge P(u)+(t-u)P'(u).
+\]
+The difference
+\[
+ L(t)=\rho[1+P(u)+(t-u)P'(u)]-(A+Bt)
+\]
+is affine. The exact certificate supplies the strict bounds
+\[
+ L(0)>1.486795215\cdot10^{-9},\qquad
+ L(1/2)>7.676481609\cdot10^{-9}.
+\]
+Linear interpolation proves $L(t)>0$ throughout $[0,1/2]$, including its
+endpoints. Consequently,
+\begin{equation}\label{eq:uniform}
+ H(t)<\rho(1+P(t))\qquad(0\le t\le1/2).
+\end{equation}
+The interval bounds certify the two endpoint comparisons; the supporting
+line argument explains why those comparisons imply a continuous theorem.
+
+\section{Finite schedules and local expansion}
+Use the parameters
+\begin{equation}\label{eq:params}
+\begin{split}
+ e&=0.203889696,\qquad b=-0.062656016,\\
+ S&=0.193175570,\qquad \theta=0.040409899,\qquad \tau=13/20,
+\end{split}
+\end{equation}
+and put $v=S-2b>0$. Here $b$ is the band-shift parameter, not the
+word-width coefficient of Theorem~\ref{thm:end}.
+
+\subsection{Integer sizes and the switch comparison}
+Let $m=\lfloor\log_2 n\rfloor$ and take the even microblock size
+$s=2\lfloor\lfloor m^{1/3}\rfloor/2\rfloor$. For $s>0$, define
+\[
+ J=20\left\lfloor\frac{em}{20s}\right\rfloor,\qquad \mu=Js.
+\]
+Then $20\mid J$ and $0\le em-\mu<20s$, so $\mu/m\to e$.
+Use the integer band divisor $2^{\lfloor-b\mu\rfloor}$. It differs from
+the ideal real value by a factor below two. The divisibility of $J$
+ensures the terminal depth $\tau J$ is integral. Exceptional small sizes
+are handled by the finite fallback branch of the formal program.
+
+Write $P(t)=\sum_{i=1}^4 a_i t^i/Q$ with $Q=10^8$, and $v=N/D$.
+At depth $j\le\tau J$, let $a=j/J$ and $r=(J-j)s>0$. Select the least
+integer $q\in[0,r/2]$ satisfying
+\begin{equation}\label{eq:integer}
+ D(J-j)\sum_{i=1}^4 a_iq^ir^{4-i}\ \ge\ Q(NJ+Dj)r^4.
+\end{equation}
+All denominators are positive, so this comparison is exactly equivalent to
+$P(q/r)\ge(v+a)/(1-a)$. It uses only integer arithmetic. The certificate
+checks $P(1/2)>(v+\tau)/(1-\tau)$; since $r$ is even, an admissible $q$
+exists at every such depth. Minimality of $q$, together with $P'<9$, gives
+\[
+ \frac{v+a}{1-a}\le P(q/r)<\frac{v+a}{1-a}+\frac9r.
+\]
+With $t=q/r$, this implies
+\begin{align}
+ S&\le2b-a+(1-a)\gamma_{232}(t),\\
+ (1-a)H(t)&<\rho(1+v)+9\rho/\mu.
+\end{align}
+The certificate also checks $P(\theta)>v$. The initial integer threshold
+is at most $\theta+1/\mu$ for the large-size branch. Its entropy is bounded
+using the tangent to $H$ at $\theta$. These facts provide uniform rounding
+control. The machine proof additionally accounts for scalar bounds,
+memory layout, and the execution cost of these comparisons.
+
+\subsection{Why the expansion can be 232}
+For $s=2h>0$ and $L=cs$, let
+\[
+ M=\binom Ls,\quad V=\binom Lh,\quad
+ \Delta=\binom{L-h}h,\quad G=\binom sh.
+\]
+Double counting disjoint ordered $h$-subsets gives $V\Delta=MG$.
+Since $\Delta\le V$ and $G<2^s$, we obtain $\Delta^2<M2^s$.
+Choosing one element from each of $s$ disjoint $c$-element sets also gives
+$M\ge c^s>2^s$. A prime selected above
+$\lceil\sqrt{M2^s}\rceil$ and within twice that integer satisfies
+$M2^s\le p^2\le16M2^s$, hence $\Delta<p$ and $G<p$.
+These finite inequalities do not require $c$ to be a power of two.
+
+Standard binomial entropy estimates yield
+\[
+ \log_2 M=cH(1/c)s+O(\log s),\qquad
+ \log_2 V=cH(1/(2c))s+O(\log s),
+\]
+and $\log_2p=(E_c+1/2)s+O(\log s)$. Moreover, $s^2/m\to0$ and
+$J\log(s)/m\to0$, so the associated local enumeration and polynomial
+factors are $n^{o(1)}$. These estimates alone do not certify the whole
+program: the concrete dimensions, bucket construction, reporting routines,
+and resource contracts must all use the same expansion. The accompanying
+extension supplies that machine-level connection.
+
+\section{The exact twelve-term certificate}
+The cost ledger retained from the baseline has the following exponent
+expressions, evaluated at $c=232$ and the parameters above:
+\begin{center}\small
+\begin{tabular}{@{}rl@{}}
+\toprule
+Term & Exponent expression\\\midrule
+1 & $2eE_c$\\
+2 & $1+e(E_c-b)$\\
+3 & $2-eS$\\
+4 & $2-e(1/2+b-H(\theta))$\\
+5 & $2-e[1/2-b-k_c-\rho(1+S-2b)]$\\
+6 & $2-e(\tau-1/2-b-k_c)$\\
+7 & $\frac85e(E_c+1/2)$\\
+8 & $2+e(4/5-\frac25E_c-2b)$\\
+9 & $1+e(1/2-b)$\\
+10 & $2-e(E_c+b)$\\
+11 & $2-2e(E_c+b)$\\
+12 & $1$\\\bottomrule
+\end{tabular}
+\end{center}
+Exact interval evaluation proves
+\begin{align*}
+4.648781151243719&<E_{232}<4.648781151243720,\\
+0.001557987216578&<k_{232}<0.001557987216579,\\
+H(\theta)&<0.244168414687344.
+\end{align*}
+The largest certified upper endpoint is
+\[
+ 1.9606138795768596941522816<1.96061388<1.960614.
+\]
+The gap is positive and therefore absorbs the proved $n^{o(1)}$ overhead
+for sufficiently large inputs; finite exceptions are handled by the
+formal fallback. When $E_c$ appears with a negative coefficient, its lower
+endpoint must be used to obtain an upper cost bound. The checker enforces
+this sign-sensitive interval calculation.
+
+For completeness, the archived analytic package also includes degree-eight
+certificates at $c=232$ and $c=256$. The formal endpoint presented here
+uses the degree-four $c=232$ choice. A separate fixed-$c$, uniform-entropy
+cost-model argument gives
+\[
+1.96061349120<\inf R_{\mathrm{model}}(232)<1.960613492.
+\]
+Its admissible parameters and proof are defined in Section 7 of the archived
+notes:
+\begin{center}\code{analytic-certificate/PROOF.md}.\end{center}
+It is independent of the
+algorithmic endpoint and is not a lower bound for arbitrary 3SUM algorithms.
+It does not exclude changing the model, mixing expansions, or using
+different algorithmic constructions.
+
+\section{Connection to the complete formal program}
+The verified source includes the concrete expansion-232 cover and bucket
+construction, exact schedules, stored reporting data, host execution and
+resource bounds, and the final hybrid solver. In particular, the last
+theorem is not obtained by treating the numerical ledger as a machine
+runtime theorem. \code{FinalSolver.lean} invokes
+\code{ThreeSumHybridEndBridge.endStatement\_of\_solvers}, supplying the
+actual hybrid program, its correctness proof, and its polynomial resource
+bound for every magnitude exponent. The compiler bridge then yields the
+original word-RAM statement. The source is the authoritative detailed
+proof of this composition.
+
+The archived official verifier receipt reports that \code{Race.bound}
+passed both the Lean and Nanoda kernels and that its statement matched
+the official frozen problem. Its reported axioms are exactly
+\code{propext}, \code{Classical.choice}, and \code{Quot.sound}, with no
+\code{sorryAx}. The receipt is dated October 14, 2026, and is tied to the
+source commit above and verifier commit
+\code{51489ee2ac82596a41375e92ea8108814f931242} \cite{verifier}.
+
+The separately archived Prove2Me completion receipt, dated October 15,
+records completion of all seven original milestones, 41 published machine
+definition bundles, 481 accepted machine proof records, and 110 reused
+proved theorem nodes. The 481 records correspond to 480 new machine theorem
+declarations, not 481 independently novel mathematical results. A graph
+audit records 1,316 actual dependency paths. These are platform provenance
+statistics; they are not measures of novelty or substitutes for the
+standalone native source and verifier checks.
+
+The official audit also records \code{site\_eligible\_for\_record: false}.
+This report records successful verification without interpreting a
+leaderboard position as eligibility for a new speedrun record or as an
+independent assessment of scientific priority.
+
+\section{Reproduction and contents of the deposit}
+The source archive accompanying this report contains the pinned native
+proof source, the exact analytic certificates and their checker, selected
+verification evidence, original license notices, and a SHA-256 manifest.
+It excludes working-directory caches, credentials, unrelated research,
+and the incomplete later exponent-improvement work.
+
+The analytic checker needs Python 3.10 or newer and only the standard
+library. From the extracted archive, run
+\begin{verbatim}
+python verify_release.py
+python analytic-certificate/verify_certificate.py --self-test
+\end{verbatim}
+The first command checks archived bytes and the official Lean-source hash
+map. It is an integrity check, not a new theorem proof. The second checks
+three exact certificates and twelve deliberately corrupted negative cases.
+The negative cases test rejection of wrong entropy ratios, oversized
+polynomial coefficients, overly small cost caps, and overly large
+model lower bounds.
+
+Logarithms are enclosed using rational arithmetic. Reduce a positive
+rational argument to $y\in[1,2]$ by powers of two and put
+$z=(y-1)/(y+1)$. For $K=48$,
+\[
+ S_K\le\ln y\le S_K+
+ \frac{2z^{2K+1}}{(2K+1)(1-z^2)},\qquad
+ S_K=2\sum_{i=0}^{K-1}\frac{z^{2i+1}}{2i+1}.
+\]
+The omitted series has positive terms, and the displayed geometric bound
+controls its remainder. Interval arithmetic accounts for negative range
+reduction exponents. The continuous lemmas in this report explain the
+logical use of the resulting finite inequalities.
+
+Full formal reproduction uses Lean \code{v4.33.1}, with Mathlib pinned to
+\begin{center}\code{0df444a360eaa60ab8c11dca51a86af692955474}.\end{center}
+It uses the pinned official verifier environment.
+The source follows the verifier's submission layout;
+the verifier supplies the Lake configuration. A root-directory build of
+the broader research workspace is not a reproduction of this theorem.
+The deposit preserves the dependency manifest and official logs. Preparing
+this deposit does not constitute a fresh full Lean or Nanoda run; the
+kernel conclusions above are attributed to the archived official run.
+
+The original analytic notes retain their October 14 statement that the
+machine bridge was not yet established by that certificate package. Those
+historical files are preserved byte for byte. The subsequent native
+machine proof and official records are separate evidence and must not be
+confused with what the arithmetic checker itself proves.
+
+\section{Attribution and use of AI}
+The author is responsible for the submitted record. OpenAI Codex assisted
+the extension and formalization, inspection and organization of the
+artifacts, and preparation of this report. Automated checks and platform
+acceptance are not described as independent human peer review. This report
+does not assert that a separate human line-by-line audit has been completed.
+
+Attribution to Alman and Vassilevska Williams, the baseline formalization,
+Anthropic, and other upstream contributors is retained. In particular,
+the inherited \code{LICENSE}, \code{NOTICE}, and per-file copyright
+headers accompany the source unchanged. The baseline's acknowledgments
+include Bj\"orklund, Husfeldt, Kaski, Koivisto, Swapnil Jain, and the
+formalization lineage through Jihoon Hyun. The deposit's licensing note
+distinguishes the report from inherited software; it does not reassign
+ownership or license third-party contributions on the author's behalf.
+
+\begin{thebibliography}{9}\raggedright
+\bibitem{avw} Josh Alman and Virginia Vassilevska Williams.
+\emph{Truly Subquadratic 3SUM and Truly Subcubic APSP via Triangles in Sparse
+Lopsided Graphs}. arXiv:2610.06783v1, 2026.
+\url{https://arxiv.org/abs/2610.06783v1}.
+\bibitem{base} c0ldzy17. \emph{three-sum-lean}, pinned source and METHOD.md,
+commit \code{2b639655e07421b9ac743de9090459bab473a7c0}, 2026.
+\url{https://github.com/c0ldzy17/three-sum-lean/tree/2b639655e07421b9ac743de9090459bab473a7c0}.
+\bibitem{anthropic} Anthropic. \emph{Truly Subquadratic 3SUM and Truly
+Subcubic APSP: a Lean 4 formalization}. Source lineage and copyright
+notices are preserved in the accompanying \code{proof-source/NOTICE}
+and \code{proof-source/Submission/} tree.
+\bibitem{artifact} Yuxuan Xu (Anchen0823).
+\emph{three-sum-1960614}, commit
+\code{8c25c0325de5be4286413f39ca0c9278aad33f52}, 2026.
+\url{https://github.com/Anchen0823/three-sum-1960614/tree/8c25c0325de5be4286413f39ca0c9278aad33f52}.
+\bibitem{verifier} Big O Speedrun. Official verification issue and run
+for the preceding source, October 14, 2026.
+\url{https://github.com/bigospeedrun/verifier/issues/8};
+\url{https://github.com/bigospeedrun/verifier/actions/runs/38567645711}.
+\bibitem{platform} Prove2Me. \emph{Deterministic Integer 3SUM 1.960614:
+Quartic Switch and Complete Program Extension}. Completion receipt
+archived October 15, 2026; campaign
+\url{https://prove2.me/campaigns/3sum-exponent}.
+\end{thebibliography}
+\end{document}

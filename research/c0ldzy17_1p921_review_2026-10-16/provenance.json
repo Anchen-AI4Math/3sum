@@ -1,0 +1,223 @@
+{
+  "date": "2026-10-16",
+  "repository": "https://github.com/c0ldzy17/three-sum-lean",
+  "baseline": "2b639655e07421b9ac743de9090459bab473a7c0",
+  "latest": "dd4bce5575effbf32c672b12a1a31e004492f2ec",
+  "oldLeanCount": 668,
+  "newLeanCount": 1200,
+  "changedExistingFiles": [
+    "README.md",
+    "REPRODUCTION.md",
+    "SOURCE_MANIFEST.json",
+    "Submission.lean",
+    "VERIFICATION.md",
+    "scripts/build_serial.py",
+    "scripts/mathlib-cache-roots.txt",
+    "scripts/source-chains.json"
+  ],
+  "workflowJobs": [
+    {
+      "name": "check (14, c0ldzy17, issue) / verify",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python3 scripts/submissions.py materialize",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python3 scripts/submissions.py preflight",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python3 -m unittest discover -s tests -v",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python3 scripts/verifier.py prepare",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python3 scripts/verifier.py setup",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python3 scripts/verifier.py verify_lean",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python3 scripts/verifier.py finalize",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python3 scripts/verifier.py verify_nanoda",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python3 scripts/verifier.py finalize",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "name": "check (14, c0ldzy17, issue) / pr_verify",
+      "conclusion": "skipped",
+      "steps": []
+    },
+    {
+      "name": "check (14, c0ldzy17, issue) / report",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run python3 scripts/submissions.py materialize",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+          "conclusion": "success"
+        },
+        {
+          "name": "Validate receipt and prepare result",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post result after storing the result artifact",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "sourceBlobs": [
+    {
+      "path": "Submission/ThreeSum/TernaryBank.lean",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70318e97fffdd1e30479f075650803f5dc6b0531",
+      "size": 8554,
+      "url": "https://api.github.com/repos/c0ldzy17/three-sum-lean/git/blobs/70318e97fffdd1e30479f075650803f5dc6b0531"
+    },
+    {
+      "path": "Submission/ThreeSum/TernaryConvolution.lean",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9faae8b135a1d37499fe8bdd0627d80c79fb3835",
+      "size": 13244,
+      "url": "https://api.github.com/repos/c0ldzy17/three-sum-lean/git/blobs/9faae8b135a1d37499fe8bdd0627d80c79fb3835"
+    },
+    {
+      "path": "Submission/ThreeSum/TernaryEuler.lean",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "616d4fa5058351ede19f94bc85e54cd564c49f1f",
+      "size": 6049,
+      "url": "https://api.github.com/repos/c0ldzy17/three-sum-lean/git/blobs/616d4fa5058351ede19f94bc85e54cd564c49f1f"
+    },
+    {
+      "path": "Submission/ThreeSum/TernaryFiniteLedger.lean",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6c8206e3feb3023d287c227c66b4cff4b6cf5ef",
+      "size": 5086,
+      "url": "https://api.github.com/repos/c0ldzy17/three-sum-lean/git/blobs/d6c8206e3feb3023d287c227c66b4cff4b6cf5ef"
+    },
+    {
+      "path": "Submission/ThreeSum/TernaryJointType.lean",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2792e0d5d87c60a9fe19d977e34d4e5de3eaba97",
+      "size": 8869,
+      "url": "https://api.github.com/repos/c0ldzy17/three-sum-lean/git/blobs/2792e0d5d87c60a9fe19d977e34d4e5de3eaba97"
+    },
+    {
+      "path": "Submission/ThreeSum/TernaryParameters.lean",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e23878c88bb31165ba9b09bcd9460559e5f9744e",
+      "size": 23830,
+      "url": "https://api.github.com/repos/c0ldzy17/three-sum-lean/git/blobs/e23878c88bb31165ba9b09bcd9460559e5f9744e"
+    },
+    {
+      "path": "Submission/ThreeSum/TernaryProfileFastExecution.lean",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62803df30970a047b8a1fa54de26dc41e190b647",
+      "size": 1278,
+      "url": "https://api.github.com/repos/c0ldzy17/three-sum-lean/git/blobs/62803df30970a047b8a1fa54de26dc41e190b647"
+    },
+    {
+      "path": "Submission/ThreeSum/TernaryProfileRuntime.lean",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df7cccc9fd9c232de274e12752ae4ceb1d843465",
+      "size": 2971,
+      "url": "https://api.github.com/repos/c0ldzy17/three-sum-lean/git/blobs/df7cccc9fd9c232de274e12752ae4ceb1d843465"
+    },
+    {
+      "path": "Submission/ThreeSum/TernaryQuery.lean",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bb153bd4d1ddfb0adb723a46d2e78892374d673",
+      "size": 3956,
+      "url": "https://api.github.com/repos/c0ldzy17/three-sum-lean/git/blobs/9bb153bd4d1ddfb0adb723a46d2e78892374d673"
+    },
+    {
+      "path": "Submission/ThreeSum/TernaryReconstruction.lean",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6edd87fa049659ed351d66901ebaed2c103b035d",
+      "size": 4313,
+      "url": "https://api.github.com/repos/c0ldzy17/three-sum-lean/git/blobs/6edd87fa049659ed351d66901ebaed2c103b035d"
+    }
+  ]
+}

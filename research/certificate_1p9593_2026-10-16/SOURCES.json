@@ -1,0 +1,44 @@
+{
+  "archive_commit": "8c25c0325de5be4286413f39ca0c9278aad33f52",
+  "archive_repository": "https://github.com/Anchen0823/three-sum-1960614",
+  "upstream_base_commit": "2b639655e07421b9ac743de9090459bab473a7c0",
+  "upstream_repository": "https://github.com/c0ldzy17/three-sum-lean",
+  "scope": "Unmodified source files from the local frozen archive; dependencies are in that archive. Not a standalone Lean build. Numeric verification does not invoke Lean.",
+  "files": [
+    {
+      "file": "source-excerpts/Arithmetic.lean",
+      "sha256": "48fc19a481369561273b1ccbab46712f68ba9f047ba4e5a4ccc41466798a0650",
+      "frozen_local_source": "3 SUM/results/2026-10-15_1p960614/proof-source/Submission/ThreeSum/Arithmetic.lean"
+    },
+    {
+      "file": "source-excerpts/BandPrimeChoice.lean",
+      "sha256": "fc3e266ee1b373a147996764da463a3ba006d395172d5b78fc5ffff4c6bf988a",
+      "frozen_local_source": "3 SUM/results/2026-10-15_1p960614/proof-source/Submission/ThreeSum/BandPrimeChoice.lean"
+    },
+    {
+      "file": "source-excerpts/GlobalKeyOffset.lean",
+      "sha256": "740f23d5bbb34d524e04a386306c744c98bc5eec831048c4871f7e507cf79f68",
+      "frozen_local_source": "3 SUM/results/2026-10-15_1p960614/proof-source/Submission/ThreeSum/GlobalKeyOffset.lean"
+    },
+    {
+      "file": "source-excerpts/LocalCoverBounds.lean",
+      "sha256": "dacdde1776622e42e24c1573e2917a49494fb5d871431a98e5e0ade67796e714",
+      "frozen_local_source": "3 SUM/results/2026-10-15_1p960614/proof-source/Submission/ThreeSum/LocalCoverBounds.lean"
+    },
+    {
+      "file": "source-excerpts/LocalHashMoments.lean",
+      "sha256": "9f00831eba273f6a9372d9952d98cbb58f5d31c2d41b8914bc00a73f38a99c47",
+      "frozen_local_source": "3 SUM/results/2026-10-15_1p960614/proof-source/Submission/ThreeSum/LocalHashMoments.lean"
+    },
+    {
+      "file": "source-excerpts/PrimeDensity.lean",
+      "sha256": "74fe16a1ad041b32e8e1e52b940453a56933d83d84c4ca62d1c57bb0e0cb2b7a",
+      "frozen_local_source": "3 SUM/results/2026-10-15_1p960614/proof-source/Submission/ThreeSum/PrimeDensity.lean"
+    },
+    {
+      "file": "source-excerpts/WeightedModuli.lean",
+      "sha256": "5529741b11bc47da060e24051719417c473022b3463b4941f5a76048a99e0006",
+      "frozen_local_source": "3 SUM/results/2026-10-15_1p960614/proof-source/Submission/ThreeSum/WeightedModuli.lean"
+    }
+  ]
+}

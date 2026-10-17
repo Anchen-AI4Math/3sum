@@ -1,0 +1,178 @@
+{
+  "created": "2026-10-16T12:12:09.317062+08:00",
+  "modified": "2026-10-16T12:12:09.813655+08:00",
+  "id": 23408567,
+  "conceptrecid": "23408566",
+  "doi": "10.5281/zenodo.23408567",
+  "conceptdoi": "10.5281/zenodo.23408566",
+  "doi_url": "https://doi.org/10.5281/zenodo.23408567",
+  "metadata": {
+    "title": "Deterministic Integer 3SUM at Exponent 1.960614: Quartic Switch Certificates and a Lean Word-RAM Proof",
+    "doi": "10.5281/zenodo.23408567",
+    "publication_date": "2026-10-16",
+    "description": "<p>This technical report and accompanying proof artifact document a deterministic O(n^1.960614) upper bound for 3SUM on polynomially bounded integers in the precise word-RAM model of the attached Lean development. The formal endpoint is EndStatement.ThreeSum.SolvedInTime (980307/500000 : Rat).</p>\n<p>The extension builds on the pinned c0ldzy17/three-sum-lean formalization and its upstream algorithmic framework. It uses local expansion c = 232, a positive-coefficient rational quartic switch, a uniform entropy bound proved using supporting lines, and integer schedules connected to the complete formal program. Exact rational interval arithmetic certifies all twelve cost expressions below 1.96061388, leaving a positive gap to the stated exponent.</p>\n<p>The deposit includes a seven-page report, its LaTeX source, 689 Lean source files, exact analytic certificates and a Python checker, archived official verification evidence, dependency pins, attribution and license notices, and SHA-256 checksums. The source is pinned to commit 8c25c0325de5be4286413f39ca0c9278aad33f52. The archived official verifier run reports successful Lean and Nanoda kernel checks, statement comparison, and an allowed-axiom audit. Preparation of this deposit reran integrity and rational-certificate checks, not the full kernel builds.</p>\n<p>This is a technical report and formal proof artifact, not a peer-reviewed publication. The complete machine proof is supplied as source. The report distinguishes the inherited framework from the extension, explains the scope of the analytic certificates, and discloses assistance from OpenAI Codex. Later unfinished exponent improvements are outside this deposit.</p>\n<p>Licensing is per component: the new report and release documentation use CC BY 4.0; inherited sources and verification material retain their existing terms. See LICENSING.txt before reuse.</p>\n<p>Pinned source: https://github.com/Anchen0823/three-sum-1960614/tree/8c25c0325de5be4286413f39ca0c9278aad33f52<br>Official verification: https://github.com/bigospeedrun/verifier/actions/runs/38567645711<br>Campaign: https://prove2.me/campaigns/3sum-exponent</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Xu, Yuxuan",
+        "affiliation": "School of Computer Science, Wuhan University",
+        "orcid": "0009-0001-8760-5277"
+      }
+    ],
+    "keywords": [
+      "3SUM",
+      "deterministic algorithms",
+      "word-RAM",
+      "Lean",
+      "formal verification",
+      "entropy bounds",
+      "exact certificates"
+    ],
+    "version": "1.0.0",
+    "language": "eng",
+    "custom": {
+      "code:codeRepository": "https://github.com/Anchen0823/three-sum-1960614",
+      "code:programmingLanguage": [
+        {
+          "id": "lean",
+          "title": {
+            "en": "Lean"
+          }
+        },
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        }
+      ]
+    },
+    "resource_type": {
+      "title": "Report",
+      "type": "publication",
+      "subtype": "report"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "23408566"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Deterministic Integer 3SUM at Exponent 1.960614: Quartic Switch Certificates and a Lean Word-RAM Proof",
+  "links": {
+    "self": "https://zenodo.org/api/records/23408567",
+    "self_html": "https://zenodo.org/records/23408567",
+    "preview_html": "https://zenodo.org/records/23408567?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.23408567",
+    "self_doi": "https://doi.org/10.5281/zenodo.23408567",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23408567",
+    "reserve_doi": "https://zenodo.org/api/records/23408567/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/23408566",
+    "parent_html": "https://zenodo.org/records/23408566",
+    "parent_doi": "https://doi.org/10.5281/zenodo.23408566",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23408566",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:23408567/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:23408567/sequence/default",
+    "files": "https://zenodo.org/api/records/23408567/files",
+    "media_files": "https://zenodo.org/api/records/23408567/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:23408567:3sum-1p960614-report.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:23408567:3sum-1p960614-report.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:23408567:3sum-1p960614-report.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:23408567:3sum-1p960614-report.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:23408567:3sum-1p960614-report.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:23408567:3sum-1p960614-report.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/23408567/versions/latest",
+    "latest_html": "https://zenodo.org/records/23408567/latest",
+    "versions": "https://zenodo.org/api/records/23408567/versions",
+    "draft": "https://zenodo.org/api/records/23408567/draft",
+    "access_links": "https://zenodo.org/api/records/23408567/access/links",
+    "access_grants": "https://zenodo.org/api/records/23408567/access/grants",
+    "access_users": "https://zenodo.org/api/records/23408567/access/users",
+    "access_request": "https://zenodo.org/api/records/23408567/access/request",
+    "access": "https://zenodo.org/api/records/23408567/access",
+    "communities": "https://zenodo.org/api/records/23408567/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/23408567/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/23408567/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/23408567/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/23408567/quota-increase",
+    "requests": "https://zenodo.org/api/records/23408567/requests"
+  },
+  "updated": "2026-10-16T12:12:09.813655+08:00",
+  "recid": "23408567",
+  "revision": 3,
+  "files": [
+    {
+      "id": "9f4ef70a-f1cd-4b0b-abd3-b5ca36abe3e7",
+      "key": "SHA256SUMS.txt",
+      "size": 352,
+      "checksum": "md5:832b8f5f623fdcd65854702bd8922638",
+      "links": {
+        "self": "https://zenodo.org/api/records/23408567/files/SHA256SUMS.txt/content"
+      }
+    },
+    {
+      "id": "ca286d5f-2ab8-4ad6-af56-e6a980741d2e",
+      "key": "3sum-1p960614-artifact-v1.0.0.zip",
+      "size": 2736813,
+      "checksum": "md5:c04ad04d860ee41b0a4ec08b46be630e",
+      "links": {
+        "self": "https://zenodo.org/api/records/23408567/files/3sum-1p960614-artifact-v1.0.0.zip/content"
+      }
+    },
+    {
+      "id": "af8048ca-218d-4524-9b3c-f80fed424e43",
+      "key": "3sum-1p960614-report.pdf",
+      "size": 87231,
+      "checksum": "md5:3afcd6477af35e0f3da478dc8bf35d05",
+      "links": {
+        "self": "https://zenodo.org/api/records/23408567/files/3sum-1p960614-report.pdf/content"
+      }
+    },
+    {
+      "id": "72514419-8a11-45be-9f95-d3c798f9bb8c",
+      "key": "README.txt",
+      "size": 3653,
+      "checksum": "md5:0b00e51ca85dc6bfcc4650878d156375",
+      "links": {
+        "self": "https://zenodo.org/api/records/23408567/files/README.txt/content"
+      }
+    },
+    {
+      "id": "ec56ec10-9f0d-413b-b43a-768ec005b20a",
+      "key": "LICENSING.txt",
+      "size": 1095,
+      "checksum": "md5:3d6eeda6cee194181c2e2dcb7699bd02",
+      "links": {
+        "self": "https://zenodo.org/api/records/23408567/files/LICENSING.txt/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1898368"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 0,
+    "unique_downloads": 0,
+    "views": 0,
+    "unique_views": 0,
+    "version_downloads": 0,
+    "version_unique_downloads": 0,
+    "version_unique_views": 0,
+    "version_views": 0
+  },
+  "state": "done",
+  "submitted": true
+}

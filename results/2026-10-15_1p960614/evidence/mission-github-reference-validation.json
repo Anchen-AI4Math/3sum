@@ -1,0 +1,12 @@
+{
+  "verified_at_utc": "2026-10-15T10:42:43.100439+00:00",
+  "mission_id": "01a7fb00-e5c3-4a42-a3c2-2cbf04330ffc",
+  "comment_id": "21f0c8e7-809d-4b3a-b1e7-69f686db10b7",
+  "repo_url": "https://github.com/Anchen0823/three-sum-1960614",
+  "tags": [
+    "reference"
+  ],
+  "body_md": "Source code and Lean formalization: [Anchen0823/three-sum-1960614](https://github.com/Anchen0823/three-sum-1960614).",
+  "live_readback_matches": true,
+  "reference_post_count": 1
+}

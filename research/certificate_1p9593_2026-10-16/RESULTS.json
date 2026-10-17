@@ -1,0 +1,429 @@
+{
+  "target": "1.9593",
+  "status": "PASS EXACT CERTIFICATE AND FINITE CHECKS",
+  "proof_status": "Paper algorithm proof in PROOF.txt; NOT a Lean machine theorem",
+  "integrity_files": 19,
+  "numeric": {
+    "status": "EXACT NUMERIC CERTIFICATE; ALGORITHMIC PROOF IS SEPARATE",
+    "expansions": [
+      72,
+      252
+    ],
+    "split": "68040073/200000000",
+    "intervals": 131,
+    "initial_theta": "45010472097/1000000000000",
+    "query_cap": "44314361846982602923/125000000000000000000",
+    "minimum_box_margin": "[0.000010000006548584315712, 0.000010000006548584315713]",
+    "E": "[4.399898363180752199638810, 4.399898363180752199638811]",
+    "kappa": "[0.002662329723008281544716, 0.002662329723008281544717]",
+    "costs": {
+      "tables": "[1.898517688600800374369921, 1.898517688600800374369922]",
+      "encoding": "[1.959220097054889107184960, 1.959220097054889107184961]",
+      "boxes": "[1.959222258057321620000000, 1.959222258057321620000000]",
+      "initial_queries": "[1.959220294319597051773506, 1.959220294319597051773507]",
+      "recursive_reporting": "[1.959225357566671029330382, 1.959225357566671029330383]",
+      "terminal_reporting": "[1.958251288748869227197082, 1.958251288748869227197083]",
+      "prime_correlation": "[1.691410654880640299495937, 1.691410654880640299495938]",
+      "auxiliary_correlation": "[1.812815471788817765126015, 1.812815471788817765126016]",
+      "candidate_listing": "[1.117834067754488920000000, 1.117834067754488920000000]",
+      "band_pairs": "[1.060702408454088732815039, 1.060702408454088732815040]",
+      "band_pairs_squared_scale": "[0.121404816908177465630078, 0.121404816908177465630079]",
+      "input_read": "[1.000000000000000000000000, 1.000000000000000000000000]"
+    },
+    "principal": "7837/4000",
+    "target": "19593/10000",
+    "rounding": {
+      "box_margin_lower": "156250102321629933/15625000000000000000000",
+      "split_perturbation_upper": "222587520212164828177381/200000000000000000000000",
+      "J_min": 222588,
+      "mu_min": 33,
+      "half_gap_lower": "15477871477/250000000000",
+      "query_rounding_log2_additive_upper": "34430877432422531398983/7812500000000000000000",
+      "strict_exponent_slack": "1/20000"
+    }
+  },
+  "numeric_negative_tests": 6,
+  "core": [
+    {
+      "lengths": [
+        6,
+        10
+      ],
+      "seed": 1729,
+      "endpoint_coordinates": 60,
+      "full_output_coordinates": 675,
+      "capped_zeta_coordinates": 1232,
+      "exact_queries": 4725,
+      "direct_leaf_reads": 5400,
+      "box_reads": 11475
+    },
+    {
+      "lengths": [
+        10,
+        6
+      ],
+      "seed": 2718,
+      "endpoint_coordinates": 60,
+      "full_output_coordinates": 675,
+      "capped_zeta_coordinates": 1232,
+      "exact_queries": 4725,
+      "direct_leaf_reads": 5400,
+      "box_reads": 11475
+    }
+  ],
+  "mixed_radix": [
+    {
+      "bases": [],
+      "target_pairs": 25,
+      "modulus": 1,
+      "cap": 1,
+      "choice_tuples": 1
+    },
+    {
+      "bases": [
+        3,
+        5
+      ],
+      "target_pairs": 3721,
+      "modulus": 15,
+      "cap": 4,
+      "choice_tuples": 900
+    },
+    {
+      "bases": [
+        2,
+        3,
+        2
+      ],
+      "target_pairs": 2401,
+      "modulus": 12,
+      "cap": 8,
+      "choice_tuples": 1152
+    }
+  ],
+  "bridge": {
+    "status": "PASS finite integration checks; not an asymptotic runtime test",
+    "score_cases": 120,
+    "guarded_lift_cases": 3888,
+    "chain_traces": [
+      [
+        [
+          1,
+          3,
+          12,
+          0
+        ],
+        [
+          3,
+          3,
+          0,
+          0
+        ],
+        [
+          9,
+          3,
+          0,
+          0
+        ],
+        [
+          27,
+          3,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          5,
+          16,
+          1
+        ],
+        [
+          5,
+          5,
+          1,
+          0
+        ],
+        [
+          25,
+          3,
+          0,
+          0
+        ],
+        [
+          75,
+          3,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          7,
+          18,
+          2
+        ],
+        [
+          7,
+          3,
+          2,
+          0
+        ],
+        [
+          21,
+          3,
+          0,
+          0
+        ],
+        [
+          63,
+          3,
+          0,
+          0
+        ]
+      ]
+    ],
+    "mixed_cover": {
+      "local_cover_lengths": [
+        14,
+        20
+      ],
+      "target_pairs": 5929,
+      "representation_cap": 672280,
+      "actual_max_representations": 105
+    },
+    "integrations": [
+      {
+        "A": [
+          0,
+          0
+        ],
+        "B": [
+          0,
+          0
+        ],
+        "C": [
+          0,
+          0
+        ],
+        "truth": true,
+        "guard": true,
+        "shift": 49,
+        "chosen_modulus": 3,
+        "prime_trace": [
+          [
+            1,
+            3,
+            0,
+            0
+          ]
+        ],
+        "false_triples": 0,
+        "weighted_score": 0,
+        "threshold": 0,
+        "scanned_mass": 4,
+        "wanted_scanned": 445,
+        "candidate_checks": 0
+      },
+      {
+        "A": [
+          -1,
+          1
+        ],
+        "B": [
+          -2,
+          2
+        ],
+        "C": [
+          -3,
+          3
+        ],
+        "truth": true,
+        "guard": true,
+        "shift": 43,
+        "chosen_modulus": 5,
+        "prime_trace": [
+          [
+            1,
+            5,
+            22,
+            0
+          ]
+        ],
+        "false_triples": 0,
+        "weighted_score": 0,
+        "threshold": 0,
+        "scanned_mass": 1,
+        "wanted_scanned": 556,
+        "candidate_checks": 0
+      },
+      {
+        "A": [
+          0
+        ],
+        "B": [
+          0
+        ],
+        "C": [
+          1
+        ],
+        "truth": false,
+        "guard": false,
+        "shift": 49,
+        "chosen_modulus": 3,
+        "prime_trace": [
+          [
+            1,
+            3,
+            4,
+            0
+          ]
+        ],
+        "false_triples": 0,
+        "weighted_score": 0,
+        "threshold": 0,
+        "scanned_mass": 0,
+        "wanted_scanned": 794,
+        "candidate_checks": 0
+      },
+      {
+        "A": [
+          0
+        ],
+        "B": [
+          0
+        ],
+        "C": [
+          3,
+          5,
+          7,
+          11
+        ],
+        "truth": false,
+        "guard": false,
+        "shift": 49,
+        "chosen_modulus": 3,
+        "prime_trace": [
+          [
+            1,
+            3,
+            12,
+            3
+          ]
+        ],
+        "false_triples": 1,
+        "weighted_score": 3,
+        "threshold": 2016840,
+        "scanned_mass": 12,
+        "wanted_scanned": 794,
+        "candidate_checks": 12
+      },
+      {
+        "A": [
+          0,
+          0
+        ],
+        "B": [
+          0,
+          0
+        ],
+        "C": [
+          0,
+          3,
+          5,
+          7,
+          11
+        ],
+        "truth": true,
+        "guard": false,
+        "shift": 49,
+        "chosen_modulus": 3,
+        "prime_trace": [
+          [
+            1,
+            3,
+            48,
+            12
+          ]
+        ],
+        "false_triples": 4,
+        "weighted_score": 12,
+        "threshold": 8067360,
+        "scanned_mass": 96,
+        "wanted_scanned": 1588,
+        "candidate_checks": 96
+      },
+      {
+        "A": [
+          1,
+          1
+        ],
+        "B": [
+          2,
+          2
+        ],
+        "C": [
+          3,
+          8
+        ],
+        "truth": true,
+        "guard": true,
+        "shift": 48,
+        "chosen_modulus": 3,
+        "prime_trace": [
+          [
+            1,
+            3,
+            12,
+            0
+          ]
+        ],
+        "false_triples": 0,
+        "weighted_score": 0,
+        "threshold": 0,
+        "scanned_mass": 2,
+        "wanted_scanned": 173,
+        "candidate_checks": 0
+      },
+      {
+        "A": [
+          -4,
+          2
+        ],
+        "B": [
+          -1,
+          3
+        ],
+        "C": [
+          -5,
+          6
+        ],
+        "truth": true,
+        "guard": false,
+        "shift": 47,
+        "chosen_modulus": 3,
+        "prime_trace": [
+          [
+            1,
+            3,
+            23,
+            3
+          ]
+        ],
+        "false_triples": 1,
+        "weighted_score": 3,
+        "threshold": 2016840,
+        "scanned_mass": 12,
+        "wanted_scanned": 1588,
+        "candidate_checks": 12
+      }
+    ],
+    "original_indices": {
+      "input_cases": 7,
+      "colored_band_catalogs": 1296
+    },
+    "negative_examples": 3
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "status": "VERIFIED ALL-PROFILE MODEL BOUNDS; heterogeneous end-to-end 3SUM bridges remain open",
+  "global_lower": "1.95845",
+  "global_upper_strict": "1.9585615",
+  "width": "0.0001115",
+  "previous_interval": [
+    "1.958",
+    "1.9585615"
+  ],
+  "gap_reduction_fraction": "900/1123",
+  "lower_counts": {
+    "empty": 32,
+    "base": 0,
+    "initial": 54,
+    "dual": 714,
+    "split": 799
+  },
+  "dual_rows_checked": 37051,
+  "allocation_vertices_checked": 148204,
+  "coupling_boosts": 752,
+  "upper_schedule_intervals": 707,
+  "negative_tests_lower": 7,
+  "negative_tests_upper": 5,
+  "certificate": "parametric_1p95845_certificate.json.gz",
+  "certificate_json_bytes": 49277816,
+  "certificate_gzip_bytes": 5263082,
+  "certificate_json_sha256": "c716e38faa0eed28753e01027c80046fa82a747a4728fed65f6bf2b32c4708ca",
+  "files_sha256": {
+    "affine_limits_2026-10-15/affine_search.py": "1a15f4ac5aba3538377cd5c423190b6dd897cc9efc11e7e0cab6b36cb90608b2",
+    "affine_limits_2026-10-15/check_local_lemmas.py": "0b73c39c70ac0aeb7c7b0c52922500e2427b985a5432ef84cd25ed4589800ea9",
+    "affine_limits_2026-10-15/coupled_exact.py": "efb24444979a37a6017286cd13b6623d33c3fca8d31841739a50eb244e24b47a",
+    "affine_limits_2026-10-15/coupled_search.py": "c2495e56238e47973f3e1117536c2a3a80284da8f00a8d3c086a1317f6e00d63",
+    "affine_limits_2026-10-15/coupling_explore.py": "d2f922c9ce4c3126c2e85a209a4ab0abf480bf28b8e5bea80c331cebceca42fc",
+    "affine_limits_2026-10-15/kappa_bound.py": "2ef7eeade456bba42a84eb7c9dbf1ae6e7a24d0501b0e023d015281ab97aadcd",
+    "affine_limits_2026-10-15/package_result.py": "5f681ba05b564363337490878a17f996e87a2e15fb9d80db2bc550a2bc50058a",
+    "affine_limits_2026-10-15/parametric_1p95845_certificate.json.gz": "a8f2b51d38942c64f0a7979da4f74008002fec0e5552a625df82aa00eda889b3",
+    "affine_limits_2026-10-15/parametric_1p95845_verification.json": "5ecbf669fdac98bbc261572c5b602554d588d0df9b86fb51b37ee120870bccec",
+    "affine_limits_2026-10-15/parametric_exact.py": "e929c5308924e7b1f0be87102b3108cbf0513e563052c69e78dcf0121191c3ba",
+    "affine_limits_2026-10-15/PARAMETRIC_PROOF.txt": "6f44f36e11ea34abd7bcac3359395f9f945eab544aa5d4b021cfb4e62f097aed",
+    "affine_limits_2026-10-15/parametric_search.py": "268e77cee79fbb547b1d3ca1051c104054f328159f8eba9e72b8c5a123140ebc",
+    "affine_limits_2026-10-15/PROOF.txt": "08bd412bf2a91dc14cc0fb280c0f92b33790ac23c38d96d360bf0944af7b50b2",
+    "affine_limits_2026-10-15/README.txt": "37737bd64fb717c06d75efb713bef7cb1c76f83eec8f50ccc8c44f8fe185b487",
+    "affine_limits_2026-10-15/SEARCH_NOTES.txt": "c1d8e45959bc12a5ae2bc8751001e15bb30516382559923737167e2356a44d3a",
+    "affine_limits_2026-10-15/verify_affine.py": "3e2e6407fb6813a4a8ed7f34b33b68a8c49f2227db5fd15b94a18d455a32f908",
+    "affine_limits_2026-10-15/verify_coupled.py": "3de9128c941a237f1df34ae532780f08a8958e93b5bc1cd15fc322d35eb3a0c3",
+    "global_limits_refinement_2026-10-14/fast_rational.py": "6938e3169b46f7c8298d597c26315a6cc746927c34dafbf0b56dab940e21eaec",
+    "global_limits_refinement_2026-10-14/upper_certificate.json": "230370ebf9098a61689018cf67ff95a79d835eb636654f8df7f9f27f2689dd00",
+    "global_limits_refinement_2026-10-14/upper_verification.json": "efc841c36cd74284989d646860fa7c6a8b556a32ad12e58153d8838e461a1fba"
+  }
+}

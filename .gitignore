@@ -1,0 +1,8 @@
+.lake/
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+/submissions/hexagon_1p999017/build/
+/research/global_limits_refinement_2026-10-14/checkpoint_lower_certificate.json
+/research/global_limits_refinement_2026-10-14/kappa_multidepth_fast_certificate.json

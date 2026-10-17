@@ -1,0 +1,1639 @@
+Failed to find real location of C:\Python314\python.exe
+3sum-1960614: 39 selected root modules (plus their imports)
+⚠ [3129/3164] Replayed Submission.ThreeSum.QuarticSwitch
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/QuarticSwitch.lean:42:20: This simp argument is unused:
+  Nat.lt_succ_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [candidates]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/QuarticSwitch.lean:110:73: This simp argument is unused:
+  and_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ThreeSum.LightSwitchScalar.Small, and_true, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/QuarticSwitch.lean:119:63: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ThreeSum.LightSwitchScalar.Small, and_true, and_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/QuarticSwitch.lean:119:73: This simp argument is unused:
+  and_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ThreeSum.LightSwitchScalar.Small, and_true, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/QuarticSwitch.lean:128:24: This simp argument is unused:
+  Nat.cast_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [test, Cond.Holds, Expr.val, Op.eval, frame, List.getD_cons_zero, List.getD_cons_succ,
+    Nat.cast_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3130/3164] Replayed Closed3Sum.cleared_switch_equivalence
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/cleared_switch_equivalence.lean:20:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/cleared_switch_equivalence.lean:30:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/cleared_switch_equivalence.lean:30:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+info: missions/3sum-1960614/machine/lean/Closed3Sum/cleared_switch_equivalence.lean:55:0: 'ThreeSum1960614.cleared_switch_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3131/3164] Replayed Closed3Sum.quartic_geometry
+info: missions/3sum-1960614/machine/lean/Closed3Sum/quartic_geometry.lean:37:0: 'ThreeSum1960614.quartic_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3132/3164] Replayed Closed3Sum.log_coefficients
+info: missions/3sum-1960614/machine/lean/Closed3Sum/log_coefficients.lean:75:0: 'ThreeSum1960614.log_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3133/3164] Replayed Closed3Sum.quartic_switch_bounds
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/quartic_switch_bounds.lean:26:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/quartic_switch_bounds.lean:96:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3135/3164] Replayed Closed3Sum.uniform_entropy_bound
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/uniform_entropy_bound.lean:43:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/uniform_entropy_bound.lean:43:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/uniform_entropy_bound.lean:78:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/uniform_entropy_bound.lean:78:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3136/3164] Replayed Closed3Sum.integer_schedule
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/integer_schedule.lean:41:40: Variable name `ha0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/integer_schedule.lean:141:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/integer_schedule.lean:141:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/integer_schedule.lean:154:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ℹ [3138/3164] Replayed Solutions.Sol_ThreeSum1960614_actual_quartic_program
+info: Solutions/Sol_ThreeSum1960614_actual_quartic_program.lean:15:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3139/3164] Replayed Closed3Sum.high_precision_logs
+info: missions/3sum-1960614/machine/lean/Closed3Sum/high_precision_logs.lean:60:0: 'ThreeSum1960614.high_precision_logs' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3140/3164] Replayed Closed3Sum.encoding_parameter_bounds
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/encoding_parameter_bounds.lean:19:53: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/encoding_parameter_bounds.lean:19:53: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/encoding_parameter_bounds.lean:24:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Closed3Sum/encoding_parameter_bounds.lean:59:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3159/3195] Replayed Submission.ThreeSum.KaratsubaBounds
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/KaratsubaBounds.lean:56:37: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/KaratsubaBounds.lean:60:37: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3161/3195] Replayed Submission.ThreeSum.Histograms
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Histograms.lean:25:0: automatically included section variable(s) unused in theorem `ThreeSum.Histograms.sum_histogram`:
+  [AddCommGroup G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [AddCommGroup G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Histograms.lean:52:34: This simp argument is unused:
+  sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ite_mul, zero_mul, mem_univ, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Histograms.lean:52:47: This simp argument is unused:
+  mem_univ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ite_mul, zero_mul, sum_ite_eq', ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Histograms.lean:52:57: This simp argument is unused:
+  ite_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ite_mul, zero_mul, sum_ite_eq', mem_univ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Histograms.lean:55:12: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h', Nat.mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Histograms.lean:64:0: automatically included section variable(s) unused in theorem `ThreeSum.Histograms.pairMass_one_eq_card`:
+  [Fintype G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3163/3195] Replayed Submission.ThreeSum.LightResidueHistogram
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightResidueHistogram.lean:139:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [3164/3195] Replayed Submission.ThreeSum.Arithmetic
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Arithmetic.lean:53:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Arithmetic.lean:81:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Arithmetic.lean:264:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [3167/3195] Replayed Submission.ThreeSum.LightKaratsuba
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightKaratsuba.lean:111:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightKaratsuba.lean:114:27: Variable name `hfit` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hfit
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightKaratsuba.lean:615:50: Try `simp at hc` instead of `simpa using hc`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3171/3195] Replayed Submission.ThreeSum.LightModuloCounts
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightModuloCounts.lean:76:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightModuloCounts.lean:158:26: Unused tactic linter: `change free + p ≤ free + 3 * q` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3176/3195] Replayed Submission.ThreeSum.BinomialEntropy
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BinomialEntropy.lean:253:57: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ℹ [3473/3495] Replayed Closed3Sum.executable_scale_rounding
+info: missions/3sum-1960614/machine/lean/Closed3Sum/executable_scale_rounding.lean:51:0: 'ThreeSum1960614.executable_scale_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3475/3495] Replayed Submission.ThreeSum.Scales
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Scales.lean:95:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Scales.lean:95:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Scales.lean:226:4: Unused tactic linter: `norm_num only [Real.rpow_natCast]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Scales.lean:231:4: Unused tactic linter: `norm_num only [Real.rpow_natCast]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Scales.lean:493:30: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Scales.lean:493:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Scales.lean:606:23: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_zero, add_zero] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3476/3495] Replayed Submission.ThreeSum.HashFamily
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/HashFamily.lean:150:8: automatically included section variable(s) unused in theorem `ThreeSum.HashFamily.hashMap_apply`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/HashFamily.lean:309:47: Variable name `huv` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _huv
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/HashFamily.lean:382:0: automatically included section variable(s) unused in theorem `ThreeSum.HashFamily.incidenceCount_eq_sum`:
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/HashFamily.lean:395:0: automatically included section variable(s) unused in theorem `ThreeSum.HashFamily.incidenceCount_mono`:
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/HashFamily.lean:448:0: automatically included section variable(s) unused in theorem `ThreeSum.HashFamily.badPartners_card_le`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/HashFamily.lean:459:23: This simp argument is unused:
+  or_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [badPartners]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/HashFamily.lean:470:0: automatically included section variable(s) unused in theorem `ThreeSum.HashFamily.raw_first_moment`:
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/HashFamily.lean:581:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/HashFamily.lean:751:0: automatically included section variable(s) unused in theorem `ThreeSum.HashFamily.trimmed_first_moment`:
+  [DecidableEq E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3481/3495] Replayed Submission.ThreeSum.Greedy
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Greedy.lean:21:0: automatically included section variable(s) unused in theorem `ThreeSum.Cover.selectMap_mem`:
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Greedy.lean:32:0: automatically included section variable(s) unused in theorem `ThreeSum.Cover.selectMap_max`:
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Greedy.lean:57:0: automatically included section variable(s) unused in theorem `ThreeSum.Cover.greedyChoices_length`:
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Greedy.lean:64:0: automatically included section variable(s) unused in theorem `ThreeSum.Cover.greedyState_spec`:
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Greedy.lean:165:2: Try `simp at hmem` instead of `simpa using hmem`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3482/3495] Replayed Submission.ThreeSum.LocalHashMoments
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LocalHashMoments.lean:214:0: automatically included section variable(s) unused in theorem `ThreeSum.LocalHashMoments.mem_allWeights`:
+  [Field K]
+  [Fintype K]
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Field K] [Fintype K] [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3483/3495] Replayed Submission.ThreeSum.TrimScales
+info: missions/3sum-1960614/machine/lean/Submission/ThreeSum/TrimScales.lean:223:4: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/TrimScales.lean:221:15: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.inv_apply, Nat.cast_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3485/3495] Replayed Submission.ThreeSum.Switch
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Switch.lean:53:20: This simp argument is unused:
+  Nat.lt_succ_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [candidates]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Switch.lean:93:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Switch.lean:100:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Switch.lean:100:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Switch.lean:199:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Switch.lean:230:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Switch.lean:230:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3486/3495] Replayed Submission.ThreeSum.CostLedger
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/CostLedger.lean:86:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/CostLedger.lean:128:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/CostLedger.lean:128:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/CostLedger.lean:136:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/CostLedger.lean:204:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/CostLedger.lean:204:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3488/3495] Replayed Submission.ThreeSum.MassScales
+info: missions/3sum-1960614/machine/lean/Submission/ThreeSum/MassScales.lean:147:73: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/MassScales.lean:147:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: missions/3sum-1960614/machine/lean/Submission/ThreeSum/MassScales.lean:159:72: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/MassScales.lean:159:68: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ℹ [3494/3528] Replayed Solutions.Sol_ThreeSum1960614_arithmetic_rates
+info: Solutions/Sol_ThreeSum1960614_arithmetic_rates.lean:13:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_arithmetic_rates.lean:14:0: 'ThreeSum.ArithmeticStageBounds.arithmetic_powerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_arithmetic_rates.lean:15:0: 'ThreeSum.ArithmeticStageBounds.offset_powerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_arithmetic_rates.lean:16:0: 'ThreeSum.ArithmeticStageBounds.normalization_powerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8787/8790] Replayed Solutions.Sol_ThreeSum1960614_cleared_switch_equivalence
+warning: Solutions/Sol_ThreeSum1960614_cleared_switch_equivalence.lean:20:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Solutions/Sol_ThreeSum1960614_cleared_switch_equivalence.lean:30:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Solutions/Sol_ThreeSum1960614_cleared_switch_equivalence.lean:30:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: Solutions/Sol_ThreeSum1960614_cleared_switch_equivalence.lean:55:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8788/8790] Replayed Closed3Sum.local_cover_bounds
+info: missions/3sum-1960614/machine/lean/Closed3Sum/local_cover_bounds.lean:69:0: 'ThreeSum1960614.local_cover_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8789/8790] Replayed Solutions.Sol_ThreeSum1960614_closed_analysis
+info: Solutions/Sol_ThreeSum1960614_closed_analysis.lean:15:0: 'ThreeSum1960614.quartic_parameter_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_closed_analysis.lean:16:0: 'ThreeSum1960614.integer_schedule' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_closed_analysis.lean:17:0: 'ThreeSum1960614.executable_scale_limits' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_closed_analysis.lean:18:0: 'ThreeSum1960614.local_cover_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_closed_analysis.lean:19:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8790/8844] Replayed Submission.ThreeSum.Radix
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Radix.lean:52:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8796/8844] Replayed Submission.ThreeSum.RawIncidences
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/RawIncidences.lean:266:0: automatically included section variable(s) unused in theorem `ThreeSum.RawIncidences.mem_rawOn`:
+  [Fintype α]
+  [Fintype β]
+  [Fintype γ]
+  [DecidableEq α]
+  [DecidableEq β]
+  [DecidableEq γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype α] [Fintype β] [Fintype γ] [DecidableEq α] [DecidableEq β] [DecidableEq γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/RawIncidences.lean:322:0: automatically included section variable(s) unused in theorem `ThreeSum.RawIncidences.rawMass_eq_sum_witnesses`:
+  [Fintype α]
+  [Fintype β]
+  [Fintype γ]
+  [DecidableEq α]
+  [DecidableEq β]
+  [DecidableEq γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype α] [Fintype β] [Fintype γ] [DecidableEq α] [DecidableEq β] [DecidableEq γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/RawIncidences.lean:337:0: automatically included section variable(s) unused in theorem `ThreeSum.RawIncidences.leftBucket_of_signature`:
+  [Fintype β]
+  [DecidableEq β]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype β] [DecidableEq β] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/RawIncidences.lean:342:0: automatically included section variable(s) unused in theorem `ThreeSum.RawIncidences.rightBucket_of_signature`:
+  [Fintype γ]
+  [DecidableEq γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype γ] [DecidableEq γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/RawIncidences.lean:347:0: automatically included section variable(s) unused in theorem `ThreeSum.RawIncidences.bucket_product_eq_sum`:
+  [Fintype β]
+  [Fintype γ]
+  [DecidableEq β]
+  [DecidableEq γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype β] [Fintype γ] [DecidableEq β] [DecidableEq γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8797/8844] Replayed Submission.ThreeSum.Subset
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Subset.lean:40:0: automatically included section variable(s) unused in theorem `ThreeSum.Subset.mobius_congr`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Subset.lean:46:0: automatically included section variable(s) unused in theorem `ThreeSum.Subset.mobius_add`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Subset.lean:101:8: automatically included section variable(s) unused in theorem `_private.Submission.ThreeSum.Subset.0.ThreeSum.Subset.powerset_subset_of_subset`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8798/8844] Replayed Submission.ThreeSum.Reporting
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Reporting.lean:46:0: automatically included section variable(s) unused in theorem `ThreeSum.Reporting.frontier_lengths`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Reporting.lean:105:0: automatically included section variable(s) unused in theorem `ThreeSum.Reporting.frontier_nodup`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Reporting.lean:156:0: automatically included section variable(s) unused in theorem `ThreeSum.Reporting.generated_candidates_length`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8799/8844] Replayed Submission.ThreeSum.RawReporting
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/RawReporting.lean:104:0: automatically included section variable(s) unused in theorem `ThreeSum.RawReporting.word_children`:
+  [Fintype α]
+  [Fintype β]
+  [Fintype γ]
+  [DecidableEq β]
+  [DecidableEq γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype α] [Fintype β] [Fintype γ] [DecidableEq β] [DecidableEq γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8800/8844] Replayed Submission.ThreeSum.RawPrefixCounts
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/RawPrefixCounts.lean:28:0: automatically included section variable(s) unused in theorem `ThreeSum.RawPrefixCounts.prefixQuery_eq_card`:
+  [Fintype α]
+  [Fintype β]
+  [Fintype γ]
+  [DecidableEq β]
+  [DecidableEq γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype α] [Fintype β] [Fintype γ] [DecidableEq β] [DecidableEq γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/RawPrefixCounts.lean:47:8: automatically included section variable(s) unused in theorem `_private.Submission.ThreeSum.RawPrefixCounts.0.ThreeSum.RawPrefixCounts.pack_injective`:
+  [Fintype α]
+  [Fintype β]
+  [Fintype γ]
+  [DecidableEq α]
+  [DecidableEq β]
+  [DecidableEq γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype α] [Fintype β] [Fintype γ] [DecidableEq α] [DecidableEq β] [DecidableEq γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/RawPrefixCounts.lean:54:8: automatically included section variable(s) unused in theorem `_private.Submission.ThreeSum.RawPrefixCounts.0.ThreeSum.RawPrefixCounts.pack_unpack`:
+  [Fintype α]
+  [Fintype β]
+  [Fintype γ]
+  [DecidableEq α]
+  [DecidableEq β]
+  [DecidableEq γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype α] [Fintype β] [Fintype γ] [DecidableEq α] [DecidableEq β] [DecidableEq γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8801/8844] Replayed Submission.ThreeSum.BlockEncoding
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BlockEncoding.lean:206:0: automatically included section variable(s) unused in theorem `ThreeSum.BlockEncoding.leftWeights_cardinality`:
+  [Fintype β]
+  [DecidableEq β]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype β] [DecidableEq β] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BlockEncoding.lean:214:0: automatically included section variable(s) unused in theorem `ThreeSum.BlockEncoding.rightWeights_cardinality`:
+  [Fintype γ]
+  [DecidableEq γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype γ] [DecidableEq γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BlockEncoding.lean:222:0: automatically included section variable(s) unused in theorem `ThreeSum.BlockEncoding.leftWeights_choice`:
+  [Fintype β]
+  [DecidableEq β]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype β] [DecidableEq β] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BlockEncoding.lean:228:0: automatically included section variable(s) unused in theorem `ThreeSum.BlockEncoding.rightWeights_choice`:
+  [Fintype γ]
+  [DecidableEq γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype γ] [DecidableEq γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8803/8844] Replayed Submission.ThreeSum.BlockForced
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BlockForced.lean:48:37: This simp argument is unused:
+  false_or
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [prefixLeft, prefixRight, remaining, mem_join, Finset.mem_union, Finset.mem_sdiff, Finset.mem_compl,
+    mem_flat, hi, not_true_eq_false, true_and, false_and, or_false, hn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BlockForced.lean:60:27: This simp argument is unused:
+  or_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [prefixLeft, prefixRight, remaining, mem_join, Finset.mem_union, Finset.mem_sdiff, Finset.mem_compl,
+    mem_flat, hi, not_false_eq_true, true_and, false_and, false_or]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BlockForced.lean:79:27: This simp argument is unused:
+  false_or
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [prefixLeft, prefixRight, remaining, mem_join, Finset.mem_union, Finset.mem_sdiff, Finset.mem_compl,
+    hi, not_true_eq_false, true_and, false_and, or_false, hn] at hL hR
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BlockForced.lean:83:17: This simp argument is unused:
+  or_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [prefixLeft, prefixRight, remaining, mem_join, Finset.mem_union, Finset.mem_sdiff, Finset.mem_compl,
+    hi, not_false_eq_true, true_and, false_and, false_or] at hL hR
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8804/8844] Replayed Submission.ThreeSum.StoredReporting
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/StoredReporting.lean:79:0: automatically included section variable(s) unused in theorem `ThreeSum.StoredReporting.positivePrefix_valid`:
+  [Fintype α]
+  [Fintype β]
+  [Fintype γ]
+  [DecidableEq β]
+  [DecidableEq γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype α] [Fintype β] [Fintype γ] [DecidableEq β] [DecidableEq γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/StoredReporting.lean:126:23: This simp argument is unused:
+  ite_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hkey]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8805/8844] Replayed Submission.ThreeSum.SubsetTransport
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SubsetTransport.lean:15:8: automatically included section variable(s) unused in theorem `ThreeSum.SubsetTransport.reindex_map`:
+  [DecidableEq α]
+  [DecidableEq β]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] [DecidableEq β] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SubsetTransport.lean:22:0: automatically included section variable(s) unused in theorem `ThreeSum.SubsetTransport.sum_powerset_map`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8807/8844] Replayed Submission.ThreeSum.BlockIndexedQuery
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BlockIndexedQuery.lean:132:0: automatically included section variable(s) unused in theorem `ThreeSum.BlockIndexedQuery.leftWeights_le_card`:
+  [Fintype β]
+  [DecidableEq β]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype β] [DecidableEq β] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BlockIndexedQuery.lean:142:0: automatically included section variable(s) unused in theorem `ThreeSum.BlockIndexedQuery.rightWeights_le_card`:
+  [Fintype γ]
+  [DecidableEq γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype γ] [DecidableEq γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BlockIndexedQuery.lean:172:0: automatically included section variable(s) unused in theorem `ThreeSum.BlockIndexedQuery.queryValue_eq_transformPrefixValue`:
+  [Fintype β]
+  [Fintype γ]
+  [DecidableEq β]
+  [DecidableEq γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype β] [Fintype γ] [DecidableEq β] [DecidableEq γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8811/8844] Replayed Submission.ThreeSum.LightSubsetAddress
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSubsetAddress.lean:75:49: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSubsetAddress.lean:108:63: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8812/8844] Replayed Submission.ThreeSum.LightSubsetEnumeration
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSubsetEnumeration.lean:95:65: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSubsetEnumeration.lean:108:65: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSubsetEnumeration.lean:127:65: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSubsetEnumeration.lean:198:19: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSubsetEnumeration.lean:107:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSubsetEnumeration.lean:139:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8813/8844] Replayed Submission.ThreeSum.LightWeightedEnumeration
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWeightedEnumeration.lean:92:65: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWeightedEnumeration.lean:105:65: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWeightedEnumeration.lean:124:65: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWeightedEnumeration.lean:195:19: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWeightedEnumeration.lean:104:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWeightedEnumeration.lean:136:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8815/8844] Replayed Submission.ThreeSum.QueryCoordinates
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/QueryCoordinates.lean:78:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/QueryCoordinates.lean:168:10: This simp argument is unused:
+  List.getElem?_eq_getElem
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hi']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/QueryCoordinates.lean:178:10: This simp argument is unused:
+  List.getElem?_eq_getElem
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8817/8844] Replayed Submission.ThreeSum.SparseBoxes
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SparseBoxes.lean:150:39: This simp argument is unused:
+  and_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [IsLargest, huc, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8819/8844] Replayed Submission.ThreeSum.LightMaskErase
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightMaskErase.lean:50:49: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightMaskErase.lean:66:63: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8827/8844] Replayed Submission.ThreeSum.LightZetaStages
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightZetaStages.lean:77:28: This simp argument is unused:
+  Nat.add_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_mul, Nat.one_mul] at hm hdata
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightZetaStages.lean:77:40: This simp argument is unused:
+  Nat.one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_mul, Nat.add_mul] at hm hdata
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8829/8844] Replayed Submission.ThreeSum.LightBoxStages
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightBoxStages.lean:77:28: This simp argument is unused:
+  Nat.add_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_mul, Nat.one_mul] at hm hdata
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightBoxStages.lean:77:40: This simp argument is unused:
+  Nat.one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_mul, Nat.add_mul] at hm hdata
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8831/8844] Replayed Submission.ThreeSum.LightStageLookup
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightStageLookup.lean:51:28: This simp argument is unused:
+  Nat.add_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_mul, Nat.one_mul] at hmul hdata
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightStageLookup.lean:51:40: This simp argument is unused:
+  Nat.one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_mul, Nat.add_mul] at hmul hdata
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8838/8844] Replayed Submission.ThreeSum.LightMaskMinimum
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightMaskMinimum.lean:70:10: This simp argument is unused:
+  Inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [best, update_frame_setLocal]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightMaskMinimum.lean:96:14: This simp argument is unused:
+  Inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [update_frame_setLocal, hnext]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightMaskMinimum.lean:107:14: This simp argument is unused:
+  Inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [update_frame_setLocal, heq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightMaskMinimum.lean:121:12: This simp argument is unused:
+  Inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [update_frame_setLocal, heq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8839/8900] Replayed Submission.ThreeSum.LightQueryBox
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightQueryBox.lean:73:28: This simp argument is unused:
+  Nat.add_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_mul, Nat.one_mul] at hm hdata
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightQueryBox.lean:73:40: This simp argument is unused:
+  Nat.one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_mul, Nat.add_mul] at hm hdata
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8841/8900] Replayed Submission.ThreeSum.LightBoxSum
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightBoxSum.lean:100:28: This simp argument is unused:
+  Nat.add_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_mul, Nat.one_mul] at hm hdata
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightBoxSum.lean:100:40: This simp argument is unused:
+  Nat.one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_mul, Nat.add_mul] at hm hdata
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8842/8900] Replayed Submission.ThreeSum.LightCanonicalBoxSum
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightCanonicalBoxSum.lean:96:30: This simp argument is unused:
+  Nat.add_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_mul, Nat.one_mul] at hm hdata
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightCanonicalBoxSum.lean:96:42: This simp argument is unused:
+  Nat.one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_mul, Nat.add_mul] at hm hdata
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8866/8900] Replayed Submission.ThreeSum.LightRadixKeys
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightRadixKeys.lean:120:49: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightRadixKeys.lean:125:19: This simp argument is unused:
+  Function.update_of_ne (by omega : dst ≠ dst + 1)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [offset]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightRadixKeys.lean:128:17: This simp argument is unused:
+  State.mem
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8912/8949] Replayed Submission.ThreeSum.LightSharedReportingEntry
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSharedReportingEntry.lean:70:5: Variable name `htWord` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _htWord
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8913/8949] Replayed Submission.ThreeSum.SharedReportingBankLayout
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankLayout.lean:100:37: Variable name `hk` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hk
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8915/8949] Replayed Submission.ThreeSum.SharedReportingBankMemory
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankMemory.lean:37:5: Variable name `hlow` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hlow
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8933/8949] Replayed Submission.ThreeSum.LightOneHot
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightOneHot.lean:68:49: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightOneHot.lean:93:63: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8953/9017] Replayed Submission.ThreeSum.BooleanGreedy
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BooleanGreedy.lean:60:27: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [active, ha, covers, hz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8965/9017] Replayed Submission.ThreeSum.LightCoverGreedy
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightCoverGreedy.lean:93:12: This simp argument is unused:
+  Inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [update_frame_setLocal, out]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8988/9017] Replayed Submission.ThreeSum.OutputDecodeOrder
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/OutputDecodeOrder.lean:40:19: This simp argument is unused:
+  Nat.succ_eq_add_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.add_mul, one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/OutputDecodeOrder.lean:99:25: This simp argument is unused:
+  Nat.succ_eq_add_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [indices, Nat.add_sub_cancel, Nat.sub_zero, pow_zero, Nat.div_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/OutputDecodeOrder.lean:105:25: This simp argument is unused:
+  Nat.succ_eq_add_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [indices]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9004/9075] Replayed Submission.ThreeSum.SourceBandLayout
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SourceBandLayout.lean:41:39: Variable name `hg` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hg
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9006/9075] Replayed Submission.ThreeSum.SourceBandPairData
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SourceBandPairData.lean:34:48: The syntax is now `structure S : Type extends P` rather than `structure S extends P : Type`
+
+Note: The purpose of this change is to accommodate `structure S extends toP : P` syntax for naming parent projections.
+⚠ [9008/9075] Replayed Submission.ThreeSum.SourceBandPairSlices
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SourceBandPairSlices.lean:10:29: Local variable 'zero' resembles constructor 'Nat.zero' - write '.zero' (with a dot) or 'Nat.zero' to use the constructor.
+
+Note: This linter can be disabled with `set_option linter.constructorNameAsVariable false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SourceBandPairSlices.lean:21:34: Local variable 'zero' resembles constructor 'Nat.zero' - write '.zero' (with a dot) or 'Nat.zero' to use the constructor.
+
+Note: This linter can be disabled with `set_option linter.constructorNameAsVariable false`
+⚠ [9023/9075] Replayed Submission.ThreeSum.LocalKeyArraySemantics
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LocalKeyArraySemantics.lean:44:66: This simp argument is unused:
+  List.map_map
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [localKeys, localRecords, List.product, List.map_flatMap, layers, List.map_ofFn, Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9036/9075] Replayed Submission.ThreeSum.LightWeightedScore
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWeightedScore.lean:112:5: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWeightedScore.lean:112:24: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWeightedScore.lean:112:43: Variable name `hc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWeightedScore.lean:170:15: This simp argument is unused:
+  Inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [remaining_zero, update_frame_setLocal]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWeightedScore.lean:199:12: This simp argument is unused:
+  Inv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [update_frame_setLocal, A, B, C, base]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWeightedScore.lean:199:44: This simp argument is unused:
+  base
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Inv, update_frame_setLocal, A, B, C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9046/9075] Replayed Submission.ThreeSum.LightSharedReportingCounts
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSharedReportingCounts.lean:95:31: This simp argument is unused:
+  SegN
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9047/9075] Replayed Submission.ThreeSum.LightSourceBandHistSelect
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSourceBandHistSelect.lean:31:5: Variable name `hl` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hl
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSourceBandHistSelect.lean:31:29: Variable name `hr` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hr
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9062/9124] Replayed Submission.ThreeSum.SharedReportingBankRows
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankRows.lean:88:5: Variable name `hlow` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hlow
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9068/9124] Replayed Submission.ThreeSum.LightSharedReportingHost
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSharedReportingHost.lean:161:55: This simp argument is unused:
+  SegN
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSharedReportingHost.lean:163:69: This simp argument is unused:
+  SegN
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightSharedReportingHost.lean:192:31: This simp argument is unused:
+  SegN
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [header, hreadH₂, hreadE₂]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9071/9124] Replayed Submission.ThreeSum.SharedReportingCosts
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingCosts.lean:83:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingCosts.lean:137:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9074/9124] Replayed Submission.ThreeSum.SharedReportingBankCosts
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankCosts.lean:109:29: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankCosts.lean:109:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9084/9124] Replayed Submission.ThreeSum.LightPrimePool
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightPrimePool.lean:125:2: Try `simp at hmem` instead of `simpa using hmem`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightPrimePool.lean:233:8: Try `simp at ht` instead of `simpa using ht`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9088/9124] Replayed Submission.ThreeSum.LocalParameterBounds
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LocalParameterBounds.lean:60:59: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LocalParameterBounds.lean:73:62: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9089/9124] Replayed Submission.ThreeSum.LightLocalCoverMagnitude
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightLocalCoverMagnitude.lean:41:15: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightLocalCoverMagnitude.lean:48:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9091/9124] Replayed Submission.ThreeSum.SharedReportingBankResourceBoundsPolynomial
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankResourceBoundsPolynomial.lean:48:48: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9092/9124] Replayed Submission.ThreeSum.SharedReportingBankAccess
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankAccess.lean:31:70: This simp argument is unused:
+  SegN
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [header]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankAccess.lean:32:65: This simp argument is unused:
+  SegN
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [header]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankAccess.lean:33:65: This simp argument is unused:
+  SegN
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [header]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankAccess.lean:34:65: This simp argument is unused:
+  SegN
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [header]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankAccess.lean:35:65: This simp argument is unused:
+  SegN
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [header]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankAccess.lean:36:65: This simp argument is unused:
+  SegN
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [header]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankAccess.lean:37:65: This simp argument is unused:
+  SegN
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [header]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankAccess.lean:38:65: This simp argument is unused:
+  SegN
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [header]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SharedReportingBankAccess.lean:39:65: This simp argument is unused:
+  SegN
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [header]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9103/9124] Replayed Submission.ThreeSum.LightOriginalOffset
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightOriginalOffset.lean:174:26: Unused tactic linter: `change free + p ≤ free + 3 * q` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9107/9124] Replayed Submission.ThreeSum.LightWantedRow
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWantedRow.lean:37:5: Variable name `hleft` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hleft
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9109/9124] Replayed Submission.ThreeSum.LightWantedJoin
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightWantedJoin.lean:63:49: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9130/9187] Replayed Submission.ThreeSum.ReportingHostTerminalCosts
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/ReportingHostTerminalCosts.lean:44:0: automatically included section variable(s) unused in theorem `ThreeSum.ReportingHostTerminalCosts.actualTestWork_eq`:
+  [Fintype β]
+  [Fintype γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype β] [Fintype γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9138/9187] Replayed Submission.ThreeSum.LightReportingStoredStep
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightReportingStoredStep.lean:180:16: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightReportingStoredStep.lean:180:16: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [9143/9187] Replayed Submission.ThreeSum.LightReportingTerminalMasks
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightReportingTerminalMasks.lean:70:2: Unused tactic linter: `change
+  querySet k (outputRows q) \ S = indexSet (remaining (prefixIndices J k) (outputRows q) \ unindexSet S)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9185/9235] Replayed Submission.ThreeSum.LightBandPrimeConstruction
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightBandPrimeConstruction.lean:30:9: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightBandPrimeConstruction.lean:31:9: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightBandPrimeConstruction.lean:44:43: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightBandPrimeConstruction.lean:45:9: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightBandPrimeConstruction.lean:45:14: Variable name `j` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _j
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightBandPrimeConstruction.lean:46:9: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9187/9235] Replayed Submission.ThreeSum.Coloring
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Coloring.lean:64:19: This simp argument is unused:
+  Fintype.card_fun
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Parameter, pow_two, Nat.mul_comm, Nat.mul_left_comm, Nat.mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/Coloring.lean:64:60: This simp argument is unused:
+  Nat.mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Parameter, Fintype.card_fun, pow_two, Nat.mul_comm, Nat.mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9190/9235] Replayed Submission.ThreeSum.LightClassFilter
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightClassFilter.lean:63:5: Variable name `hwant` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hwant
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightClassFilter.lean:77:2: Unused tactic linter: `light_assoc` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9195/9235] Replayed Submission.ThreeSum.BandPreprocessingCorrectness
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BandPreprocessingCorrectness.lean:118:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/BandPreprocessingCorrectness.lean:118:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9202/9235] Replayed Submission.ThreeSum.LightBandRawAStep
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightBandRawAStep.lean:101:14: This simp argument is unused:
+  update_frame_setLocal
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hlen, ← he]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9209/9235] Replayed Submission.ThreeSum.SourceFiniteInputs
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SourceFiniteInputs.lean:35:51: Variable name `j` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _j
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9229/9278] Replayed Submission.ThreeSum.SourceFiniteRetention
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/SourceFiniteRetention.lean:51:6: Unused tactic linter: `change _ ≤ bound` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9242/9278] Replayed Submission.ThreeSum.EncodedColorPrimeCosts
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/EncodedColorPrimeCosts.lean:75:9: Variable name `j` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _j
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9248/9278] Replayed Submission.ThreeSum.LightEncodedColorResult
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightEncodedColorResult.lean:50:5: Variable name `hprime` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hprime
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightEncodedColorResult.lean:50:28: Variable name `hcover` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hcover
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightEncodedColorResult.lean:50:51: Variable name `hwanted` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hwanted
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightEncodedColorResult.lean:51:5: Variable name `hcontrols` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hcontrols
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightEncodedColorResult.lean:51:34: Variable name `hbank` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hbank
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightEncodedColorResult.lean:52:34: Variable name `hlen` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hlen
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightEncodedColorResult.lean:52:64: Variable name `hp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9262/9278] Replayed Submission.ThreeSum.LightEncodedColorLayout
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightEncodedColorLayout.lean:92:65: This simp argument is unused:
+  Nat.cast_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ColorBandBounds.count, Nat.cast_mul, Nat.cast_ofNat, pow_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightEncodedColorLayout.lean:70:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightEncodedColorLayout.lean:72:94: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9292/9332] Replayed Submission.ThreeSum.LightColorScan
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightColorScan.lean:49:35: Variable name `hsrc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hsrc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightColorScan.lean:49:55: Variable name `hparams` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hparams
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9338/9382] Replayed Submission.ThreeSum.LightThreeSumWantedHost
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:26:34: Variable name `hbank` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hbank
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:29:24: Variable name `hbv` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hbv
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:30:5: Variable name `hcv` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hcv
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:30:44: Variable name `hrec` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hrec
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:32:5: Variable name `hnB` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hnB
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:32:18: Variable name `hnC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hnC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:32:31: Variable name `hGA` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hGA
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:32:44: Variable name `hGB` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hGB
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:32:57: Variable name `hGC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hGC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:33:5: Variable name `hnword` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hnword
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:33:33: Variable name `hJword` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hJword
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:34:5: Variable name `hhword` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hhword
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:35:5: Variable name `hgword` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hgword
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:35:33: Variable name `hMword` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hMword
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:36:5: Variable name `hlword` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hlword
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:36:38: Variable name `hsword` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hsword
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/LightThreeSumWantedHost.lean:37:33: Variable name `hNword` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hNword
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [9393/9406] Replayed Solutions.Sol_ThreeSum1960614_concrete_local_cover
+info: Solutions/Sol_ThreeSum1960614_concrete_local_cover.lean:18:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9394/9406] Replayed Theorems.Thm_ThreeSum1960614_high_precision_logs
+warning: Theorems/Thm_ThreeSum1960614_high_precision_logs.lean:7:8: declaration uses `sorry`
+⚠ [9395/9406] Replayed Solutions.Sol_ThreeSum1960614_encoding_parameter_bounds
+warning: Solutions/Sol_ThreeSum1960614_encoding_parameter_bounds.lean:19:53: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Solutions/Sol_ThreeSum1960614_encoding_parameter_bounds.lean:24:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Solutions/Sol_ThreeSum1960614_encoding_parameter_bounds.lean:19:53: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solutions/Sol_ThreeSum1960614_encoding_parameter_bounds.lean:59:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9397/9406] Replayed Theorems.Thm_ThreeSum1960614_executable_scale_rounding
+warning: Theorems/Thm_ThreeSum1960614_executable_scale_rounding.lean:7:8: declaration uses `sorry`
+ℹ [9399/9406] Replayed Solutions.Sol_ThreeSum1960614_executable_scale_rounding
+info: Solutions/Sol_ThreeSum1960614_executable_scale_rounding.lean:51:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9400/9406] Replayed Solutions.Sol_ThreeSum1960614_hierarchy_rates
+info: Solutions/Sol_ThreeSum1960614_hierarchy_rates.lean:15:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9401/9406] Replayed Solutions.Sol_ThreeSum1960614_high_precision_logs
+info: Solutions/Sol_ThreeSum1960614_high_precision_logs.lean:60:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9404/9430] Replayed Theorems.Thm_ThreeSum1960614_cleared_switch_equivalence
+warning: Theorems/Thm_ThreeSum1960614_cleared_switch_equivalence.lean:7:8: declaration uses `sorry`
+⚠ [9406/9430] Replayed Theorems.Thm_ThreeSum1960614_quartic_switch_bounds
+warning: Theorems/Thm_ThreeSum1960614_quartic_switch_bounds.lean:9:8: declaration uses `sorry`
+⚠ [9407/9430] Replayed Theorems.Thm_ThreeSum1960614_uniform_entropy_bound
+warning: Theorems/Thm_ThreeSum1960614_uniform_entropy_bound.lean:9:8: declaration uses `sorry`
+⚠ [9408/9430] Replayed Solutions.Sol_ThreeSum1960614_integer_schedule
+warning: Solutions/Sol_ThreeSum1960614_integer_schedule.lean:41:40: Variable name `ha0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Solutions/Sol_ThreeSum1960614_integer_schedule.lean:141:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Solutions/Sol_ThreeSum1960614_integer_schedule.lean:154:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Solutions/Sol_ThreeSum1960614_integer_schedule.lean:141:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ℹ [9409/9430] Replayed Solutions.Sol_ThreeSum1960614_integrated_switch_bounds
+info: Solutions/Sol_ThreeSum1960614_integrated_switch_bounds.lean:15:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9410/9430] Replayed Solutions.Sol_ThreeSum1960614_integrated_switch_program
+info: Solutions/Sol_ThreeSum1960614_integrated_switch_program.lean:17:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9411/9430] Replayed Solutions.Sol_ThreeSum1960614_local_cover_bounds
+info: Solutions/Sol_ThreeSum1960614_local_cover_bounds.lean:69:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9412/9430] Replayed Solutions.Sol_ThreeSum1960614_local_cover_initializer
+info: Solutions/Sol_ThreeSum1960614_local_cover_initializer.lean:22:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9413/9430] Replayed Solutions.Sol_ThreeSum1960614_log_coefficients
+info: Solutions/Sol_ThreeSum1960614_log_coefficients.lean:75:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9414/9430] Replayed Solutions.Sol_ThreeSum1960614_machine_band_rates
+info: Solutions/Sol_ThreeSum1960614_machine_band_rates.lean:17:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9416/9430] Replayed Solutions.Sol_ThreeSum1960614_machine_cost_bridge
+info: Solutions/Sol_ThreeSum1960614_machine_cost_bridge.lean:11:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9417/9430] Replayed Solutions.Sol_ThreeSum1960614_machine_global_encoding
+info: Solutions/Sol_ThreeSum1960614_machine_global_encoding.lean:15:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9418/9430] Replayed Solutions.Sol_ThreeSum1960614_machine_global_initializer
+info: Solutions/Sol_ThreeSum1960614_machine_global_initializer.lean:15:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9419/9430] Replayed Solutions.Sol_ThreeSum1960614_machine_local_schedule
+info: Solutions/Sol_ThreeSum1960614_machine_local_schedule.lean:15:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9420/9430] Replayed Solutions.Sol_ThreeSum1960614_machine_scale_rates
+info: Solutions/Sol_ThreeSum1960614_machine_scale_rates.lean:18:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9421/9430] Replayed Solutions.Sol_ThreeSum1960614_machine_size_initializer
+info: Solutions/Sol_ThreeSum1960614_machine_size_initializer.lean:14:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9423/9430] Replayed Solutions.Sol_ThreeSum1960614_model_algebra
+info: Solutions/Sol_ThreeSum1960614_model_algebra.lean:14:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9425/9430] Replayed Solutions.Sol_ThreeSum1960614_parameter_initializer
+info: Solutions/Sol_ThreeSum1960614_parameter_initializer.lean:17:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9427/9447] Built Solutions.Sol_ThreeSum1960614_complete_machine_goal (23s)
+warning: Solutions/Sol_ThreeSum1960614_complete_machine_goal.lean:8:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: Solutions/Sol_ThreeSum1960614_complete_machine_goal.lean:10:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9428/9447] Replayed Solutions.Sol_ThreeSum1960614_quartic_geometry
+info: Solutions/Sol_ThreeSum1960614_quartic_geometry.lean:37:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9429/9447] Replayed Theorems.Thm_ThreeSum1960614_encoding_parameter_bounds
+warning: Theorems/Thm_ThreeSum1960614_encoding_parameter_bounds.lean:7:8: declaration uses `sorry`
+⚠ [9430/9447] Replayed Theorems.Thm_ThreeSum1960614_initial_entropy_bound
+warning: Theorems/Thm_ThreeSum1960614_initial_entropy_bound.lean:7:8: declaration uses `sorry`
+ℹ [9432/9447] Replayed Solutions.Sol_ThreeSum1960614_quartic_program_contract
+info: Solutions/Sol_ThreeSum1960614_quartic_program_contract.lean:14:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9433/9447] Replayed Theorems.Thm_ThreeSum1960614_quartic_geometry
+warning: Theorems/Thm_ThreeSum1960614_quartic_geometry.lean:7:8: declaration uses `sorry`
+⚠ [9434/9447] Replayed Theorems.Thm_ThreeSum1960614_log_coefficients
+warning: Theorems/Thm_ThreeSum1960614_log_coefficients.lean:7:8: declaration uses `sorry`
+⚠ [9435/9447] Replayed Solutions.Sol_ThreeSum1960614_quartic_switch_bounds
+warning: Solutions/Sol_ThreeSum1960614_quartic_switch_bounds.lean:26:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Solutions/Sol_ThreeSum1960614_quartic_switch_bounds.lean:96:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ℹ [9436/9447] Replayed Solutions.Sol_ThreeSum1960614_raw_cost_exponent
+info: Solutions/Sol_ThreeSum1960614_raw_cost_exponent.lean:13:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9437/9447] Replayed Solutions.Sol_ThreeSum1960614_stage_rates
+info: Solutions/Sol_ThreeSum1960614_stage_rates.lean:21:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_stage_rates.lean:22:0: 'ThreeSum.Parameters.all_costs_lt_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_stage_rates.lean:23:0: 'ThreeSum.StageBounds.table_powerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_stage_rates.lean:24:0: 'ThreeSum.StageBounds.encoder_powerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_stage_rates.lean:25:0: 'ThreeSum.StageBounds.boxes_powerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_stage_rates.lean:26:0: 'ThreeSum.StageBounds.initial_powerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_stage_rates.lean:27:0: 'ThreeSum.StageBounds.active_powerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Solutions/Sol_ThreeSum1960614_stage_rates.lean:28:0: 'ThreeSum.StageBounds.terminal_powerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9438/9447] Replayed Solutions.Sol_ThreeSum1960614_switch_resources
+info: Solutions/Sol_ThreeSum1960614_switch_resources.lean:15:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9440/9447] Replayed Theorems.Thm_ThreeSum1960614_quartic_parameter_certificate
+warning: Theorems/Thm_ThreeSum1960614_quartic_parameter_certificate.lean:9:8: declaration uses `sorry`
+⚠ [9441/9447] Replayed Theorems.Thm_ThreeSum1960614_costs_solve_3sum
+warning: Theorems/Thm_ThreeSum1960614_costs_solve_3sum.lean:9:8: declaration uses `sorry`
+⚠ [9443/9447] Replayed Theorems.Thm_ThreeSum1960614_tangent_log_bounds
+warning: Theorems/Thm_ThreeSum1960614_tangent_log_bounds.lean:7:8: declaration uses `sorry`
+⚠ [9444/9447] Replayed Solutions.Sol_ThreeSum1960614_uniform_entropy_bound
+warning: Solutions/Sol_ThreeSum1960614_uniform_entropy_bound.lean:43:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Solutions/Sol_ThreeSum1960614_uniform_entropy_bound.lean:43:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Solutions/Sol_ThreeSum1960614_uniform_entropy_bound.lean:78:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Solutions/Sol_ThreeSum1960614_uniform_entropy_bound.lean:78:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9445/9447] Replayed Theorems.Thm_ThreeSum1960614_Draft
+warning: Theorems/Thm_ThreeSum1960614_Draft.lean:8:8: declaration uses `sorry`
+warning: Theorems/Thm_ThreeSum1960614_Draft.lean:13:8: declaration uses `sorry`
+warning: Theorems/Thm_ThreeSum1960614_Draft.lean:17:8: declaration uses `sorry`
+warning: Theorems/Thm_ThreeSum1960614_Draft.lean:27:8: declaration uses `sorry`
+warning: Theorems/Thm_ThreeSum1960614_Draft.lean:40:8: declaration uses `sorry`
+warning: Theorems/Thm_ThreeSum1960614_Draft.lean:50:8: declaration uses `sorry`
+warning: Theorems/Thm_ThreeSum1960614_Draft.lean:55:8: declaration uses `sorry`
+warning: Theorems/Thm_ThreeSum1960614_Draft.lean:59:8: declaration uses `sorry`
+⚠ [9446/9447] Built Submission.ThreeSum.ModelWitnessBounds (24s)
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/ModelWitnessBounds.lean:118:25: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: missions/3sum-1960614/machine/lean/Submission/ThreeSum/ModelWitnessBounds.lean:118:25: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ℹ [9447/9447] Built Solutions.Sol_ThreeSum1960614_model_bound (20s)
+info: Solutions/Sol_ThreeSum1960614_model_bound.lean:12:0: 'solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9447 jobs).

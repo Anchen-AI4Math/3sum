@@ -1,0 +1,9 @@
+{
+  "checked_at_utc": "2026-10-15T10:21:30.825562+00:00",
+  "manifest_sha256": "3e5505d439e5e616b1ee3d2d89b8e2b5596a7b8bbbf077d13700c69cc1239145",
+  "source_files_checked": 1003,
+  "source_hashes_match": true,
+  "user_server_first_authorization_matches": true,
+  "accepted_proof_hashes_match": true,
+  "accepted_proofs_checked": 481
+}
